@@ -510,7 +510,7 @@ margin: 0 !important;
 				padding: 8%;
 			}
 			&:before {
-				content: 'Expert tips';
+				content: 'Experttips';
 			    position: absolute;
 			    top: 0;
 			    left: 0;
@@ -539,7 +539,7 @@ margin: 0 !important;
 
 		//  Bomässa
 		&.bomassa {
-			background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/tradgardsbild-wide.jpg");
+			background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/tradgardsbild-wide-host.jpg")
 			@include shade-bg(0.15);
 		}
 
@@ -575,7 +575,7 @@ margin: 0 !important;
 		@include aspect-ratio(1, 2);
 		/* column */
 		&:nth-child(1) .content .rad:nth-child(1) .box {
-			background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/automower315x.jpg');
+			background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/hva_motorsagar.jpg");
 			@include light-text;
 			@include ghost-button-filled($yellow,$white);
 		}
@@ -585,7 +585,7 @@ margin: 0 !important;
 		;
 		}
 		&:nth-child(2) .content .full-height {
-			background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/sebastian-klippt-close.jpg');
+			background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/mats2.jpg");
 			@include light-text;
 		}
 		&:nth-child(3) .content .rad:nth-child(1) .box {
@@ -628,13 +628,13 @@ margin: 0 !important;
 			background: $white;
 		}
 		&:nth-child(3) .box{
-			background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/batteridrivet_stihl.jpg');
+			background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/hva_125bvx.jpg");
 			@include light-text;
 			@include shade-bg(0.3);
 			@include ghost-button-filled($green,$white);
 		}
 		&:nth-child(4) .box{
-			background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/slapvagn-smartadrag2.jpg');
+			background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/skogsverktyg.jpg");
 			@include light-text;
 			@include shade-bg(0.3);
 			@include ghost-button-filled($blue,$white);
@@ -1270,7 +1270,7 @@ body:not(.startpage) .fabrikk--article {
 			font-size: 54px;
 			line-height: 56px;
 			margin-bottom: 10px;
-			color: #000;
+			color: #fff;
 			@media screen and (max-width: 1070px) {
 			    font-size: 43px;
 			    padding-top: 20px;
@@ -1282,7 +1282,7 @@ body:not(.startpage) .fabrikk--article {
 		}
 		.service-ingress {
 			font-size: 18px;
-			color: #000;
+			color: #fff;
 		}
 	}
 }
