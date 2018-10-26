@@ -1,0 +1,3388 @@
+@charset "utf-8";
+$green: #b6c628;
+$yellow: #f2b029;
+$red: #c05240;
+$blue: #00a1b4;
+$lightgreen: #add147;
+$lightblue: #47bffa;
+$lightyellow: #f5b83a;
+$lightgray: #f4f4f4;
+$white: #fff;
+$black: #111;
+$season: #b6c628;
+
+/* nya farger */
+$nydarkgreen:#a6b037 ;
+$nygreen:#b9c43d ;
+$nylightgreen:#d5db85 ;
+$nydarkyellow:#cf9f32 ;
+$nyyellow:#e1ae3b ;
+$nylightyellow:#edce85 ;
+$nydarkred:#9c4d3e ;
+$nyred:#a85342 ;
+$nylightred:#c8958c ;
+$nydarkblue:#5298a9 ;
+$nyblue:#57a0b1 ;
+$nylightblue:#83c5d0 ;
+
+
+// font-family: 'Univia Pro Regular'
+// font-family: 'Univia Pro Medium'
+// font-family: 'Univia Pro UltraLight'
+// font-family: 'Univia Pro Bold' 
+
+$light: 'Univia Pro UltraLight'!important;
+$bold: 'Univia Pro Bold' !important;
+$regular: 'Univia Pro Regular'!important;
+
+
+// $light: 400!important;
+// $bold: 700 !important;
+// $regular: 400!important;
+
+@mixin uppercase-fix {
+	text-transform: lowercase;
+	display: inline-block;
+	&:first-letter {
+		text-transform: capitalize;
+	}
+}
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content, > .box, > .thumbnail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@mixin light-text {
+	color: $white;
+	h1, h2, h3 ,h4, h5, .h5{
+		color: $white;
+	}
+	.ghost-button, a {
+		color: $white;	
+	}
+}
+@mixin ghost-button-filled($color, $second-color) {
+	.ghost-button, .btn, &.ghost-button, &.btn,  {
+		background: $second-color;
+		color: $color;
+		span {
+			color: $color;
+		}
+		border-color: $second-color !important;
+		padding: 10px 21px;
+	    border: 2px solid;
+	    margin: 5px 5px 5px 0;
+	    display: inline-block;
+	    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+		&:hover {
+			color: $second-color;
+			span {
+				color: $second-color;
+			}
+			background: transparent;
+			text-decoration: none;
+		}
+	}
+}
+@mixin ghost-button-notfilled($color, $second-color) {
+	.ghost-button, .btn, &.ghost-button, &.btn,  {
+		background: transparent;
+		color: $second-color;
+		span {
+			color: $second-color;
+		}
+		padding: 10px 21px;
+	    border: 2px solid;
+	    margin: 5px 5px 5px 0;
+	    display: inline-block;
+	    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+		&:hover {
+			border-color: $second-color;
+			color: $color;
+			span {
+				color: $color;
+			}
+			background: $second-color;
+			text-decoration: none;
+		}
+	}
+}
+@mixin shade-bg($shade){
+	h1, h2, h3 ,h4, h5, .h5, p, a {
+		position: relative;
+		z-index: 1;
+	}
+	.push-blob {
+		z-index: 1;
+	}
+	&:after {
+		content: ' ';
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    background: rgba(0,0,0,$shade);
+	}
+}
+@mixin prod-bg {
+	.full-link {
+		background: rgba(200,200,200,0.2);
+	}
+}
+
+
+
+/* Generelt */
+h1, h2, h3, h4, h5, h6, b, p, strong, em, span, button, div, article, section, input {
+	font-family: "Droid Sans", 'Helvetica', 'Arial', sans-serif !important;
+}
+
+.pris, p, a:not(.fa), div {
+	font-family: $regular;
+}
+h1, h1 a, h2, h2 a, h5, h5 a, .h5, .h5 a, h6, h6 a {
+	font-family: $bold;
+}
+h3, h3 a, h4, h4 a {
+	font-family: $light;
+}
+h1 {}
+h2 {
+	margin-bottom: 8px;
+	margin-top: 10px;
+}
+h3 {}
+h4 {}
+h4 {}
+body {
+	width: 100%;
+	overflow-x: hidden;
+	font-family: 'Univia Pro', "Droid Sans", 'Helvetica', 'Arial', sans-serif !important;
+}
+h1 {
+	line-height: 27px;
+}
+p, div {
+	font-size: 14px;
+}
+.btn, .tws-article-quantity .input-group input, .tws-article-list--show-more-button {
+	border-radius: 0px !important;
+}
+.fabrikk--content {
+	max-width: none;
+	overflow-x: hidden;
+}
+.container {
+    width: 102%;
+    padding: 0;
+}
+.ghost-button  {
+	padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.push-blob {
+	position: absolute;
+	border: 4px solid white;
+	background-color: $blue;
+	text-align: center;
+	border-radius: 50%;
+	p {
+		color: #fff;
+		margin: 0;
+		font-size: 15px !important;
+		text-align: center;
+	}
+	b, i {
+		display: block;
+	}
+}
+
+.tws-api--price-regular {
+	text-decoration: none;
+	font-size: 14px;
+	&:before {
+		content: "ord: "
+	}
+}
+.tws-api--price-current {
+	color: $green !important;
+	font-size: 20px
+}
+
+//
+//
+/* HEADER */
+//
+//
+
+/* logo */
+
+.fabrikk--header .slot--logo .tws-logo--image .tws-img--image {
+	width: 50% !important;
+	height: auto !important;
+}
+
+/* header top row */
+
+.slot--top-bar-html {
+	max-width: none;
+	margin: auto !important;
+	float: none;
+	text-align: center;
+	p {
+		font-size: 12px;
+		font-family: $light;
+		display: inline;
+		text-transform: uppercase;
+		a {
+			color: #fff;
+			font-family: $light;
+			&:hover {
+				text-decoration: none;
+				color: $yellow;
+			}
+		}
+	}
+}
+
+/* meny */
+
+.fabrikk--back-to-top {
+	display: none;
+}
+
+.tws-mega-menu--open-button.open, .tws-mega-menu--search-button.open {
+	background: $yellow;
+}
+.fabrikk--header-wrapper {
+	min-height: 120px;
+	background: repeating-linear-gradient(45deg, #323232, #252525 1px, #323232 2px, #323232 5px) ;
+}
+.tws-mega-menu--articlegroup-list-ul {
+	.tws-mega-menu--articlegroup {
+		 a:hover {
+			text-decoration: none !important;
+			color: #fff;
+		}
+
+		ul .tws-mega-menu--articlegroup-children a{
+			color: #cfcfcf;
+			&:hover {
+				text-decoration: none !important;
+				color: #fff;
+			}
+		}
+	}
+}
+
+/* breadcrumbs */
+
+.tws-breadcrumbs--text, .tws-breadcrumbs--home-icon {
+	text-transform: lowercase;
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
+.tws-container--tws-custom-html {
+padding: 0 !important;
+margin: 0 !important;
+}
+
+.slot--breadcrumbs {
+  position: relative;
+  //z-index: 2;
+}
+
+/* mini-varukorg */
+.tws-micro-cart--label {
+	color: #fff;
+}
+
+.tws-micro-cart--counter{
+	color: #fff;
+	float: none;
+	font-family: $regular;
+	position: static;
+	height: auto;
+	width: auto;
+	padding: initial;
+	font-size: 14px;
+	&:before {
+		font-size: 14px;
+		position: static;
+		content: ': ';
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.tws-micro-cart a{
+		width: auto;
+		.tws-micro-cart--counter:before {
+			content: 'korg: ';
+		}
+	}
+}
+
+//
+//
+/* startsida boxes */
+//
+//
+
+.startpage {
+	.fabrikk--content-wrapper {
+		width: 100%;
+	}
+	h1 {
+		font-size: 4vw;
+		line-height: 1.1em;
+		letter-spacing: 0;
+	}
+	h2 {
+		font-family: $bold;
+		font-size: 1.5vw;
+		line-height: 1.1em;
+		letter-spacing: 0;
+		&.split {
+			font-size: 1.3vw;
+		}
+	}
+	h3 { 
+		font-size: 3vw;
+		letter-spacing: 0;
+	}
+	h4 {
+		letter-spacing: 0;
+	}
+	h5, .h5, .tws-articles-two--name { 
+		font-size: 1.4vw;
+		letter-spacing: 0;
+	}
+	h6 {
+		letter-spacing: 0;
+	}
+	p {
+		font-family: $light;
+		line-height: 1.1em;
+	}
+	.sub-title {
+		font-size: 65%;
+		display: block;
+	}
+	@media screen and (max-width: 1000px) {
+		h1 {
+			font-size: 7.8vw;
+		}
+		h2 {
+			font-size: 3.5vw;
+			line-height: 1.1em;
+			&.split {
+				font-size: 2.5vw;
+			}
+		}
+		h3 { font-size: 7vw;}
+		h4 {}
+		h5, .h5, .tws-articles-two--name { font-size: 2.7vw; }
+		h6 {}
+	}
+	@media screen and (max-width: 560px) {
+		h1 {
+			font-size: 11vw;
+		}
+		h2 {
+			font-size: 7.3vw;
+			line-height: 1.1em;
+			&.split {
+				font-size: 5vw;
+			}
+		}
+		h3 { font-size: 9vw;}
+		h4 {}
+		h5, .h5, .tws-articles-two--name { font-size: 6.2vw;}
+		h6 {}
+	}
+}
+
+
+// Lite generellare grejer för boxarna
+
+.fabrikk--component-container {
+	display: flex;
+	flex-wrap: wrap;
+	> * {
+		width: 100%;
+	}
+}
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	.column {
+		width: 100%;
+		@media screen and (min-width: 600px) {
+			max-width: 50%;
+		    -ms-flex-preferred-size: 50%;
+		    flex-basis: 50%;
+		    width: 50%;
+		}
+		@media screen and (min-width: 992px) {
+			max-width: 25%;
+		    -ms-flex-preferred-size: 25%;
+		    flex-basis: 25%;
+		    width: 25%;
+		}
+		.rad {
+			@include aspect-ratio(1, 1);
+		}
+		.box {
+			padding: 8%;
+		    background-size: cover !important;
+		    img {
+				position: absolute;
+				bottom: 15%;
+				width: 80%;
+				left: 10%;
+			}
+			.pris {
+				position: absolute;
+				bottom: 5%;
+				left: 10%;
+				font-size: 1.8em; 
+				font-family: $bold;
+				color: $green;
+				em {
+					position: absolute;
+				    display: inline;
+				    width: 100%;
+				    left: 0;
+				    bottom: -8px;
+				    font-style: normal;
+				    font-size: 12px;
+				    color: #888;
+				    font-family: $light;
+				}
+				&:after {
+					content: " SEK"
+				}
+			}
+		    .full-link {
+				position: absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				strong {
+					color: #666;
+					position: absolute;
+					bottom: 5%;
+					right: 10%;
+				}
+			}
+		}
+		.full-height {
+			text-align: center;
+			padding: 60px 8% 8% 8%;
+			height: 100%;
+			background-size: cover !important;
+			h3 {
+				margin-top: 0;
+			}
+			@media screen and (min-width: 600px) {
+				padding: 8%;
+			}
+			&:before {
+				content: 'Expert tips';
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    text-align: left;
+			    padding: 12px 20px;
+			    margin: 0;
+			    background: #00a1b4;
+			    @media screen and (min-width: 600px) {
+					top: -44px;
+				}
+			}
+		}
+	}
+}
+
+// intro headern
+
+.intro.onebox {
+	.box-container {
+		@include aspect-ratio(8, 2);
+   		width: calc(100%);
+		height: 500px;
+		background-size: cover;
+		background-position: center center;
+
+		//  Bomässa
+		&.bomassa {
+			background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/tradgardsbild-wide.jpg");
+			@include shade-bg(0.15);
+		}
+
+		//  vinter
+		&.vinter {
+			background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/vinter-gardsman-top.jpg");
+			@include shade-bg(0.3);
+		}
+
+		.content {
+			.box {
+				padding: 80px 10px 0 5%;
+				@include light-text;
+				p {
+					font-size: 16px;
+					max-width: 450px;
+					font-family: $light;
+					margin: 15px 0;
+				}
+				h1, h2 {
+					margin: 2px;
+					line-height: 1em;
+				}
+			}
+		}
+	}
+}
+
+// statiskt grid
+
+.boxes.vertical{
+	.column {
+		@include aspect-ratio(1, 2);
+		/* column */
+		&:nth-child(1) .content .rad:nth-child(1) .box {
+			background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/automower315x.jpg');
+			@include light-text;
+			@include ghost-button-filled($yellow,$white);
+		}
+		&:nth-child(1) .content .rad:nth-child(2) .box {
+			background: $white;
+			@include prod-bg
+		;
+		}
+		&:nth-child(2) .content .full-height {
+			background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/sebastian-klippt-close.jpg');
+			@include light-text;
+		}
+		&:nth-child(3) .content .rad:nth-child(1) .box {
+			background: $white;
+		}
+		&:nth-child(3) .content .rad:nth-child(2) .box {
+			background: $white;
+			@include prod-bg
+		;
+		}
+		&:nth-child(4) .content .rad:nth-child(1) .box {
+			background: $red;
+			@include light-text;
+			@include ghost-button-notfilled($red,$white);
+		}
+		&:nth-child(4) .content .rad:nth-child(2) .box {
+			background: $white;
+			.push-blob {
+				padding: 24px 9px;
+				top: -10px;
+				transform: rotate(-12deg);
+				right: 40px;
+			}
+		}
+	}
+}
+
+// fyra statiska
+
+.boxes.horizontal{
+	.column {
+		@include aspect-ratio(1, 1);
+		&:nth-child(1) .box{
+			background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/skyddsklader.jpg');
+			@include light-text;
+			@include shade-bg(0.3);
+			@include ghost-button-notfilled($red,$white);
+		}
+		&:nth-child(2) .box{
+			background: $white;
+		}
+		&:nth-child(3) .box{
+			background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/batteridrivet_stihl.jpg');
+			@include light-text;
+			@include shade-bg(0.3);
+			@include ghost-button-filled($green,$white);
+		}
+		&:nth-child(4) .box{
+			background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/slapvagn-smartadrag2.jpg');
+			@include light-text;
+			@include shade-bg(0.3);
+			@include ghost-button-filled($blue,$white);
+		}
+	}
+}
+
+// Två & Fyra Dynamiska
+
+.tws-container--tws-articles-two {
+	margin: 0 !important;
+	padding: 0 !important;
+	&.dynamiska-robotgrasklippare, &.dynamiska-skog, &.dynamiska-tradgard, &.dynamiska-slap, &.dynamiska-atv {
+		width: 100%;
+		@media screen and (min-width: 992px) {
+			width: 50%;
+		}
+	}
+	&.fyra-generella-dynamiska-produkter {
+		.tws-list--grid-item {
+			@media only screen and (min-width: 992px){
+				max-width: calc(25% - 10px);
+			    -ms-flex-preferred-size: calc(25% - 10px);
+			    flex-basis: calc(25% - 10px);
+			    width: calc(25% - 10px);
+			}
+		}
+	}
+	.tws-list--grid-item {
+		@include aspect-ratio(1, 1);
+		margin: 0;
+		max-width: calc(100% - 10px);
+	    -ms-flex-preferred-size: calc(100% - 10px);
+	    flex-basis: calc(100% - 10px);
+	    width: calc(100% - 10px);
+		@media only screen and (min-width: 600px){
+			max-width: calc(50% - 10px);
+		    -ms-flex-preferred-size: calc(50% - 10px);
+		    flex-basis: calc(50% - 10px);
+		    width: calc(50% - 10px);
+		}
+		&:nth-child(2) .thumbnail:after, &:nth-child(4) .thumbnail:after {
+			content: ' ';
+		    position: absolute;
+		    top: -7.5px;
+		    left: -5px;
+		    right: -5px;
+		    bottom: -7.5px;
+		    background: rgba(0,0,0,0.1);
+		    z-index: 10;
+		}
+		@media screen and (min-width: 600px) and (max-width: 992px){
+			&:nth-child(1) .thumbnail:after, &:nth-child(4) .thumbnail:after {
+				content: ' ';
+			    position: absolute;
+			    top: -7.5px;
+			    left: -5px;
+			    right: -5px;
+			    bottom: -7.5px;
+			    background: rgba(0,0,0,0.1);
+			    z-index: 10;
+			}
+			&:nth-child(2) .thumbnail:after{
+				display: none; 
+			}
+		}
+		.thumbnail {
+			border: 0 !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			border-radius: 0 !important;
+			.tws-article-list--grid-item-link {
+				position: absolute;
+				width: 85%;
+				top: 60%;
+				left: 50%;
+    			transform: translate(-50%, -50%);
+				.tws-img {
+					border: 0;
+					padding: 0 !important;
+					width: 90%;
+					margin: auto;
+					&.tws-article-list--product-image-second {
+						left: 50%;
+    					transform: translateX(-50%);
+					}
+				}
+			}
+			.caption {
+				padding: 3% 7% 7% 7%;
+				position: static;
+				.tws-util-heading {
+					position: relative;
+				    .tws-util-heading--heading {
+				    	@include uppercase-fix;
+				    }
+				}
+				.tws-article-list--introduction-text {
+					position: relative;
+					//display: none;
+				}
+				.tws-api-price {
+					&:after {
+					    content: 'läs mer' !important;
+					    position: absolute;
+					    bottom: 3%;
+					    right: 5%;
+					    font-size: 14px;
+					    text-transform: lowercase;
+					    color: #666;
+					}
+					.tws-api--price-regular {
+						display: none;
+					}
+					.tws-api--price-current {
+						position: absolute;
+						left: 6%;
+						bottom: 3%;
+					}
+				}
+				.tws-article-list--buy-button, .tws-article-list--item-stock {
+					display: none;
+				}
+			}
+			.tws-article-list--labels {
+				top: -1px !important;
+				right: 0 !important;
+				margin: 0 !important;
+				z-index: 25 !important;
+				.tws-article-labels--new {
+					position: absolute;
+					z-index: 2;
+					right: -31px;
+					top: -14px;
+					text-align: center;
+					transform: rotate(45deg);
+					border-left: 40px solid transparent;
+					border-right: 40px solid transparent;
+					border-bottom: 40px solid $green;
+					width: 0;
+					.tws-article-labels--label-text {
+						position: absolute;
+						color: $white;
+						font-weight: 700;
+						font-size: 12px;
+						padding: 0 !important;
+						top: 23px;
+						right: -23px;
+						border: 0 !important;
+						background: transparent;
+					}
+				}
+			}
+		}
+	}
+}
+
+// kategori banners
+
+.start-banner, .robotgrasklippare-banner, .skog-banner, .tradgard-banner, .slap-banner, .atv-banner {
+	z-index: 2;
+    position: relative;
+    //margin: -3px !important;
+	.kategori-banner {
+		background-size: cover;
+		background-position: center;
+		padding: 25px;
+		&.justnu {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-justnu-gron.jpg');
+			&.svart {
+				background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-justnu-svart.jpg');
+			}
+		}
+		&.skog {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-skog-rod.jpg');
+		}
+		&.atv {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-atv-gul.jpg');
+		}
+		&.tradgard {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-tradgard-gron-2.jpg');
+		}
+		&.slap {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-slap-bla.jpg');
+		}
+		&.robotgrasklippare {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-robotgrasklippare-gul.jpg');
+		}
+		h3 {
+			text-align: center;
+			margin: 0;
+			a {
+				font-family: $light;
+				color: #fff;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+// två statiska
+
+.statiska-robotgrasklippare, .statiska-skog, .statiska-tradgard, .statiska-slap, .statiska-atv {
+	@media screen and (min-width: 992px) {
+		width: 50%;
+	}
+	.boxes {
+		height: 100%;
+		.column {
+			padding: 1%;
+			@include aspect-ratio(1, 1);
+			max-width: 100%;
+		    -ms-flex-preferred-size: 100%;
+		    flex-basis: 100%;
+		    width: 100%;
+			@media screen and (min-width: 600px) {
+				max-width: 50%;
+			    -ms-flex-preferred-size: 50%;
+			    flex-basis: 50%;
+			    width: 50%;
+			}
+			.box {
+			}
+		}
+	}
+}
+.statiska-robotgrasklippare .column {
+	&:nth-child(1) .box{
+		background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/automower-bg-lightyellow.jpg');
+		@include light-text;
+		@include ghost-button-filled($yellow,$white);
+	}
+	&:nth-child(2) .box{
+		background: $yellow;
+		@include light-text;
+		@include ghost-button-notfilled($yellow,$white);
+	}
+}
+.statiska-skog .column {
+	&:nth-child(1) .box{
+		background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/fa%CC%88rglagda-bilder-skog-2.jpg');
+		@include light-text;
+		@include ghost-button-filled($red,$white);
+	}
+	&:nth-child(2) .box{
+		@include prod-bg;
+	}
+}
+.statiska-tradgard .column {
+	&:nth-child(1) .box{
+		background: $green;
+		@include light-text;
+		@include ghost-button-notfilled($green,$white);
+	}
+	&:nth-child(2) .box{
+		@include prod-bg;
+	}
+}
+.statiska-slap .column {
+	&:nth-child(1) .box{
+		background: $blue;
+		@include light-text;
+		@include ghost-button-notfilled($blue,$white);
+	}
+	&:nth-child(2) .box{
+		background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/fa%CC%88rglagda-bilder-slap-2.jpg');
+		@include light-text;
+		@include ghost-button-filled($blue,$white);
+	}
+}
+.statiska-atv .column {
+	&:nth-child(1) .box{
+		background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/atv-bg-yellow.jpg');
+		@include light-text;
+		@include ghost-button-filled($yellow,$white);
+	}		
+	&:nth-child(2) .box{
+		background: $yellow;
+		@include light-text;
+		@include ghost-button-notfilled($yellow,$white);
+	}
+}
+/* undersidor */
+
+body:not(.startpage) {
+	.fabrikk--content {
+		.fabrikk--article-group, .fabrikk--article-search-results, .fabrikk--custom-page {
+			max-width: 1240px;
+			margin: auto;
+			.tws-list--grid-item {
+				margin: 0;
+				@media screen and (max-width: 992px){
+					&:nth-child(8n+2) ,&:nth-child(8n+3), &:nth-child(8n+6) ,&:nth-child(8n+7) {
+						.thumbnail:after{
+						    background: rgba(0,0,0,0.1);
+						}
+					}
+				}
+				@media screen and (min-width: 992px) {
+					&:nth-child(8n+2) ,&:nth-child(8n+4), &:nth-child(8n+5) ,&:nth-child(8n+7) {
+						.thumbnail:after{
+						    background: rgba(0,0,0,0.1);
+						}
+					}
+				}
+				.thumbnail:after{
+					content: ' ';
+				    position: absolute;
+				    top: 0px;
+				    left: 0px;
+				    right: 0px;
+				    bottom: 0px;
+				    background: rgba(0,0,0,0.0);
+				    z-index: 10;
+				    transition: 0.3s;
+				}
+				&:hover .thumbnail:after{
+			    	background: rgba(0,0,0,0.15);
+			    }
+			}
+		}
+		.thumbnail {
+			height: 100%;
+			position: relative;
+			border: 0 !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			.tws-article-list--product-image, .tws-articlegroup-list--product-image {
+				border: 0 !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				.tws-img--image{
+					max-width: 80% !important;
+					max-height: 80% !important;
+				}
+			}
+			.caption {
+				padding: 0 10% 10% 10%;
+				.tws-util-heading {
+					padding: 0;
+					.tws-util-heading--heading{
+						font-size: 18px;
+						a {
+							@include uppercase-fix;
+							width: 100%;
+						}
+						/*padding: 25px;
+						&:before {
+							content: 'Kategori:';
+							display: block;
+							font-size: 0.8em;
+							color: #777;
+						}
+						a {
+							@include uppercase-fix;
+							text-align: left;
+							
+						}*/
+					}
+					&.tws-articlegroup-list--article-name {
+						.tws-util-heading--heading {
+							&:before {
+								content: 'Kategori:';
+								display: block;
+								font-size: 0.8em;
+								color: #777;
+								font-size: 14px;
+								font-weight: 300;
+							}
+							a {
+								@include uppercase-fix;
+								text-align: left;
+								
+							}
+						}
+					}
+				}
+				.tws-article-list--item-stock {
+					font-size: 0;
+					left: 10%;
+					position: absolute;
+					bottom: 15px;
+   					opacity: 0.9;
+   					max-width: 80%;
+				}
+				.tws-article-list--item-stock:after {
+					content: '• I lager - skickas omgående';
+					display: inline-block;
+					font-size: 11px;
+					color: $green
+				}
+				.tws-article-list--item-stock:empty:after {
+					content: '• Skickas inom 2-5 arbetsdagar';
+				}
+				.tws-article-list--buy-button {
+					@include ghost-button-filled($white,$green);
+					z-index: 100;
+					margin-bottom: 25px;
+					@media screen and (min-width: 500px) {
+						margin-bottom: 5px;
+					}
+					.btn {
+						height: auto;						
+					}
+					
+				}
+			}
+			.tws-article-list--labels {
+				top: 8px !important;
+				left: 5px !important;
+				margin: 0 !important;
+				z-index: 25 !important;
+				.tws-article-labels--new {
+					position: absolute;
+					z-index: 2;
+					left: -37px;
+					top: -15px;
+					text-align: center;
+					transform: rotate(-45deg);
+					border-left: 50px solid transparent;
+					border-right: 50px solid transparent;
+					border-bottom: 50px solid $green;
+					width: 0;
+					.tws-article-labels--label-text {
+						position: absolute;
+						color: $white;
+						font-weight: 700;
+						padding: 0 !important;
+						top: 30px;
+						left: -25px;
+						border: 0 !important;
+						background: transparent;
+					}
+				}
+			}
+		}
+	}
+}	
+.tws-horizontal-flip-list--name {
+	@include uppercase-fix;
+}
+
+/* pop-up */
+
+.modal-content {
+	a {
+		color: #333;
+	}
+	.tws-api-price {
+	    flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+	.modal-header {
+		.close {
+			margin-top: 0;
+		}
+		.modal-title {
+			@include uppercase-fix;
+		}
+	}	
+	.media-body {
+		@include uppercase-fix;
+	}
+	.modal-footer {
+		button, a {
+			padding: 15px 25px;
+			@include uppercase-fix;
+		}
+		button {
+			@include ghost-button-notfilled($white,$green);
+		}
+		a.btn {
+			@include ghost-button-filled($white,$green);
+		}
+	}
+}
+/* produkt sidor */
+
+body:not(.startpage) .fabrikk--article {
+	.fabrikk--article-top {
+		.slot--article-name {
+			h1, h2, h3, h4, h5  {
+				@include uppercase-fix;
+			}
+		}
+		.slot--article-buy-button {
+			width: 250px;
+			.btn {
+				border-bottom: 0px;
+				@include ghost-button-filled($white,$green);
+				padding: 13px 28px 12px 28px !important;
+				margin: 0 !important;
+			}
+		}
+		.slot--article-price {
+			.tws-article-price--price {
+				flex-direction: column-reverse;
+				.tws-api--price-current {
+					padding-top: 8px;
+					font-size: 2em;
+				}
+			}
+		}
+		.i-lager {
+			color: $green;
+			font-weight:700 !important
+		}
+		.tws-article-stock-shipping--stock-info {
+			display: none;
+		}
+	}
+	.tws-horizontal-flip-list--price {
+		bottom: 45px;
+		.tws-api-price {
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+/* Varukorg */
+
+.slot--checkout-shortcuts {
+	@media screen and (min-width: 992px) {
+		padding: 0 60px;
+	}
+	.tws-checkout-shortcuts--purchase-as {
+		display: block;
+		margin-top: 15px;
+	    font-size: 18px;
+	    font-family: $bold;
+		a {
+			display: block;
+			color: $green;
+		}
+	}
+}
+
+.fabrikk--checkout {
+	.tws-cart--shop-more {
+		margin: 10px 14px;
+	    max-width: 150px;
+	}
+	.fabrikk--checkout-method {
+		.tws-checkout--checklist  {
+			.row {
+				max-width: 900px;
+		    	margin: auto;
+			}
+		}
+	}
+	.tws-discount-field--add, .tws-discount-field--enter-discount-btn {
+		padding: 10px 21px !important;
+	    border: 2px solid;
+ 	    display: inline-block;
+	    border-color: $green;
+	    background-color: transparent;
+	    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+	}
+	.tws-discount-field--enter-discount-btn {
+		margin-bottom: 10px;
+	}
+	.tws-discount-field--add:hover, .tws-discount-field--enter-discount-btn:hover, .tws-discount-field--enter-discount-btn:focus {
+		text-decoration: none;
+		color: #fff;
+	    background-color: $green;
+	    span {
+	    	color: #fff;
+	    }
+	}
+	.tws-checkout .tws-checkout--payment-methods-list a.tws-checkout--payment-active.active {
+		border-bottom-width: 1px;
+		border-radius: 0px;
+	}
+	.btn-group {
+		.btn-primary {
+			@include ghost-button-filled($white, $green);
+		}
+		.btn-default {
+			@include ghost-button-notfilled($white, $green);
+		}
+	}
+}
+
+/* Service */
+
+.custompage-8386089 .fabrikk--content-wrapper, .custompage-8386397 .fabrikk--content-wrapper {
+  margin-top: -62px;
+} 
+.custompage-8386397 .tws-breadcrumbs--text, .custompage-8386397 .tws-breadcrumbs--home-icon, .custompage-8386397 .tws-breadcrumbs--spacer, .custompage-8386089 .tws-breadcrumbs--text, .custompage-8386089 .tws-breadcrumbs--home-icon, .custompage-8386089 .tws-breadcrumbs--spacer {
+	color: #fff;
+}
+.service-banner /* Service banern och texten */{
+	background: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/Grupp-wide.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 95px 70px 95px 59%;
+
+	@media screen and (max-width: 1070px) {
+		padding: 0;
+		height: 275px;
+		background-position: initial;
+	}
+	@media screen and (max-width: 900px) {
+		background: url( https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/gardsman-service-personal.jpg);
+		background-position: center top;
+		background-size: cover;
+		height: 450px;
+	}
+	@media screen and (max-width: 600px) {
+		height: 275px;
+	}
+ 	.banner-text {
+    	max-width: 65%;
+    	@media screen and (max-width: 1200px) {
+			max-width: 100%;
+		}
+		@media screen and (max-width: 1070px) {
+		    position: relative;
+		    top: 275px;
+		    background-color: #c3c3c3;
+		    padding: 25px 40px 50px 45px;
+		}
+		@media screen and (max-width: 900px) {
+			top: 450px;
+		}
+    	@media screen and (max-width: 600px) {
+			top: 275px;
+		}
+    	.service-titel {
+			font-size: 54px;
+			line-height: 56px;
+			margin-bottom: 10px;
+			color: #000;
+			@media screen and (max-width: 1070px) {
+			    font-size: 43px;
+			    padding-top: 20px;
+			}
+			@media screen and (max-width: 450px) {
+				font-size: 33px;
+				line-height: 33px;
+			}
+		}
+		.service-ingress {
+			font-size: 18px;
+			color: #000;
+		}
+	}
+}
+
+
+.service-content{
+	.service-intro /* Service introt under bannern */{
+		width: 50%;
+		margin: 80px auto;
+		text-align: center;
+		@media screen and (max-width: 1070px) {
+			width: 72%;
+			margin-top: 360px; 
+		}
+		@media screen and (max-width: 900px) {
+			width: 100%;
+		}
+		@media screen and (max-width: 750px) {
+			margin-top: 450px; 
+		}
+		@media screen and (max-width: 450px) {
+			width: 100%;
+		}
+		.service-intro-titel {
+			font-size: 35px;
+			line-height: 35px;
+		}
+		.service-intro-ingress {
+			font-size: 16px;
+			max-width: 55%;
+			margin: auto;
+			@media screen and (max-width: 900px) {
+				max-width: 71%;
+			}
+			@media screen and (max-width: 450px) {
+				max-width: 66%;
+			}
+		}
+	}
+	.service-kategorier-cont {
+		text-align: center;
+		.service-kategori {
+		    display: inline-block;
+		    margin: 25px;
+		    width: 260px;
+		&.service-kategori-inner-header /* Service kategorierna */{
+			height: 215px;
+			background-size: cover;
+			.service-kategori-inner-titel {
+				color: #fff;
+			    font-size: 22px;
+			    font-weight: 100;
+			    position: relative;
+			    font-family: $bold;
+			    text-align: left;
+			    padding: 10px 0 0 25px;
+			}
+			.service-kategori-inner-titel-liten {
+				text-align: left;
+				padding: 0 0 0 25px;
+				position: relative;
+				color: #fff;
+				font-family: $light;
+			}
+			.ghost-button {
+				top: 70px;
+				position: relative;
+				background-color: #fff;
+				color: #00a1b4;
+				font-size: 19px;
+				font-weight: 100;
+				padding: 11px 26px;
+				border: none;
+				margin: 0;
+				left: -43px;
+			}
+		} /* Service kategorierna bilderna */
+		&#service-robot {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-robotgrasklippare.jpg);
+		}
+		&#service-handburet{
+		background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-handburet.jpg);
+		}
+		&#service-hjulburet {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-hjulburet.jpg);
+		}
+		&#service-atv {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-atv.jpg);
+		}
+		&#service-slapvagnar {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-slapvagn.jpg);
+		}
+		&#service-ovrigt {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-ovrigt.jpg);
+		}
+			.service-kategori-inner-profile /* Presentationerna av experterna */{
+				text-align: left;
+				margin-top: 10px;
+				em {
+					background: #00a1b4;
+				    display: block;
+				    padding: 15px;
+				    font-size: 16px;
+				    color: white;
+				    font-style: normal;
+				}
+				img.service-bild {
+					width: 100%;
+					display: block;
+					padding-bottom: 12px;
+				}
+				h3 {
+					margin: 5px 0;
+					font-size: 25px;
+					font-family: $bold;
+				}
+				a {
+					font-family: $bold;
+				    color: #000;
+				    font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+/* Service Automower Undersida */
+
+.banner-automower {
+	background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/automoer-service-3.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.banner-undersida-text {
+	    color: #fff;
+	    padding: 140px 25% 75px 5%;
+	    .service-automower-titel {
+			font-size: 57px;
+			line-height: 56px;
+			margin-bottom: 10px;
+			color: #fff;
+			@media screen and (max-width: 500px) {
+				font-size: 40px;
+			}
+		}
+		.service-automower-ingress {
+			font-size: 18px;
+			max-width: 550px;
+		}
+	}
+}
+.service-undersida-content {
+	max-width: 1090px;
+	margin: auto;
+	@media screen and (min-width: 599px) {
+		width: 90%;
+	}
+	.service-undersida-intro /* huvudtexten */{
+		width: 68%;
+		padding-right: 30px;
+		vertical-align: top;
+		margin: 50px auto;
+		display: inline-block;
+		text-align: left;
+		@media screen and (max-width: 900px) {
+			width: 59%;
+		}
+		@media screen and (max-width: 600px) {
+			width: 90%;
+			padding-right: 0;
+			display: block;
+		}
+		.service-undersida-intro-titel {
+			font-size: 30px;
+			line-height: 31px;
+		}
+		.service-undersida-intro-ingress {
+			font-size: 16px;
+			max-width: 450px;
+		    margin-top: 15px;
+		    iframe{
+		    	width: 100%;
+				max-width: 350px;
+				margin-top: 40px;
+		    }
+		}
+	}
+	.service-undersida-kategorier-cont /* experttips */{
+	    text-align: center;
+	    width: 31%;
+	    display: inline-block;
+	    margin-top: -49px;
+	    color: #fff;
+		@media screen and (max-width: 900px) {
+			width: 40%;
+		}
+		@media screen and (max-width: 600px) {
+			width: 90%;
+			margin: auto;
+			display: block;
+		}
+	    .service-undersida-kategori {
+		    display: inline-block;
+		    width: 100%;
+		    .service-undersida-kategori-inner-header /* experttips headern */{
+			    background-color: #00a1b4;
+			    .service-undersida-kategori-inner-titel {
+				    margin: 0;
+				    text-align: left;
+				    padding: 15px 15px 15px 20px;
+				    color: #fff;
+				    font-family: $regular;
+				}
+			}
+			.service-undersida-kategori-inner-profile /* experttips innehall */{
+			    background-color: #d7d7d7;
+			    text-align: left;
+			    padding: 40px 45px;
+			    h5 /* titel */{
+			    	font-size: 16px;
+					padding-bottom: 5px;
+					margin: 0;
+				}
+				p {
+				    font-size: 14px;
+				    color: #000;
+				}
+				img {
+					margin: 10px 0;
+				}
+				em {
+					display: block;
+					color: #222;
+					font-size: 14px;
+					font-style: normal;
+				}
+				h3 /* person titel */{
+					font-family: $bold;
+					margin: 5px 0;
+				}
+				a {
+					color: #555;
+					word-break: break-all;
+					font-family: $bold;
+				}
+			}
+		}
+	}
+	.service-automower-tabeller /* Service tabellerna */{
+		text-align: center;
+		.service-automower-tabeller-h2 {
+			margin: 25px 1.5%;
+		}
+		div {
+			font-size: 0px;
+			ul {
+				overflow: hidden;
+				position: relative;
+			    display: inline-block;
+			    max-width: 365px;
+			    margin: -2px;
+			    padding: 35px;
+			    font-size: 16px;
+			    vertical-align: top;
+			    text-align: left;
+			    color: #fff;
+			    @media screen and (max-width: 370px) {
+					padding: 15px;
+				}
+			    @media screen and (min-width: 800px) {
+					height: 1200px;
+				}
+				.service-automower-info-titel {
+				    list-style: none;
+				    background: #47bffa;
+				    font-size: 22px;
+				    color: #fff;
+				    margin: -35px -35px 20px -35px;
+				    padding: 35px 35px 25px 35px;
+					font-family: $bold;
+				}
+				.service-automower-third-titel, .service-automower-second-titel {
+				    list-style: none;
+				    margin: 45px 0 5px 0;
+				    font-family: $bold;
+				}
+				.service-automower-ingress  {
+				    list-style: none;
+				    font-family: $light;
+				}
+				.service-automower-checks /* ovrelistan */{
+					margin: 15px 10px;
+					list-style: none;
+					font-family: $light;
+					em {
+					    display: block;
+					    padding-left: 24px;
+					    font-size: 13px;
+					    color: #efefef;
+					}
+					&:before {
+						content: "\2713 ";
+						padding-right: 10px;
+						font-size: 16px;
+						color: #efefef;
+					}
+				}
+				.service-automower-info /* nedre listan */{
+					margin: 15px 10px;
+					list-style: none;
+					font-family: $light;
+					&:before {
+						content: "- ";
+						padding-right: 10px;
+						color: #efefef;
+					}
+				}
+				.service-automower-pris {
+					margin: 15px 10px 15px 0;
+					font-family: $bold;
+					font-size: 22px;
+					list-style: none;
+				}
+				.ghost-button {
+					a {
+						color: #fff;
+					}
+					&:hover {
+						background: #fff;
+						a {
+							color: #999;
+							text-decoration: none;
+						}
+					}
+				}
+				/* Individuella skillnader */
+				&.service-all-inclusive {
+					background: $nyyellow;
+					@media screen and (max-width: 800px) {
+						padding-bottom: 100px;
+					}
+					.service-automower-info-titel {
+						background: $nydarkyellow;
+					}
+					.erbjudande {
+						list-style: none;
+						position: absolute;
+						bottom: -65px;
+						right: -100px;
+						img {
+							width: 330px;
+						}
+						.push-blob {
+							width: 130px;
+							left: 0px;
+				    		top: 45px;
+						}
+					}
+				}
+				&.service-premium  {
+					background: $nyblue;
+					.service-automower-info-titel {
+						background: $nydarkblue;
+					}
+				}
+				&.service-originalservice {
+					background: $nygreen;
+					.service-automower-info-titel {
+						background: $nydarkgreen;
+					}
+				}
+
+				&.service-onlineservice {
+					background: #999;
+					.service-automower-info-titel {
+						background: #888;
+					}
+				}
+				&.service-onlinepremium {
+					background: $nyred;
+					.service-automower-info-titel {
+						background: $nydarkred;
+					}
+				}
+
+				&.service-lightservice{
+					background: #bbb;
+					.service-automower-info-titel {
+						background: #aaa;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/* FIXES */
+
+/* load thingy */
+
+.fabrikk--header:after {
+	height: 5px;
+	background: $yellow;
+	bottom: -5px;
+}
+
+.tws-list-pagination {
+	margin-right: 15px;
+	a.ng-binding {
+		color: $green;
+		&:hover {
+			text-decoration: none;
+			color: #333
+		}
+	}
+}
+
+/* Lite gott och blandat */
+
+label.control-label  {
+	font-family: $bold;
+}
+div.help-block {
+	color: #aaa;
+}
+select.form-control {
+	font-size: 13px;
+}
+
+
+.tws-mega-menu--articlegroup a, .tws-mega-menu--articlegroup-children a,.tws-mega-menu--custom-links a, .tws-mega-menu--articlegroup-list-ul .tws-mega-menu--all-articlegroups a{
+	background-color: transparent;
+	&:hover {
+		text-decoration: none !important;
+		color: #fff !important;
+	}
+}
+.tws-mega-menu--menu-wrapper .tws-mega-menu--articlegroup a, .tws-mega-menu--menu-wrapper .tws-mega-menu--navigation .tws-mega-menu--custom-dropdown-item a {
+	color: $lightyellow;
+}
+
+.texbar .texbar-content a.tx-btn {
+	background-color: $lightyellow;
+}
+
+.tws-article-search .ng-binding strong{
+	font-family: $regular;
+	color: $green;
+}
+.tws-mega-menu--navigation .tws-mega-menu--articlegroup>a {
+	border-bottom: none;
+}
+.tws-mega-menu--nav-menu-item, .tws-mega-menu--open-button{
+	background: $yellow !important;
+	color: #fff;
+}
+.tws-mega-menu--delimiter::before {
+	border-color: #fff;
+}
+
+// firefox bugg som sabbade startsidan
+.tws-article-list--list .tws-list--type-grid .tws-list--grid-item {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+}
+
+/* bildspelet */
+
+.tws-container--tws-image-carousel {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/* gomma saker */
+
+.tws-theme-preview, #mfPreviewBar, .tws-list-controls, .tws-list--type-list .image-placeholder, .slot--shipping-notice { 
+display: none; 
+}
+
+/* oklart */
+
+.tws-micro-cart-counter:before { 
+transform: scale(1.4); 
+}
+
+.tws-checkout-shortcuts-ship-to  {
+display: none;
+}
+
+//
+//
+/* Media Queries*/
+//
+//
+
+//fixes
+
+@media screen and (max-width: 560px) {
+	.slot--top-bar-html {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.desktop-button{
+		display: none;
+	}
+}
+@media screen and (min-width: 768px) {
+	.mobile-button{
+		display: none;
+	}
+}
+@media screen and (max-width: 990px) {
+	.tws-mega-menu--articlegroup-list-ul .tws-mega-menu--articlegroup ul {
+		overflow: hidden;
+	}
+	.tws-mega-menu--articlegroup-list-ul .tws-mega-menu--articlegroup ul:not(.open-child) {
+		max-height: 0px;
+		display: block;
+	}
+	.tws-mega-menu--articlegroup-list-ul .tws-mega-menu--articlegroup ul.open-child {
+		max-height: 2000px;
+		transition: max-height 1.5s;
+	}
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 990px){
+	.tws-mega-menu--articlegroup-list>ul>li.tws-mega-menu--2x li {
+		width: 100%;
+	}
+}
+
+// dolj slut i lager meddelandet
+.tws-article-buy-button-with-modal--cart-messages,.slot--checkout-cart .alert-warning {
+    display: none;
+}
+.custompage {
+	.fabrikk--content {
+		overflow-x: visible;
+		.tws-util-heading {
+			padding-left: 15px;
+			padding-top: 15px;
+		}
+	}
+}
+.campaign {
+	position: relative;
+	color: #eee;
+	padding: 75px;
+	background-position: center center !important;
+    background-size: cover !important;
+	background: #333;
+	h1 {
+		color: #eee;
+		font-size: 9vw;
+		line-height: 9vw;
+		margin: 0;
+	}
+	strong {
+		font-size: 3.3vw;
+		display: block;
+	}
+	p {
+		max-width: 700px;
+	}
+	.info-box {
+		display: none;
+		border: 1px solid white;
+		padding: 3% 4%;
+		margin-top: 55px;
+		p {
+			font-family: $light;
+		}
+	}
+	@media screen and (max-width: 990px) {
+		padding: 170px 20px 45px 20px;
+	}
+	.push-blob {
+	    right: 50px;
+	    left: initial;
+	    font-size: 24px;
+	    top: -30px;
+	    border: 0px;
+	    color: #fff;
+	    font-family: $light;
+	    transform: rotate(-20deg);
+	    background-color: $red;
+	    padding: 30px 16px;
+	    text-align: center;
+	    width: 172px;
+	    text-transform: uppercase;
+	    strong {
+			font-size: 50px;
+			line-height: 41px;
+			display: initial;
+			margin-bottom: 0;
+	    }
+
+	}
+}
+.campaign {
+	background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/blackfriday.jpg");
+}
+/*
+.introduktion, .statiskt-grid, .tv_-boxar-statisk {
+	padding: 0 !important;
+	margin: 0 !important;
+	.boxes, .onebox {
+		font-size: 0px;
+	}
+	.intro.onebox {
+		font-size: 0;
+		.box-container {
+			@include aspect-ratio(8, 2);
+			margin-left: -2px;
+			font-size: initial;
+	   		width: calc(100%);
+			height: 500px;
+			display: inline-block;
+			color: #ccc;
+			background-size: cover;
+			background-position: center center;
+			background-image: $start-header-bild;
+			.content {
+				&.center-content {
+					text-align: center;
+					p {
+						margin: auto !important;
+					}
+					h1, p, .ghost-button {
+						color: #fff !important;
+						border-color: #fff !important;
+						letter-spacing: 0px;
+					}
+					.ghost-button {
+						width: 300px;
+						display: block;
+						margin: 5px auto;
+						&.intro-right {
+							@media screen and (min-width: 1000px) {
+								position: absolute;
+								bottom: 85px;
+								right: 125px;
+							}
+						}
+					}
+					.ghost-button:hover {
+						background: #fff !important;
+						color: #000 !important;
+					}
+					.box {
+						padding: 25px 5px;
+					}
+				}
+				.push-blob {
+					transform: rotate(-10deg);
+					margin-top: 15px;
+					margin-left: 10px;
+					width: 185px;
+					height: 185px;
+					padding: 52px 15px;
+					border: 0px;
+					display: inline-block;
+					position: absolute;
+					right: 150px;
+					left: initial;
+					color: #fff;
+					@media screen and (max-width: 560px) {
+						right: 30%;
+						top: initial;
+						bottom: 20px;
+					}
+					p {
+						padding-top: 3px;
+						max-width: 100% !important;
+						margin: 0 !important;
+						font-size: 17px !important;
+						color: #fff;
+					}
+					a {
+						color: #fff;
+						margin: 0;
+						padding-top: 10px;
+						font-size: 24px !important;
+						text-align: center;
+						display: block;
+						text-decoration: underline;
+					}
+				}
+				.box {
+					vertical-align: top;
+				    height: 100%;
+				    width: 100%;
+				    display: inline-block;
+				    margin-left: -1px;
+					position: relative;
+					color: #333;
+					padding: 80px 10px 0 70px;
+					p {
+						color: #fff;
+						font-size: 16px;
+						max-width: 30%;
+						font-family: $light;
+						display: block;
+						margin: 15px 0;
+					}
+					h1, h2 {
+						margin: 2px;
+						line-height: 1em;
+						color: #fff;
+						font-family: $bold;
+					}
+					.full-link {
+						position: absolute;
+						top:0;
+						left:0;
+						right:0;
+						bottom:0;
+						strong {
+							color: #fefefe;
+							position: absolute;
+							bottom: 5%;
+	    					right: 10%;
+						}
+					}
+					.ghost-button {
+			    		color: #fff;
+			    		border-color: #fff;
+			    		background-color: transparent;
+			    	}
+			    	.ghost-button:hover {
+			    		color: #313131;
+			    		border-color: #fff;
+			    		background-color: #fff;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	.two.boxes  {
+		.box-container {
+			margin-left: -2px;
+			font-size: initial;
+	   		width: calc(50%);
+			height: auto;
+			display: inline-block;
+			color: #fff;
+			h1 {
+				color: #fff;
+			}
+			.content .rad .box {
+				position: relative;
+				color: #333;
+				padding: 25px 25px 0 25px;
+				p {
+					font-size: 14px;
+					position: relative;
+					z-index: 1;
+				}
+				h5 {
+					margin-bottom: 2px;
+					position: relative;
+					z-index: 1;
+				}
+				img {
+					position: absolute;
+					bottom: 15%;
+					width: 80%;
+					left: 10%;
+				}
+				.pris {
+					position: absolute;
+					bottom: 5%;
+    				left: 10%;
+					font-size: 1.8em; 
+   					font-family: $bold;
+   					color: $green;
+   					em {
+   						position: absolute;
+					    display: inline;
+					    width: 100%;
+					    left: 0;
+					    bottom: -8px;
+					    font-style: normal;
+					    font-size: 12px;
+					    color: #888;
+					    font-family: $light;
+   					}
+   					&:after {
+   						content: " SEK"
+   					}
+				}
+				.full-link {
+					position: absolute;
+					top:0;
+					left:0;
+					right:0;
+					bottom:0;
+					strong {
+						color: #666;
+						position: absolute;
+						bottom: 5%;
+    					right: 10%;
+					}
+				}
+			}
+			&:nth-child(1){
+				width: calc(25%);
+				@include aspect-ratio(1, 2);
+				.content {
+					margin: 0;
+					.rad {
+						font-size: 0px;
+						height: 50%;
+						.box {
+							vertical-align: top;
+						    height: 100%;
+						    width: 100%;
+						    display: inline-block;
+						    color: #fff;
+						}
+					}
+					.rad-1 {
+						.box {
+							background-image: $start-1-1;
+							background-size: cover;
+							color: #fff;
+					    	h2 {
+					    		color: #fff;
+					    		margin-top: 0;
+					    		position: relative;
+					    		z-index: 2;
+					    	}
+					    	.ghost-button {
+					    		position: absolute;
+					    		color: #fff;
+					    		display: block;
+					    		z-index: 2;
+					    	}
+					    	.ghost-button:hover {
+					    		background-color: #FFF;
+					    		color: $lightblue;
+					    		border-color: #fff;
+								text-decoration: none;
+							}
+							.push-blob {
+								left: 5px;
+								bottom: -20px;
+								height: 11.5vw;
+								width: 11.5vw;
+								p {
+									color: #fff;
+									padding: 2.3vw 0;
+									line-height: 6.4vw;
+									margin: 0;
+									font-size: 1.5vw !important;
+									text-align: center;
+									font-family: $bold;
+								}
+								@media screen and (max-width: 1000px) {
+									height: 25vw;
+									width: 25vw;
+									bottom: -45px;
+									p {
+										padding: 5.5vw 0;
+										line-height: 13vw;
+										font-size: 3.3vw !important;
+									}
+								}
+								@media screen and (max-width: 560px) {
+									height: 50vw;
+									width: 50vw;
+									bottom: -35px;
+									p {
+										padding: 12.5vw 0;
+										line-height: 23vw;
+										font-size: 6.2vw !important;
+									}
+								}
+							}
+						}
+					}
+					.rad-2 {
+						.box {
+							color: #000;
+							background-color: $start-2-1;
+							h2 {
+					    		color: #fff;
+					    		margin-top: 0;
+					    	}
+						}
+					}
+				}
+			}
+			&:nth-child(2){
+				width: calc(25%);
+				@include aspect-ratio(1, 2);
+				.content {
+					&:before {
+						content: 'Expert tips';
+						position: absolute;
+						top: -79px;
+						left: -35px;
+						right: -32px;
+						text-align: left;
+						padding: 12px 20px;
+						margin: 0;
+						background: $blue;
+					}
+
+			    	text-align: center;
+					margin: 35px;
+					@media screen and (max-width: 560px) {
+						margin-top: 79px;						
+					}
+					h3 {
+						color: #fff !important;
+						margin-top: 0;
+					}
+					p {
+						color: #fff;
+						font-size: 17px;
+						display: inline-block;
+						max-width: 100%;
+						a {
+							color: #fff;
+							font-family: $light;
+							&:hover {
+								text-decoration: none;
+							}
+						}
+						font-family: $light;
+					}
+					div {
+						width: calc(16%);
+					    height: calc(7%);
+					    background: #168adb;
+					    display: inline-block;
+					    margin: 5px -2px 0;
+					    &:nth-child(3) {
+					    	background: #75cafa;
+					    }
+					    &:nth-child(4) {
+					    	background: #21c1fb;
+					    }
+					    &:nth-child(5) {
+					    	background: #1b9efc;
+					    }
+					}
+				}
+				background-image: $start-1-2;
+				background-size: cover;
+			}
+			&:nth-child(3){
+				width: calc(50%);
+				@include aspect-ratio(1, 1);
+				.content {
+					margin: 0;
+					.rad {
+						font-size: 0px;
+						height: 50%;
+						.box {
+							vertical-align: top;
+						    width: calc(50%);
+						    height: 100%;
+						    display: inline-block;
+						    margin-left: -1px;
+						    &:nth-child(1){ 
+						    	background: #fff;
+						    }
+						    &:nth-child(2){ 
+								.full-link {
+									background: rgba(200,200,200,0.2);
+								}
+						    }
+						    .push-blob {
+									right: 15px;
+									top: 15px;
+									height: 7vw;
+									width: 7vw;
+									p {
+										color: #fff;
+										padding: 2.3vw 0;
+										line-height: 1.5vw;
+										margin: 0;
+										font-size: 1.5vw !important;
+										text-align: center;
+									}
+
+									@media screen and (max-width: 1000px) {
+										height: 15vw;
+										width: 15vw;
+										p {
+											padding: 4.5vw 0;
+											line-height: 3vw;
+											font-size: 3vw !important;
+										}
+									}
+									@media screen and (max-width: 560px) {
+										height: 30vw;
+										width: 30vw;
+										p {
+											padding: 9.5vw 0;
+											line-height: 5vw;
+											font-size: 5vw !important;
+										}
+									}
+								}
+						}
+					}
+					.rad-1 {
+						.box {
+						    &:nth-child(1){ 
+								.full-link {
+									background: rgba(200,200,200,0.2);
+								}
+						    }
+						    &:nth-child(2){ 
+								background: $start-1-4;
+								.full-link {
+									background: rgba(200,200,200,0);
+								}
+						    }
+						}
+					}
+					.rad-2 {
+						.box {
+							&:nth-child(1){ 
+								background: $start-2-3;
+								background-size: cover;
+								p {
+									color: #fff;
+								}
+								h2 {
+									color: #fff;
+									margin-top: 0;
+								}
+								.ghost-button {
+					    		color: #fff;
+						    	}
+						    	.ghost-button:hover {
+						    		background-color: #FFF;
+						    		color: $blue;
+						    		border-color: #fff;
+									text-decoration: none;
+								}
+						    }
+						    &:nth-child(2){ 
+								.full-link {
+									background: rgba(200,200,200,0.2);
+								}
+								.push-blob {
+									right: 15px;
+									top: 15px;
+									height: 6.5vw;
+									width: 6.5vw;
+									p {
+										color: #fff;
+										padding: 2.3vw 0;
+										line-height: 1.5vw;
+										margin: 0;
+										font-size: 1.5vw !important;
+										text-align: center;
+									}
+									@media screen and (max-width: 1000px) {
+										top: 60px;
+										height: 15vw;
+										width: 15vw;
+										p {
+											padding: 5.5vw 0;
+											line-height: 3vw;
+											font-size: 3vw !important;
+										}
+									}
+									@media screen and (max-width: 560px) {
+										top: 120px;
+										height: 30vw;
+										width: 30vw;
+										p {
+											padding: 12.5vw 0;
+											line-height: 5vw;
+											font-size: 5vw !important;
+										}
+									}
+								}
+						    }
+						}
+					}
+				}
+			}
+		}
+	}
+	.second-two.boxes  {
+		.box-container {
+			margin-left: -2px;
+			font-size: initial;
+	   		width: calc(50%);
+			height: auto;
+			display: inline-block;
+			color: #000;
+			.content {
+				padding: 25px 25px 0 25px;
+				p {
+					font-size: 14px;
+					position: relative;
+					z-index: 1;
+				}
+				img {
+					position: absolute;
+					bottom: 15%;
+					width: 80%;
+					left: 10%;
+				}
+				.pris {
+					position: absolute;
+					bottom: 5%;
+					left: 10%;
+					font-size: 1.8em; 
+						font-family: $bold;
+						color: $green;
+						em {
+							position: absolute;
+					    display: inline;
+					    width: 100%;
+					    left: 0;
+					    bottom: -8px;
+					    font-style: normal;
+					    font-size: 12px;
+					    color: #888;
+					    font-family: $light;
+						}
+						&:after {
+							content: " SEK"
+						}
+				}
+				.full-link {
+					position: absolute;
+					top:0;
+					left:0;
+					right:0;
+					bottom:0;
+					strong {
+						color: #666;
+						position: absolute;
+						bottom: 5%;
+						right: 10%;
+					}
+				}
+			}
+			&:nth-child(1){
+				width: calc(25%);
+				background-image: $start-3-1;
+				background-size: cover;
+				@include aspect-ratio(1, 1);
+				.content {
+					margin: 0;
+					p {
+						font-size: 16px;
+					}
+			    	h2 {
+			    		color: #fff;
+			    		margin-top: 0;
+			    		position: relative;
+			    		z-index: 2;
+			    	}
+			    	.ghost-button {
+			    		color: #fff;
+			    		position: absolute;
+			    		display: block;
+			    		z-index: 2;
+						bottom: 25px;
+			    	}
+			    	.ghost-button:hover {
+			    		background-color: #FFF;
+			    		color: $lightblue;
+			    		border-color: #fff;
+						text-decoration: none;
+					}
+			    	color: #fff;
+			    	&:after {
+						content: ' ';
+						background: rgba(0,0,0,0.3);
+						position: absolute;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						right: 0;
+			    	}
+				}
+			}
+			&:nth-child(2){
+				width: calc(25%);
+				background-image: $start-3-2;
+				background-size: cover;
+				@include aspect-ratio(1, 1);
+				.content {
+					h2 {
+						color: #fff !important;
+						margin-top: 0;
+					}
+				}
+			}
+			&:nth-child(3){
+				width: calc(25%);
+				background-image: $start-3-3;
+				background-size: cover;
+				@include aspect-ratio(1, 1);
+				.content {
+					margin: 0;
+					p {
+						font-size: 16px;
+					}
+			    	h2 {
+			    		color: #fff;
+			    		margin-top: 0;
+			    		position: relative;
+			    		z-index: 2;
+			    	}
+			    	.ghost-button {
+			    		color: #fff;
+			    		position: absolute;
+			    		display: block;
+			    		z-index: 2;
+						bottom: 25px;
+			    	}
+			    	.ghost-button:hover {
+			    		background-color: #FFF;
+			    	    color: $lightblue;
+			    		border-color: #fff;
+						text-decoration: none;
+					}
+			    	color: #fff;
+			    	&:after {
+						content: ' ';
+						background: rgba(0,0,0,0.3);
+						position: absolute;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						right: 0;
+			    	}
+				}
+			}
+			&:nth-child(4){
+				width: calc(25%);
+				background-image: $start-3-4;
+				background-size: cover;
+				@include aspect-ratio(1, 1);
+				.content {
+					margin: 0;
+					p {
+						font-size: 16px;
+					}
+			    	h2 {
+			    		color: #fff;
+			    		margin-top: 0;
+			    		position: relative;
+			    		z-index: 2;
+			    	}
+			    	.ghost-button {
+			    		color: #fff;
+			    		position: absolute;
+			    		display: block;
+			    		z-index: 2;
+						bottom: 25px;
+			    	}
+			    	.ghost-button:hover {
+			    		background-color: #FFF;
+			    	    color: $lightblue;
+			    		border-color: #fff;
+						text-decoration: none;
+					}
+			    	color: #fff;
+			    	&:after {
+						content: ' ';
+						background: rgba(0,0,0,0.3);
+						position: absolute;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						right: 0;
+			    	}
+				}
+			}
+		}
+	}
+	.four.boxes  {
+		.box-container {
+			width: calc(100%);
+			@include aspect-ratio(4, 1);
+			margin-left: -2px;
+			font-size: initial;
+			height: auto;
+			display: inline-block;
+			color: #fff;
+			h1 {
+				color: #fff;
+			}
+			.content {
+				margin: 0;
+				.rad {
+					font-size: 0px;
+					position: relative;
+					height: 100%;
+					.box {
+						margin-left: -1px;
+						position: relative;
+						color: #333;
+						height: 100%;
+						padding: 20px 25px 0 25px;
+						vertical-align: top;
+						width: calc(25%);
+					    display: inline-block;
+						p {
+							font-size: 14px;
+						}
+						h5 {
+							margin-bottom: 2px;
+						}
+						h2, h3 {
+							margin-top: 0;
+						}
+						img {
+							position: absolute;
+							bottom: 15%;
+							width: 80%;
+							left: 10%;
+						}
+						.pris {
+							position: absolute;
+							bottom: 5%;
+		    				left: 10%;
+							font-size: 1.8em; 
+		   					font-family: $bold;
+		   					color: $green;
+		   					&:after {
+		   						content: " SEK"
+		   					}
+				   			em {
+		   						position: absolute;
+							    display: inline;
+							    width: 100%;
+							    left: 0;
+							    bottom: -8px;
+							    font-style: normal;
+							    font-size: 12px;
+							    color: #888;
+							    font-family: $light;
+		   					}
+						}
+						.full-link {
+							position: absolute;
+							top:0;
+							left:0;
+							right:0;
+							bottom:0;
+							strong {
+								color: #666;
+								position: absolute;
+								bottom: 5%;
+		    					right: 10%;
+							}
+						}
+						&:nth-child(2){ 
+							margin-left: -3px;
+							.full-link {
+								background: rgba(200,200,200,0.2);
+							}
+						}
+						&:nth-child(4){ 
+							.full-link {
+								background: rgba(200,200,200,0.2);
+							}
+						}
+					}
+				}
+			}	
+		}
+	}
+	.row {
+		margin-right: 5px;
+		margin-left: 0;
+		.col {
+			margin: 0 0 0 -1px;
+		    padding: 15px;
+		    box-sizing: content-box;
+		    &:nth-child(even){
+		    	background-color: $lightgray;
+		    }
+			.thumbnail {
+				&:hover{
+				border: 0;
+				}
+				tws-img {
+					border: 0;
+				}
+			}
+		}
+	}
+}
+
+
+.start-banner {
+	z-index: 2;
+    position: relative;
+    margin: -3px !important;
+	.kategori-banner {
+		background-size: cover;
+		background-position: center;
+		padding: 25px;
+		&.justnu-banner {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-justnu-gron.jpg');
+			&.svart {
+				background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-justnu-svart.jpg');
+			}
+		}
+		&.skog-banner {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-skog-rod.jpg');
+		}
+		&.atv-banner {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-atv-gul.jpg');
+		}
+		&.tradgard-banner {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-tradgard-gron-2.jpg');
+		}
+		&.slap-banner {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-slap-bla.jpg');
+		}
+		&.robotgrasklippare-banner {
+			background-image: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/kategoribanner-robotgrasklippare-gul.jpg');
+		}
+		h3 {
+			text-align: center;
+			margin: 0;
+			a {
+				font-family: $light;
+				color: #fff;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.tv_-boxar-statisk{
+	display: inline-block;
+    width: 50%;
+    vertical-align: top;
+	.four.boxes  {
+		.box-container {
+			width: calc(100%);
+			@include aspect-ratio(2, 1);
+			.content {
+				.rad {
+					.box {
+						width: calc(50%);
+						&.info-box{
+							color: #fff;
+							h2 {
+					    		color: #fff;
+					    		margin-top: 10px;
+					    	}
+					    	.ghost-button {
+					    		color: #fff;
+					    	}
+					    	.ghost-button:hover {
+					    		background-color: #FFF;
+					    		border-color: #fff;
+								text-decoration: none;
+							}
+						}
+						&.skog-box {
+							background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/fa%CC%88rglagda-bilder-skog-2.jpg');
+							background-position: center;
+							background-size: cover;
+							.ghost-button {
+					    		color: $red;
+					    		background: #fff;
+					    		border-color: #fff;
+					    	}
+					    	.ghost-button:hover {
+					    		color: #fff;
+					    		background-color: transparent;
+								text-decoration: none;
+							}
+						}
+
+						&.atv-box {
+							background: $yellow;
+							.ghost-button:hover {
+					    		color: $yellow;
+							}
+						}
+						&.tradgard-box {
+							background: $green;
+							.ghost-button:hover {
+					    		color: $green;
+							}
+						}
+						&.slap-box {
+							background: $blue;
+							.ghost-button:hover {
+					    		color: $blue;
+							}
+						}
+						&.slap-box-2 {
+							background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/fa%CC%88rglagda-bilder-slap-2.jpg');
+							background-position: center;
+							background-size: cover;
+							.ghost-button {
+					    		color: $blue;
+					    		background: #fff;
+					    		border-color: #fff;
+					    	}
+					    	.ghost-button:hover {
+					    		color: #fff;
+					    		background-color: transparent;
+								text-decoration: none;
+							}
+						}
+						&.robotgrasklippare-box {
+							background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/automower-bg-lightyellow.jpg');
+							background-position: center;
+							background-size: cover;
+							.ghost-button {
+					    		color: $yellow;
+					    		background: #fff;
+					    		border-color: #fff;
+					    	}
+					    	.ghost-button:hover {
+					    		color: #fff;
+					    		background-color: transparent;
+								text-decoration: none;
+							}
+						}
+						&.robotgrasklippare-box-2 {
+							background: $yellow;
+					    	.ghost-button:hover {
+					    		color: $yellow;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.tv_-boxar-dynamisk {
+	display: inline-block;
+    width: 50%;
+    margin-left: -5px !important;
+    .tws-articles-two--row {
+    	margin: 0 0 0 4px!important;
+    }
+}
+
+
+.tws-container--tws-articles-two {
+	padding: 0 !important;
+	margin: 0;
+	.tws-articles-two--row, .tws-article-list--list {
+		margin: 0px;
+		@media (min-width: 475px){
+			margin: 0px 8px 0px 0px;
+		}
+		@media (min-width: 992px){
+			margin: 0px 8px 0px -3px;
+		}
+		.tws-articles-two--col, .tws-list--list {
+		    -webkit-box-flex: 0;
+		    -ms-flex-positive: 0;
+		    flex-grow: 0;
+		    -ms-flex-negative: 1;
+		    flex-shrink: 1;
+		    margin: 0px;
+		    padding: 0px;
+		    -ms-flex-preferred-size: calc(100%);
+		    flex-basis: calc(100% );
+			@media (min-width: 560px){
+			    -ms-flex-preferred-size: calc(50%);
+			    flex-basis: calc(50%);
+			}
+		    &.tws-articles-two--col-4, .tws-article-list--col-md-4 {
+				@media (min-width: 992px){
+				    -ms-flex-preferred-size: calc(25%);
+				    flex-basis: calc(25%);
+				}
+			}
+			.tws-articles-two--image:after {
+			    content: '';
+			    position: absolute;
+			    bottom: 0;
+			    right: 0;
+			    left: 0;
+			    top: 0;
+			}
+			&:nth-child(even) .tws-articles-two--image:after {
+				background: rgba(200,200,200,0.2);
+			}
+			&.tws-articles-two--col-4 {
+				@media (min-width: 560px) and (max-width: 992px ){
+					.tws-articles-two--image:after {
+						background: rgba(200,200,200,0.2);
+					}
+					&:first-child .tws-articles-two--image:after, &:last-child .tws-articles-two--image:after {
+						background: transparent;
+					}
+				}
+			}
+			&.tws-articles-two--col-2 {
+				@media (min-width: 560px) and (max-width: 992px ){
+					.tws-articles-two--image:after {
+						background: transparent;
+					}
+					&:first-child .tws-articles-two--image:after{
+						background: rgba(200,200,200,0.2);
+					}
+				}
+			}
+			.tws-articles-two--article {
+				padding: 2vw;
+				border: 0px !important;
+				margin: 0px !important;
+				padding: 2vw !important;
+				height: calc(100% );
+				.tws-img {
+					padding: 0px;
+				}
+				.tws-article-labels {
+					margin-top: 5px;
+					margin-left: -1px;
+				}
+				&:hover {
+					border: 0px !important;
+					margin: 0px !important;
+					padding: 2vw !important;
+					height: calc(100% );
+					.tws-img {
+						padding: 0px;
+					}
+				}
+				.tws-articles-two--image {
+					.tws-img {
+						border: 0px;
+						img {
+							padding: 145px 25px 0px 25px;
+							margin-bottom: -10px;
+							@media (min-width: 560px){
+								padding: 75px 25px 0px 25px;
+							}
+							@media (min-width: 992px){
+								padding: 5vw 15px 0px 15px;
+							}
+						}
+					}
+				}
+				.caption {
+					@media (min-width: 992px){
+						padding: 0.5vw;
+					}
+					.tws-articles-two--caption {
+						overflow: initial;
+						position: static;
+						.tws-articles-two--name {
+							max-width: 90%;
+							position: absolute;
+						    top: 35px;
+						    font-family: $bold;
+						    text-transform: lowercase;
+						    &:first-letter {
+							    text-transform: capitalize;
+							}
+						}
+						.tws-api-price {
+							position: relative;
+							.tws-api--price-current {
+								font-size: 1.5em;
+								padding: 1px;
+								margin: -1px;
+								@media (min-width: 992px){
+									font-size: 1.9vw;
+								}
+								font-family: $bold;
+								&:after {
+								    content: 'läs mer';
+								    font-family: $light;
+								    font-size: 13px;
+								    color: #555;
+								    text-transform: lowercase;
+								    position: absolute;
+								    right: 0;
+								    bottom: 0;
+								}
+							}
+							.tws-api--price-regular {
+								display: none !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (min-width: 992px){
+		&:nth-child(even) {
+			.tws-articles-two--col-4 {
+				&:nth-child(even) .tws-articles-two--image:after{
+					background: transparent;
+				}
+				&:nth-child(odd) .tws-articles-two--image:after{
+					content: '';
+				    position: absolute;
+				    bottom: 0;
+				    right: 0;
+				    left: 0;
+				    top: 0;
+				    background: rgba(200,200,200,0.2);
+				}
+			}
+		}
+	}
+}
+
+*/
+/*  Undersida kategorier */
+
+/*
+
+h5, .tws-util-heading--heading {
+	a {
+    	text-transform: lowercase;
+    	display: block;
+		&:first-letter {
+			text-transform: capitalize;
+		}
+	}
+}
+
+.fabrikk--content {
+	padding: 0 ;
+	.fabrikk--article-group, .slot--custom-page {
+		.slot--article-groups, .customPageArticlegroupSelection{
+			margin: 15px auto ;
+			@media (min-width: 600px){
+				width: 70%;
+			}
+			.row {
+				.thumbnail {
+					padding: 20px;
+					.caption {
+						text-align: left !important;
+					    border-width: 0px !important;
+					    border-color: #eee;
+					    border-style: solid;
+					    padding: 0px;
+					    background-color: transparent !important;
+						h5, .tws-util-heading--heading {
+							a {
+								font-family: $bold;
+							}
+							&:before{
+								content: 'kategori: ';
+								font-size: 12px;
+								color: #aaa;
+								font-family: $light;
+							}
+						}
+					}
+					&:after {
+						content: ' ';
+						position: absolute;
+					    top: -10px;
+					    right: 0px;
+					    bottom: -10px;
+					    left: -10px;
+						transition: background 0.5s;
+					}
+					&:hover:after, &:active:after{
+						background: rgba(100,100,100,0.3) !important;
+					}
+				}
+				&:nth-child(even) {
+					.tws-list-item-:nth-child(even) {
+						.thumbnail{
+							&:after {
+							    background: rgba(100,100,100,0.1);
+							}
+						}
+					}
+				}
+				&:nth-child(odd) {
+					.tws-list-item-:nth-child(odd) {
+						.thumbnail{
+							&:after {
+							    background: rgba(100,100,100,0.1);
+							}
+						}
+					}
+				}
+				@media (max-width: 990px){
+					.tws-list-item-{
+						.thumbnail{
+							&:after {
+								background: transparent !important;
+							}
+						}	
+					}
+					.tws-list-item-:nth-child(2), .tws-list-item-:nth-child(3) {
+						.thumbnail{
+							&:after {
+							    background: rgba(100,100,100,0.1) !important;
+							}
+						}
+					}
+				}
+			}
+		}
+		.slot--article-group-custom-field {
+			.tws-custom-page {
+				.customPageHtml {
+					.ng-isolate-scope {
+						text-align: center;
+					}
+					p {
+						max-width: 780px;
+						display: inline-block;
+					}
+				}
+			}
+		}
+		.slot--articles, .slot--article-group-custom-field, .customPageArticleList {
+			.tws-list-controls{
+				margin-right: 35px;
+				.btn-default {
+					padding: 10px 15px;
+				}
+			}
+			.tws-list--type-list {
+				padding: 25px 5% 0 5%;
+				.tws-article-list--article-name {
+					text-transform: lowercase;
+					&:first-letter {
+						text-transform: capitalize;
+					}
+				}
+				.tws-api--price-regular {
+					font-size: 12px;
+				}
+				.tws-api--price-current {
+					font-size: 18px;
+					font-family: $light;
+				}
+			}
+			.row {
+				&:nth-child(even) {
+				}
+				.thumbnail {
+					&:hover {
+						border: none;
+						padding: 20px;
+						margin: 0;
+						.tws-article-list--product-image {
+							padding: 0;
+						}
+					}
+					padding: 20px;
+					.tws-article-list--product-image {
+						border: none;
+					}
+					.caption {
+						text-align: left !important;
+					    border-width: 0px !important;
+					    border-color: #eee;
+					    border-style: solid;
+					    background-color: transparent !important;
+					    .tws-article-list--buy-button {
+					    	visibility: initial;
+					    	align-self: initial;
+					    	text-align: left;
+					    }
+						.tws-article-buy-button-with-modal--buy-button {
+							border: none;
+							background: none;
+						}
+						.tws-article-list--choices-button, .tws-article-buy-button-with-modal--buy-button, .tws-article-list--show-more-button{
+							padding: 10px 21px;
+						    border: 2px solid;
+						    margin: 5px 5px 5px 0;
+						    display: inline-block;
+						    transition: color 0.4s, background-color 0.4s !important;
+						    background-color: transparent;
+						    border-color: $green;
+						    font-family: $regular;
+						    color: #333;
+						    span {
+						    	transition: color 0.4s, background-color 0.4s !important;
+						    	font-family: $regular;
+						    }
+						    &:hover{
+						    	span{
+						    		color: $white;
+						    	}
+								color: $white;
+								background-color: $green;
+						    }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+*/
+/*  Produkt sidor */
+/*
+
+.fabrikk--content {
+	.fabrikk--article {
+		.slot--article-name h1 {
+			text-transform: lowercase;
+			&:first-letter {
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+.tws-article-stock-shipping p span{
+	font-family: $light;
+}
+.tws-article-attributes {
+	.tws-article-attribute-title:after {
+		content: ':';
+	}
+}
+.slot--article-page-footer {
+	h3 {
+		text-align: center;
+	}
+}
+.slick-track {
+	.tws-horizontal-flip-list--back-content {
+		a {
+			p {
+				color: #333;
+			}
+			div {
+				color: #333;
+				font-family: $light;
+			}
+		}
+		.tws-horizontal-flip-list--show-more-button, .ladda-label  {
+			background: $green;
+			color: #fff;
+		}
+
+	}
+}
+.slick-slider {
+	.tws-article-buy-button-with-modal--buy-button {
+		color: #fff;
+	    background-color: $green;
+	    border: 2px solid $green;
+	}
+}
+.tws-article-price {
+	span {
+		padding-top: 15px;
+		color: $green;
+		font-size: 22px;
+		font-family: $light;
+	}
+}
+.tws-article-buy-button-with-modal--buy-button,  .tws-article-buy-button-with-modal--submit-button {
+	max-width: 200px;
+    border: 2px solid;
+    transition: color 0.4s, background-color 0.4s !important;
+    background-color: transparent;
+    border-color: $green;
+    font-family: $regular;
+    color: #333;
+    span {
+    	transition: color 0.4s, background-color 0.4s !important;
+    	font-family: $regular;
+	    font-size: 23px;
+	    line-height: 20px;
+	    margin-top: 2px;
+    }
+    &:hover{
+    	span{
+    		color: $white !important;	
+    	}
+		color: $white;
+		background-color: $green;
+		border: 2px solid $green;
+    }
+}
+.tws-article-buy-button-with-modal--submit-button {
+	max-width: 300px;
+}
+.tws-article-price--price {
+	.tws-api--price-regular {
+		font-size: 18px;
+	}
+	.tws-api--price-current {
+		font-size: 24px
+	}
+
+}
+.i-lager {
+	color: $green;
+	font-family: $bold;
+}
+.tws-article-description--show-more{
+	button {
+		border-color: #ccc !important;
+		padding: 8px 18px !important;
+		span {
+			font-size: 15px;
+		}
+	}
+}
+
+*/
+/* sok resultat sida */
+/*
+.tws-article-search {
+	input.form-control {
+		text-transform: lowercase;
+		&:first-letter {
+			text-transform: capitalize;
+		}
+	}
+	.dropdown-menu li a {
+		text-transform: lowercase;
+		&:first-letter {
+			text-transform: capitalize;
+		}
+	}
+}
+
+.tws-article-search-page {
+	.tws-list-controls{
+		margin-right: 35px;
+		.btn-default {
+			padding: 10px 15px;
+		}
+	}
+	.tws-list--type-list {
+		padding: 25px 5% 0 5%;
+		.tws-list-repeat {
+			border-bottom: 1px #eee solid;
+			min-height: 60px;
+		}
+		.tws-article-list--article-name {
+			text-transform: lowercase;
+			&:first-letter {
+				text-transform: capitalize;
+			}
+		}
+		.tws-api--price-regular {
+			font-size: 12px;
+		}
+		.tws-api--price-current {
+			font-size: 18px;
+			font-family: $light;
+		}
+		.tws-article-list--buy-button {
+			margin-top: 0; 
+			.btn-primary, .tws-article-list--show-more-button {
+				padding: 10px 21px;
+			    border: 2px solid;
+			    margin: 5px 5px 5px 0;
+			    display: inline-block;
+			    transition: color 0.4s, background-color 0.4s !important;
+			    background-color: transparent;
+			    border-color: $green;
+			    font-family: $regular;
+			    color: #333;
+			    span {
+			    	transition: color 0.4s, background-color 0.4s !important;
+			    	font-family: $regular;
+			    }
+			    &:hover{
+			    	span{
+			    		color: $white;
+			    	}
+					color: $white;
+					background-color: $green;
+			    }
+			}
+		}
+	}
+}
+*/
