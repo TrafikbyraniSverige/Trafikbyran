@@ -452,7 +452,7 @@ div {
 }
 
 .boxes .column .full-height:before {
-    content: 'Experttips';
+    content: 'Expert tips';
     position: absolute;
     top: 0;
     left: 0;
@@ -495,7 +495,7 @@ div {
 }
 
 .intro.onebox .box-container.bomassa {
-    background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/tradgardsbild-wide-host.jpg")
+    background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/tradgardsbild-wide.jpg")
 }
 
 .intro.onebox .box-container.bomassa h1,
@@ -608,7 +608,7 @@ div {
 }
 
 .boxes.vertical .column:nth-child(1) .content .rad:nth-child(1) .box {
-    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/hva_motorsagar.jpg");
+    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/automower315x.jpg");
     color: #fff
 }
 
@@ -672,7 +672,7 @@ div {
 }
 
 .boxes.vertical .column:nth-child(2) .content .full-height {
-    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/mats2.jpg");
+    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/sebastian-klippt-close.jpg");
     color: #fff
 }
 
@@ -877,7 +877,7 @@ div {
 }
 
 .boxes.horizontal .column:nth-child(3) .box {
-    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/hva_125bvx.jpg");
+    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/batteridrivet_stihl.jpg");
     color: #fff
 }
 
@@ -959,7 +959,7 @@ div {
 }
 
 .boxes.horizontal .column:nth-child(4) .box {
-    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/skogsverktyg.jpg");
+    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/slapvagn-smartadrag2.jpg");
     color: #fff
 }
 
@@ -2551,7 +2551,7 @@ body:not(.startpage) .fabrikk--article .tws-horizontal-flip-list--price .tws-api
     font-size: 54px;
     line-height: 56px;
     margin-bottom: 10px;
-    color: #FFF
+    color: #000
 }
 
 @media screen and (max-width: 1070px) {
@@ -2570,7 +2570,7 @@ body:not(.startpage) .fabrikk--article .tws-horizontal-flip-list--price .tws-api
 
 .service-banner .banner-text .service-ingress {
     font-size: 18px;
-    color: #FFF
+    color: #000
 }
 
 .service-content .service-intro {
