@@ -292,7 +292,7 @@ p, div {
         .boxes .column .full-height {
           padding: 8%; } }
       .boxes .column .full-height:before {
-        content: 'Experttips';
+        content: 'Personlig service hos Gårdsman';
         position: absolute;
         top: 0;
         left: 0;
@@ -323,7 +323,7 @@ p, div {
     right: 0;
     bottom: 0; }
   .intro.onebox .box-container.bomassa {
-    background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/tradgardsbild-wide-host.jpg"); }
+    background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/julklappar_2018.jpg"); }
     .intro.onebox .box-container.bomassa h1, .intro.onebox .box-container.bomassa h2, .intro.onebox .box-container.bomassa h3, .intro.onebox .box-container.bomassa h4, .intro.onebox .box-container.bomassa h5, .intro.onebox .box-container.bomassa .h5, .intro.onebox .box-container.bomassa p, .intro.onebox .box-container.bomassa a {
       position: relative;
       z-index: 1; }
@@ -383,7 +383,7 @@ p, div {
     right: 0;
     bottom: 0; }
   .boxes.vertical .column:nth-child(1) .content .rad:nth-child(1) .box {
-    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/hva_motorsagar.jpg");
+    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Sma/snoslungor.jpg");
     color: #fff; }
     .boxes.vertical .column:nth-child(1) .content .rad:nth-child(1) .box h1, .boxes.vertical .column:nth-child(1) .content .rad:nth-child(1) .box h2, .boxes.vertical .column:nth-child(1) .content .rad:nth-child(1) .box h3, .boxes.vertical .column:nth-child(1) .content .rad:nth-child(1) .box h4, .boxes.vertical .column:nth-child(1) .content .rad:nth-child(1) .box h5, .boxes.vertical .column:nth-child(1) .content .rad:nth-child(1) .box .h5 {
       color: #fff; }
@@ -411,7 +411,7 @@ p, div {
     .boxes.vertical .column:nth-child(1) .content .rad:nth-child(2) .box .full-link {
       background: rgba(200, 200, 200, 0.2); }
   .boxes.vertical .column:nth-child(2) .content .full-height {
-    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/mats2.jpg");
+    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Sma/petter.jpg");
     color: #fff; }
     .boxes.vertical .column:nth-child(2) .content .full-height h1, .boxes.vertical .column:nth-child(2) .content .full-height h2, .boxes.vertical .column:nth-child(2) .content .full-height h3, .boxes.vertical .column:nth-child(2) .content .full-height h4, .boxes.vertical .column:nth-child(2) .content .full-height h5, .boxes.vertical .column:nth-child(2) .content .full-height .h5 {
       color: #fff; }
@@ -469,7 +469,7 @@ p, div {
     right: 0;
     bottom: 0; }
   .boxes.horizontal .column:nth-child(1) .box {
-    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/skyddsklader.jpg");
+    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/hva_motorsagar.jpg");
     color: #fff; }
     .boxes.horizontal .column:nth-child(1) .box h1, .boxes.horizontal .column:nth-child(1) .box h2, .boxes.horizontal .column:nth-child(1) .box h3, .boxes.horizontal .column:nth-child(1) .box h4, .boxes.horizontal .column:nth-child(1) .box h5, .boxes.horizontal .column:nth-child(1) .box .h5 {
       color: #fff; }
@@ -508,7 +508,7 @@ p, div {
   .boxes.horizontal .column:nth-child(2) .box {
     background: #fff; }
   .boxes.horizontal .column:nth-child(3) .box {
-    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/hva_125bvx.jpg");
+    background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Sma/leksaker3.jpg");
     color: #fff; }
     .boxes.horizontal .column:nth-child(3) .box h1, .boxes.horizontal .column:nth-child(3) .box h2, .boxes.horizontal .column:nth-child(3) .box h3, .boxes.horizontal .column:nth-child(3) .box h4, .boxes.horizontal .column:nth-child(3) .box h5, .boxes.horizontal .column:nth-child(3) .box .h5 {
       color: #fff; }
@@ -665,11 +665,6 @@ p, div {
         position: static; }
         .tws-container--tws-articles-two .tws-list--grid-item .thumbnail .caption .tws-util-heading {
           position: relative; }
-          .tws-container--tws-articles-two .tws-list--grid-item .thumbnail .caption .tws-util-heading .tws-util-heading--heading {
-            text-transform: lowercase;
-            display: inline-block; }
-            .tws-container--tws-articles-two .tws-list--grid-item .thumbnail .caption .tws-util-heading .tws-util-heading--heading:first-letter {
-              text-transform: capitalize; }
         .tws-container--tws-articles-two .tws-list--grid-item .thumbnail .caption .tws-article-list--introduction-text {
           position: relative; }
         .tws-container--tws-articles-two .tws-list--grid-item .thumbnail .caption .tws-api-price:after {
@@ -1032,11 +1027,7 @@ body:not(.startpage) .fabrikk--content .thumbnail {
         	
         }*/ }
         body:not(.startpage) .fabrikk--content .thumbnail .caption .tws-util-heading .tws-util-heading--heading a {
-          text-transform: lowercase;
-          display: inline-block;
           width: 100%; }
-          body:not(.startpage) .fabrikk--content .thumbnail .caption .tws-util-heading .tws-util-heading--heading a:first-letter {
-            text-transform: capitalize; }
       body:not(.startpage) .fabrikk--content .thumbnail .caption .tws-util-heading.tws-articlegroup-list--article-name .tws-util-heading--heading:before {
         content: 'Kategori:';
         display: block;
@@ -1045,11 +1036,7 @@ body:not(.startpage) .fabrikk--content .thumbnail {
         font-size: 14px;
         font-weight: 300; }
       body:not(.startpage) .fabrikk--content .thumbnail .caption .tws-util-heading.tws-articlegroup-list--article-name .tws-util-heading--heading a {
-        text-transform: lowercase;
-        display: inline-block;
         text-align: left; }
-        body:not(.startpage) .fabrikk--content .thumbnail .caption .tws-util-heading.tws-articlegroup-list--article-name .tws-util-heading--heading a:first-letter {
-          text-transform: capitalize; }
     body:not(.startpage) .fabrikk--content .thumbnail .caption .tws-article-list--item-stock {
       font-size: 0;
       left: 10%;
@@ -1115,12 +1102,6 @@ body:not(.startpage) .fabrikk--content .thumbnail {
         border: 0 !important;
         background: transparent; }
 
-.tws-horizontal-flip-list--name {
-  text-transform: lowercase;
-  display: inline-block; }
-  .tws-horizontal-flip-list--name:first-letter {
-    text-transform: capitalize; }
-
 /* pop-up */
 .modal-content a {
   color: #333; }
@@ -1129,22 +1110,8 @@ body:not(.startpage) .fabrikk--content .thumbnail {
   flex-direction: column-reverse; }
 .modal-content .modal-header .close {
   margin-top: 0; }
-.modal-content .modal-header .modal-title {
-  text-transform: lowercase;
-  display: inline-block; }
-  .modal-content .modal-header .modal-title:first-letter {
-    text-transform: capitalize; }
-.modal-content .media-body {
-  text-transform: lowercase;
-  display: inline-block; }
-  .modal-content .media-body:first-letter {
-    text-transform: capitalize; }
 .modal-content .modal-footer button, .modal-content .modal-footer a {
-  padding: 15px 25px;
-  text-transform: lowercase;
-  display: inline-block; }
-  .modal-content .modal-footer button:first-letter, .modal-content .modal-footer a:first-letter {
-    text-transform: capitalize; }
+  padding: 15px 25px; }
 .modal-content .modal-footer button .ghost-button, .modal-content .modal-footer button .btn, .modal-content .modal-footer button.ghost-button, .modal-content .modal-footer button.btn {
   background: transparent;
   color: #b6c628;
@@ -1181,11 +1148,6 @@ body:not(.startpage) .fabrikk--content .thumbnail {
       color: #b6c628; }
 
 /* produkt sidor */
-body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-name h1, body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-name h2, body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-name h3, body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-name h4, body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-name h5 {
-  text-transform: lowercase;
-  display: inline-block; }
-  body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-name h1:first-letter, body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-name h2:first-letter, body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-name h3:first-letter, body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-name h4:first-letter, body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-name h5:first-letter {
-    text-transform: capitalize; }
 body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-buy-button {
   width: 250px; }
   body:not(.startpage) .fabrikk--article .fabrikk--article-top .slot--article-buy-button .btn {
@@ -1857,6 +1819,6 @@ select.form-control {
       margin-bottom: 0; }
 
 .campaign {
-  background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/blackfriday.jpg"); }
+  background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/julklappar_2018.jpg"); }
 
 /*# sourceMappingURL=style.css.map */

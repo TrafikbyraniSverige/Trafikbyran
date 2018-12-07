@@ -510,7 +510,7 @@ margin: 0 !important;
 				padding: 8%;
 			}
 			&:before {
-				content: 'Experttips';
+       			content: 'Personlig service hos Gårdsman';
 			    position: absolute;
 			    top: 0;
 			    left: 0;
@@ -539,7 +539,7 @@ margin: 0 !important;
 
 		//  Bomässa
 		&.bomassa {
-			background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/tradgardsbild-wide-host.jpg");
+    		background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/julklappar_2018.jpg");
 			@include shade-bg(0.15);
 		}
 
@@ -575,7 +575,7 @@ margin: 0 !important;
 		@include aspect-ratio(1, 2);
 		/* column */
 		&:nth-child(1) .content .rad:nth-child(1) .box {
-			background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/hva_motorsagar.jpg");
+    		background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Sma/snoslungor.jpg");
 			@include light-text;
 			@include ghost-button-filled($yellow,$white);
 		}
@@ -585,7 +585,7 @@ margin: 0 !important;
 		;
 		}
 		&:nth-child(2) .content .full-height {
-			background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/mats2.jpg");
+    		background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Sma/petter.jpg");
 			@include light-text;
 		}
 		&:nth-child(3) .content .rad:nth-child(1) .box {
@@ -619,7 +619,7 @@ margin: 0 !important;
 	.column {
 		@include aspect-ratio(1, 1);
 		&:nth-child(1) .box{
-			background: url('https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/skyddsklader.jpg');
+    		background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/hva_motorsagar.jpg");
 			@include light-text;
 			@include shade-bg(0.3);
 			@include ghost-button-notfilled($red,$white);
@@ -628,7 +628,7 @@ margin: 0 !important;
 			background: $white;
 		}
 		&:nth-child(3) .box{
-			background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/hva_125bvx.jpg");
+    		background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Sma/leksaker3.jpg");
 			@include light-text;
 			@include shade-bg(0.3);
 			@include ghost-button-filled($green,$white);
@@ -729,7 +729,7 @@ margin: 0 !important;
 				.tws-util-heading {
 					position: relative;
 				    .tws-util-heading--heading {
-				    	@include uppercase-fix;
+				    	// @include uppercase-fix;
 				    }
 				}
 				.tws-article-list--introduction-text {
@@ -980,7 +980,7 @@ body:not(.startpage) {
 					.tws-util-heading--heading{
 						font-size: 18px;
 						a {
-							@include uppercase-fix;
+							// @include uppercase-fix;
 							width: 100%;
 						}
 						/*padding: 25px;
@@ -1007,7 +1007,7 @@ body:not(.startpage) {
 								font-weight: 300;
 							}
 							a {
-								@include uppercase-fix;
+								// @include uppercase-fix;
 								text-align: left;
 								
 							}
@@ -1076,7 +1076,7 @@ body:not(.startpage) {
 	}
 }	
 .tws-horizontal-flip-list--name {
-	@include uppercase-fix;
+	// @include uppercase-fix;
 }
 
 /* pop-up */
@@ -1094,16 +1094,16 @@ body:not(.startpage) {
 			margin-top: 0;
 		}
 		.modal-title {
-			@include uppercase-fix;
+			// @include uppercase-fix;
 		}
 	}	
 	.media-body {
-		@include uppercase-fix;
+		// @include uppercase-fix;
 	}
 	.modal-footer {
 		button, a {
 			padding: 15px 25px;
-			@include uppercase-fix;
+			// @include uppercase-fix;
 		}
 		button {
 			@include ghost-button-notfilled($white,$green);
@@ -1119,7 +1119,7 @@ body:not(.startpage) .fabrikk--article {
 	.fabrikk--article-top {
 		.slot--article-name {
 			h1, h2, h3, h4, h5  {
-				@include uppercase-fix;
+				// @include uppercase-fix;
 			}
 		}
 		.slot--article-buy-button {
@@ -1924,5 +1924,5 @@ display: none;
 	}
 }
 .campaign {
-	background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/blackfriday.jpg");
+  background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/julklappar_2018.jpg"); 
 }
