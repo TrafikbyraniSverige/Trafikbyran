@@ -539,7 +539,7 @@ margin: 0 !important;
 
 		//  Bomässa
 		&.bomassa {
-    		background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/julklappar_2018.jpg");
+    		background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/vinter2018.jpg");
 			@include shade-bg(0.15);
 		}
 
@@ -1011,6 +1011,13 @@ body:not(.startpage) {
 								text-align: left;
 								
 							}
+						}
+					}
+				}
+				.tws-article-list--price {
+					span.tws-api--price-current {
+						@media screen and (max-width: 567px) {
+							font-size: 15px;
 						}
 					}
 				}

@@ -323,7 +323,7 @@ p, div {
     right: 0;
     bottom: 0; }
   .intro.onebox .box-container.bomassa {
-    background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/julklappar_2018.jpg"); }
+    background-image: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltfönster/Stora/vinter2018.jpg"); }
     .intro.onebox .box-container.bomassa h1, .intro.onebox .box-container.bomassa h2, .intro.onebox .box-container.bomassa h3, .intro.onebox .box-container.bomassa h4, .intro.onebox .box-container.bomassa h5, .intro.onebox .box-container.bomassa .h5, .intro.onebox .box-container.bomassa p, .intro.onebox .box-container.bomassa a {
       position: relative;
       z-index: 1; }
@@ -1037,6 +1037,9 @@ body:not(.startpage) .fabrikk--content .thumbnail {
         font-weight: 300; }
       body:not(.startpage) .fabrikk--content .thumbnail .caption .tws-util-heading.tws-articlegroup-list--article-name .tws-util-heading--heading a {
         text-align: left; }
+    @media screen and (max-width: 567px) {
+      body:not(.startpage) .fabrikk--content .thumbnail .caption .tws-article-list--price span.tws-api--price-current {
+        font-size: 15px; } }
     body:not(.startpage) .fabrikk--content .thumbnail .caption .tws-article-list--item-stock {
       font-size: 0;
       left: 10%;
