@@ -25,6 +25,14 @@ $nydarkblue:#5298a9 ;
 $nyblue:#57a0b1 ;
 $nylightblue:#83c5d0 ;
 
+$min-mob: 567px;
+$min-pad: 767px;
+$min-lap: 992px;
+
+$max-mob: 566px;
+$max-pad: 766px;
+$max-lap: 991px;
+
 
 // font-family: 'Univia Pro Regular'
 // font-family: 'Univia Pro Medium'
@@ -34,9 +42,144 @@ $nylightblue:#83c5d0 ;
 $light: 'Univia Pro UltraLight'!important;
 $bold: 'Univia Pro Bold' !important;
 $regular: 'Univia Pro Regular'!important;
-
-h1 {
-	font-family: $light;
-	color: $green;
+h1{
+	font-family: $regular;
+}
+h2, h3, h4 {
+	font-family: $bold;
 }
 
+.btn {
+	border: none !important;
+	padding: 17px 10px !important;
+}
+.bountiful--main-wrapper {
+	padding: 30px 5px 60px 5px !important;
+	@media screen and (min-width: $min-mob) {
+		padding: 30px 15px 60px 15px !important;
+	}
+}
+.tws-list--type-grid, .slick-track {
+	justify-content: center;
+	margin: 0 -15px;
+	@media screen and (min-width: $min-mob) {
+		margin: 0 -25px;
+	}
+	@media screen and (min-width: $min-lap) {
+		margin: 0 -35px;
+	}
+	
+	.tws-list--grid-item {
+		overflow: hidden;
+		position: relative;
+		margin: 0 !important;
+		.thumbnail{
+			position: relative;
+			flex-direction: column-reverse;
+			box-shadow: none;
+			border: none;
+			height: auto;
+			margin: 10px;
+			@media screen and (min-width: $min-mob) {
+				margin: 25px;
+			}
+			.tws-article-list--labels{
+				left: unset;
+				box-shadow: none;
+				transform: rotate(45deg);
+				right: -50px;
+				top: -10px;
+				@media screen and (min-width: $min-mob) {
+					right: -63px;
+					top: -25px;
+				}
+				.tws-article-labels--special-offer {
+					display: none;
+				}
+				.tws-article-labels--new {
+					margin: 0;
+					.tws-article-labels--label-text {
+						padding: 13px 40px 10px 40px;
+						background-color: $green;
+					}
+				}
+			}
+			/* image */
+			.tws-article-list--grid-item-link{
+				margin: 15px 0 85px 0;
+				@media screen and (min-width: $min-mob) {
+					margin: 35px 0 75px 0;
+				}
+			}
+			.caption {
+				padding: 0;
+				box-shadow: none;
+				position: static;
+				.tws-util-heading {
+					@media screen and (min-width: $min-mob) {
+						margin-right: 30px;
+					}
+					.tws-util-heading--heading {
+						font-size: 1.1rem;
+					}
+				}
+				.tws-article-list--introduction-text {
+
+				}
+				.tws-article-list--price {
+					position: absolute;
+					bottom: 60px;
+					left: 0;
+					.tws-api--price-current {
+						color: $green;
+						font-family: $regular;
+						font-size: 1.2rem;
+						letter-spacing: 0.5px;
+					}
+				}
+				.tws-article-list--delivery-info{
+					position: absolute;
+					bottom: 0px;
+					height: 60px;
+					right: 0;
+					width: 100%;
+					font-size: 0.8rem;
+				}
+				.tws-article-list--buy-button{
+					display: none;
+				}
+			}
+			&:focus, &:hover{
+				outline: 0;
+				box-shadow: none !important;
+			}
+		}
+		&:after {
+			pointer-events: none;
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			z-index: 1;
+		}
+		
+		@media screen and (max-width: $max-lap) {
+			&:nth-child(4n + 2),&:nth-child(4n + 3) {
+				&:after {
+					background: rgba(0,0,0,0.08);
+				}
+			}
+		}
+		@media screen and (min-width: $min-lap) {
+			&:nth-child(8n + 2),&:nth-child(8n + 4),&:nth-child(8n + 5),&:nth-child(8n + 7) {
+				&:after {
+					background: rgba(0,0,0,0.08);
+				}
+			}
+		}
+	}
+	
+	
+}
