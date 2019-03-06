@@ -45,10 +45,10 @@ h2, h3, h4 {
 }
 
 .bountiful--main-wrapper {
-	padding: 30px 5px 60px 5px !important;
-	@media screen and (min-width: $min-mob) {
-		padding: 30px 15px 60px 15px !important;
-	}
+	padding-top: 0 !important;
+	// @media screen and (min-width: $min-mob) {
+	// 	padding: 30px 15px 60px 15px !important;
+	// }
 }
 .bountiful--sidebar {
 	.bountiful--sidebar-wrapper {
