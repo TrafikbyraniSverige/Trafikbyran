@@ -14,19 +14,19 @@ h2, h3, h4 {
     .bountiful--main-wrapper {
       padding: 30px 15px 60px 15px !important; } }
 
-.tws-list--type-grid, .slick-track {
+.tws-list--type-grid {
   margin: 0 -15px 0 0; }
   @media screen and (min-width: 567px) {
-    .tws-list--type-grid, .slick-track {
+    .tws-list--type-grid {
       margin: 0 -25px 0 0; } }
   @media screen and (min-width: 992px) {
-    .tws-list--type-grid, .slick-track {
+    .tws-list--type-grid {
       margin: 0 -35px 0 0; } }
-  .tws-list--type-grid .tws-list--grid-item, .slick-track .tws-list--grid-item {
+  .tws-list--type-grid .tws-list--grid-item {
     overflow: hidden;
     position: relative;
     margin: 0 !important; }
-    .tws-list--type-grid .tws-list--grid-item .thumbnail, .slick-track .tws-list--grid-item .thumbnail {
+    .tws-list--type-grid .tws-list--grid-item .thumbnail {
       position: relative;
       flex-direction: column-reverse;
       box-shadow: none;
@@ -35,61 +35,61 @@ h2, h3, h4 {
       margin: 10px;
       /* image */ }
       @media screen and (min-width: 567px) {
-        .tws-list--type-grid .tws-list--grid-item .thumbnail, .slick-track .tws-list--grid-item .thumbnail {
+        .tws-list--type-grid .tws-list--grid-item .thumbnail {
           margin: 25px; } }
-      .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--labels {
+      .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels {
         left: unset;
         box-shadow: none;
         transform: rotate(45deg);
         right: -50px;
         top: -10px; }
         @media screen and (min-width: 567px) {
-          .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--labels {
+          .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels {
             right: -63px;
             top: -25px; } }
-        .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--special-offer, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--special-offer {
+        .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--special-offer {
           display: none; }
-        .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--new, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--new {
+        .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--new {
           margin: 0; }
-          .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--new .tws-article-labels--label-text, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--new .tws-article-labels--label-text {
+          .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--new .tws-article-labels--label-text {
             padding: 13px 40px 10px 40px;
             background-color: #b6c628; }
-      .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link {
+      .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link {
         margin: 15px 0 85px 0; }
         @media screen and (min-width: 567px) {
-          .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link {
+          .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link {
             margin: 35px 0 75px 0; } }
-      .tws-list--type-grid .tws-list--grid-item .thumbnail .caption, .slick-track .tws-list--grid-item .thumbnail .caption {
+      .tws-list--type-grid .tws-list--grid-item .thumbnail .caption {
         padding: 0;
         box-shadow: none;
         position: static; }
         @media screen and (min-width: 567px) {
-          .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-util-heading, .slick-track .tws-list--grid-item .thumbnail .caption .tws-util-heading {
+          .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-util-heading {
             margin-right: 30px; } }
-        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-util-heading .tws-util-heading--heading, .slick-track .tws-list--grid-item .thumbnail .caption .tws-util-heading .tws-util-heading--heading {
+        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-util-heading .tws-util-heading--heading {
           font-size: 1.1rem; }
-        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--price, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--price {
+        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--price {
           position: absolute;
           bottom: 60px;
           left: 0; }
-          .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--price .tws-api--price-current, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--price .tws-api--price-current {
+          .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--price .tws-api--price-current {
             color: #b6c628;
             font-family: "Univia Pro Regular" !important;
             font-size: 1.2rem;
             letter-spacing: 0.5px; }
-        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--delivery-info, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--delivery-info {
+        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--delivery-info {
           position: absolute;
           bottom: 0px;
           height: 60px;
           right: 0;
           width: 100%;
           font-size: 0.8rem; }
-        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button {
+        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button {
           display: none; }
-      .tws-list--type-grid .tws-list--grid-item .thumbnail:focus, .tws-list--type-grid .tws-list--grid-item .thumbnail:hover, .slick-track .tws-list--grid-item .thumbnail:focus, .slick-track .tws-list--grid-item .thumbnail:hover {
+      .tws-list--type-grid .tws-list--grid-item .thumbnail:focus, .tws-list--type-grid .tws-list--grid-item .thumbnail:hover {
         outline: 0;
         box-shadow: none !important; }
-    .tws-list--type-grid .tws-list--grid-item:after, .slick-track .tws-list--grid-item:after {
+    .tws-list--type-grid .tws-list--grid-item:after {
       pointer-events: none;
       content: '';
       position: absolute;
@@ -99,10 +99,10 @@ h2, h3, h4 {
       left: 0;
       z-index: 1; }
     @media screen and (max-width: 991px) {
-      .tws-list--type-grid .tws-list--grid-item:nth-child(4n + 2):after, .tws-list--type-grid .tws-list--grid-item:nth-child(4n + 3):after, .slick-track .tws-list--grid-item:nth-child(4n + 2):after, .slick-track .tws-list--grid-item:nth-child(4n + 3):after {
+      .tws-list--type-grid .tws-list--grid-item:nth-child(4n + 2):after, .tws-list--type-grid .tws-list--grid-item:nth-child(4n + 3):after {
         background: rgba(0, 0, 0, 0.08); } }
     @media screen and (min-width: 992px) {
-      .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 2):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 4):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 5):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 7):after, .slick-track .tws-list--grid-item:nth-child(8n + 2):after, .slick-track .tws-list--grid-item:nth-child(8n + 4):after, .slick-track .tws-list--grid-item:nth-child(8n + 5):after, .slick-track .tws-list--grid-item:nth-child(8n + 7):after {
+      .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 2):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 4):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 5):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 7):after {
         background: rgba(0, 0, 0, 0.08); } }
 
 .bountiful--article .tws-article-labels--special-offer {
