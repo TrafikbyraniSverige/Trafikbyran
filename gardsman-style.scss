@@ -181,12 +181,23 @@ h2, h3, h4 {
 	}	
 }
 .bountiful--article {
+	.tws-article-labels--special-offer {
+		display: none;
+	}
 	.tws-article-price {
 		.twsPriceRegular {
-
+			text-decoration: none;
+			&:before {
+				content: 'ord: ';
+			}
 		}
 		.twsPriceCurrent {
 			color: $green;
+		}
+	}
+	.slot--article-stock-shipping {
+		.tws-article-stock-shipping--stock-info {
+			display: none;
 		}
 	}
 }

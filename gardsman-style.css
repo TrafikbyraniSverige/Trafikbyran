@@ -105,7 +105,15 @@ h2, h3, h4 {
       .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 2):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 4):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 5):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 7):after, .slick-track .tws-list--grid-item:nth-child(8n + 2):after, .slick-track .tws-list--grid-item:nth-child(8n + 4):after, .slick-track .tws-list--grid-item:nth-child(8n + 5):after, .slick-track .tws-list--grid-item:nth-child(8n + 7):after {
         background: rgba(0, 0, 0, 0.08); } }
 
+.bountiful--article .tws-article-labels--special-offer {
+  display: none; }
+.bountiful--article .tws-article-price .twsPriceRegular {
+  text-decoration: none; }
+  .bountiful--article .tws-article-price .twsPriceRegular:before {
+    content: 'ord: '; }
 .bountiful--article .tws-article-price .twsPriceCurrent {
   color: #b6c628; }
+.bountiful--article .slot--article-stock-shipping .tws-article-stock-shipping--stock-info {
+  display: none; }
 
 /*# sourceMappingURL=gardsman-style.css.map */
