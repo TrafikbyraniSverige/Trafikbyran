@@ -28,8 +28,7 @@ h2, h3, h4 {
     margin: 0 !important; }
     .tws-list--type-grid .tws-list--grid-item .thumbnail, .slick-track .tws-list--grid-item .thumbnail {
       box-shadow: none;
-      border: none;
-      /* image */ }
+      border: none; }
       .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--labels {
         left: unset;
         box-shadow: none;
@@ -47,11 +46,6 @@ h2, h3, h4 {
           .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--new .tws-article-labels--label-text, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--labels .tws-article-labels--new .tws-article-labels--label-text {
             padding: 13px 40px 10px 40px;
             background-color: #b6c628; }
-      .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link {
-        margin: 15px 0 85px 0; }
-        @media screen and (min-width: 567px) {
-          .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link, .slick-track .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link {
-            margin: 35px 0 75px 0; } }
       .tws-list--type-grid .tws-list--grid-item .thumbnail .caption, .slick-track .tws-list--grid-item .thumbnail .caption {
         padding: 0;
         box-shadow: none;
@@ -89,6 +83,11 @@ h2, h3, h4 {
   @media screen and (min-width: 567px) {
     .tws-list--type-grid .tws-list--grid-item .thumbnail {
       margin: 25px; } }
+  .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link {
+    margin: 15px 0 85px 0; }
+    @media screen and (min-width: 567px) {
+      .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link {
+        margin: 35px 0 75px 0; } }
   .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--price {
     position: absolute;
     bottom: 60px;
