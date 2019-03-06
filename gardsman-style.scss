@@ -220,12 +220,6 @@ h2, h3, h4 {
 		display: none;
 	}
 	.tws-article-price {
-		.twsPriceRegular {
-			text-decoration: none;
-			&:before {
-				content: 'ord: ';
-			}
-		}
 		.twsPriceCurrent {
 			color: $green;
 		}
@@ -238,6 +232,14 @@ h2, h3, h4 {
 	.slot--article-choices {
 		.form-group {
 			width: 100%;
+		}
+	}
+}
+.tws-article-price {
+	.twsPriceRegular {
+		text-decoration: none;
+		&:before {
+			content: 'ord: ';
 		}
 	}
 }
