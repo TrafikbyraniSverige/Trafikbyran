@@ -16,13 +16,13 @@ h2, h3, h4 {
       padding: 30px 15px 60px 15px !important; } }
 
 .tws-list--type-grid, .slick-track {
-  margin: 0 -15px; }
+  margin: 0 -15px 0 0; }
   @media screen and (min-width: 567px) {
     .tws-list--type-grid, .slick-track {
-      margin: 0 -25px; } }
+      margin: 0 -25px 0 0; } }
   @media screen and (min-width: 992px) {
     .tws-list--type-grid, .slick-track {
-      margin: 0 -35px; } }
+      margin: 0 -35px 0 0; } }
   .tws-list--type-grid .tws-list--grid-item, .slick-track .tws-list--grid-item {
     overflow: hidden;
     position: relative;

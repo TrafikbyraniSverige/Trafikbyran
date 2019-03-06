@@ -60,12 +60,12 @@ h2, h3, h4 {
 	}
 }
 .tws-list--type-grid, .slick-track {
-	margin: 0 -15px;
+	margin: 0 -15px 0 0;
 	@media screen and (min-width: $min-mob) {
-		margin: 0 -25px;
+		margin: 0 -25px 0 0;
 	}
 	@media screen and (min-width: $min-lap) {
-		margin: 0 -35px;
+		margin: 0 -35px 0 0;
 	}
 	
 	.tws-list--grid-item {
