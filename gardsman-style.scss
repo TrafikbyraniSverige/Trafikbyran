@@ -118,9 +118,6 @@ h2, h3, h4 {
 
 				}
 				.tws-article-list--price {
-					position: absolute;
-					bottom: 60px;
-					left: 0;
 					.tws-api--price-current {
 						color: $green;
 						font-family: $regular;
@@ -128,14 +125,7 @@ h2, h3, h4 {
 						letter-spacing: 0.5px;
 					}
 				}
-				.tws-article-list--delivery-info{
-					position: absolute;
-					bottom: 0px;
-					height: 60px;
-					right: 0;
-					width: 100%;
-					font-size: 0.8rem;
-				}
+				
 				.tws-article-list--buy-button{
 					display: none;
 				}
@@ -168,6 +158,21 @@ h2, h3, h4 {
 			margin: 10px;
 			@media screen and (min-width: $min-mob) {
 				margin: 25px;
+			}
+			.caption {
+				.tws-article-list--price {
+					position: absolute;
+					bottom: 60px;
+					left: 0;
+				}
+				.tws-article-list--delivery-info{
+					position: absolute;
+					bottom: 0px;
+					height: 60px;
+					right: 0;
+					width: 100%;
+					font-size: 0.8rem;
+				}
 			}
 		}
 		@media screen and (max-width: $max-lap) {

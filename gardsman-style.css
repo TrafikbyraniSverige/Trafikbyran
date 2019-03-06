@@ -61,22 +61,11 @@ h2, h3, h4 {
             margin-right: 30px; } }
         .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-util-heading .tws-util-heading--heading, .slick-track .tws-list--grid-item .thumbnail .caption .tws-util-heading .tws-util-heading--heading {
           font-size: 1.1rem; }
-        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--price, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--price {
-          position: absolute;
-          bottom: 60px;
-          left: 0; }
-          .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--price .tws-api--price-current, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--price .tws-api--price-current {
-            color: #b6c628;
-            font-family: "Univia Pro Regular" !important;
-            font-size: 1.2rem;
-            letter-spacing: 0.5px; }
-        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--delivery-info, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--delivery-info {
-          position: absolute;
-          bottom: 0px;
-          height: 60px;
-          right: 0;
-          width: 100%;
-          font-size: 0.8rem; }
+        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--price .tws-api--price-current, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--price .tws-api--price-current {
+          color: #b6c628;
+          font-family: "Univia Pro Regular" !important;
+          font-size: 1.2rem;
+          letter-spacing: 0.5px; }
         .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button {
           display: none; }
       .tws-list--type-grid .tws-list--grid-item .thumbnail:focus, .tws-list--type-grid .tws-list--grid-item .thumbnail:hover, .slick-track .tws-list--grid-item .thumbnail:focus, .slick-track .tws-list--grid-item .thumbnail:hover {
@@ -100,6 +89,17 @@ h2, h3, h4 {
   @media screen and (min-width: 567px) {
     .tws-list--type-grid .tws-list--grid-item .thumbnail {
       margin: 25px; } }
+  .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--price {
+    position: absolute;
+    bottom: 60px;
+    left: 0; }
+  .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--delivery-info {
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    right: 0;
+    width: 100%;
+    font-size: 0.8rem; }
 @media screen and (max-width: 991px) {
   .tws-list--type-grid .tws-list--grid-item:nth-child(4n + 2):after, .tws-list--type-grid .tws-list--grid-item:nth-child(4n + 3):after {
     background: rgba(0, 0, 0, 0.08); } }
