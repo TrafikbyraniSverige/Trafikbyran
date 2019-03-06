@@ -51,7 +51,7 @@ h2, h3, h4 {
 
 .btn {
 	border: none !important;
-	padding: 17px 10px !important;
+	// padding: 17px 10px !important;
 }
 .bountiful--main-wrapper {
 	padding: 30px 5px 60px 5px !important;
@@ -178,7 +178,15 @@ h2, h3, h4 {
 				}
 			}
 		}
+	}	
+}
+.bountiful--article {
+	.tws-article-price {
+		.twsPriceRegular {
+
+		}
+		.twsPriceCurrent {
+			color: $green;
+		}
 	}
-	
-	
 }

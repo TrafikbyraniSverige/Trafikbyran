@@ -6,8 +6,7 @@ h2, h3, h4 {
   font-family: "Univia Pro Bold" !important; }
 
 .btn {
-  border: none !important;
-  padding: 17px 10px !important; }
+  border: none !important; }
 
 .bountiful--main-wrapper {
   padding: 30px 5px 60px 5px !important; }
@@ -105,5 +104,8 @@ h2, h3, h4 {
     @media screen and (min-width: 992px) {
       .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 2):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 4):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 5):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 7):after, .slick-track .tws-list--grid-item:nth-child(8n + 2):after, .slick-track .tws-list--grid-item:nth-child(8n + 4):after, .slick-track .tws-list--grid-item:nth-child(8n + 5):after, .slick-track .tws-list--grid-item:nth-child(8n + 7):after {
         background: rgba(0, 0, 0, 0.08); } }
+
+.bountiful--article .tws-article-price .twsPriceCurrent {
+  color: #b6c628; }
 
 /*# sourceMappingURL=gardsman-style.css.map */
