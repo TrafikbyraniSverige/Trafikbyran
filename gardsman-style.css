@@ -123,5 +123,7 @@ h2, h3, h4 {
   color: #b6c628; }
 .bountiful--article .slot--article-stock-shipping .tws-article-stock-shipping--stock-info {
   display: none; }
+.bountiful--article .slot--article-choices .form-group {
+  width: 100%; }
 
 /*# sourceMappingURL=gardsman-style.css.map */
