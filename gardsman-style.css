@@ -125,6 +125,8 @@ h2, h3, h4 {
 @media screen and (min-width: 992px) {
   .slick-track .tws-list--grid-item .slick-slide:nth-child(8n + 2):after, .slick-track .tws-list--grid-item .slick-slide:nth-child(8n + 4):after, .slick-track .tws-list--grid-item .slick-slide:nth-child(8n + 5):after, .slick-track .tws-list--grid-item .slick-slide:nth-child(8n + 7):after {
     background: rgba(0, 0, 0, 0.08); } }
+.slick-track .tws-list--grid-item .slick-slide:hover:after {
+  background: rgba(0, 0, 0, 0.12); }
 
 .bountiful--article .tws-article-labels--special-offer {
   display: none; }

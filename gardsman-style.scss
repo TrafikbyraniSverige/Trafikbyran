@@ -208,6 +208,7 @@ h2, h3, h4 {
 .slick-track{
 	.tws-list--grid-item {
 		.slick-slide {
+
 			@media screen and (max-width: $max-lap) {
 				&:nth-child(4n + 2),&:nth-child(4n + 3) {
 					&:after {
@@ -220,6 +221,11 @@ h2, h3, h4 {
 					&:after {
 						background: rgba(0,0,0,0.08);
 					}
+				}
+			}
+			&:hover{
+				&:after {
+					background: rgba(0,0,0,0.12);
 				}
 			}
 		}
