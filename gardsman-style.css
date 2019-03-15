@@ -153,8 +153,24 @@ h2, h3, h4 {
 .slick-track .tws-list--grid-item .slick-slide:hover:after {
   background: rgba(0, 0, 0, 0.1); }
 
-.bountiful--article .tws-article-labels--special-offer {
-  display: none; }
+.bountiful--article .bountiful--article-left-col {
+  overflow: hidden; }
+  .bountiful--article .bountiful--article-left-col .slot--article-labels {
+    box-shadow: none;
+    transform: rotate(-45deg);
+    left: -50px;
+    top: -10px; }
+    @media screen and (min-width: 567px) {
+      .bountiful--article .bountiful--article-left-col .slot--article-labels {
+        left: -50px;
+        top: -25px; } }
+    .bountiful--article .bountiful--article-left-col .slot--article-labels .tws-article-labels--new {
+      margin: 0; }
+      .bountiful--article .bountiful--article-left-col .slot--article-labels .tws-article-labels--new .tws-article-labels--label-text {
+        padding: 13px 40px 10px 40px;
+        background-color: #b6c628; }
+    .bountiful--article .bountiful--article-left-col .slot--article-labels .tws-article-labels--special-offer {
+      display: none; }
 .bountiful--article .tws-article-price .twsPriceCurrent {
   color: #b6c628; }
 .bountiful--article .slot--article-stock-shipping .tws-article-stock-shipping--stock-info {
