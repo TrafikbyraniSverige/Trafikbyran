@@ -19,9 +19,9 @@ h2, h3, h4 {
       .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item a {
         font-weight: 100;
         color: #fff;
-        padding: 9px 0;
+        padding: 12px 0;
         border-bottom: 1px solid rgba(250, 250, 250, 0.16);
-        margin: 0px 12px; }
+        margin: 0px 14px; }
         .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item a:after {
           border-left-color: #fff; }
       .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item:hover {
@@ -92,7 +92,9 @@ h2, h3, h4 {
           font-size: 1.2rem;
           letter-spacing: 0.5px; }
         .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button {
-          display: none; }
+          border-radius: 0; }
+          .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button .btn:after, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button .btn:after {
+            display: none; }
       .tws-list--type-grid .tws-list--grid-item .thumbnail:focus, .tws-list--type-grid .tws-list--grid-item .thumbnail:hover, .slick-track .tws-list--grid-item .thumbnail:focus, .slick-track .tws-list--grid-item .thumbnail:hover {
         outline: 0;
         box-shadow: none !important; }
