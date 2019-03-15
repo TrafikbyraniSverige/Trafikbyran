@@ -280,26 +280,26 @@ h2, h3, h4 {
 }
 .bountiful--article {
 	.bountiful--article-left-col {
-		overflow: hidden;
-		.slot--article-labels {
-			box-shadow: none;
-			transform: rotate(-45deg);
-			left: -36px;
-			top: 3px;
-			.tws-article-labels--new {
-				margin: 0;
-				.tws-article-labels--label-text {
-					padding: 13px 40px 10px 40px;
-					background-color: $green;
+		.bountiful--article-images {
+			overflow: hidden;
+			.slot--article-labels {
+				box-shadow: none;
+				transform: rotate(-45deg);
+				left: -36px;
+	    		top: 3px;
+				.tws-article-labels--new {
+					margin: 0;
+					.tws-article-labels--label-text {
+						padding: 13px 40px 10px 40px;
+						background-color: $green;
+					}
+				}
+				.tws-article-labels--special-offer {
+					display: none;
 				}
 			}
-			.tws-article-labels--special-offer {
-				display: none;
-			}
 		}
-		
 	}
-	
 	.tws-article-price {
 		.twsPriceCurrent {
 			color: $green;
