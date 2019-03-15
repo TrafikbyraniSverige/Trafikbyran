@@ -128,10 +128,10 @@ h2, h3, h4 {
 .tws-list--type-grid .tws-list--grid-item:hover:after {
   background: rgba(0, 0, 0, 0.1); }
 
-.tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item {
+.tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item:after {
   background: transparent !important; }
-  .tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 2):after, .tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 4):after, .tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 5):after, .tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 7):after {
-    background: rgba(0, 0, 0, 0.08) !important; }
+.tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 2):after, .tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 4):after, .tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 5):after, .tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 7):after {
+  background: rgba(0, 0, 0, 0.08) !important; }
 
 @media screen and (max-width: 991px) {
   .slick-track .tws-list--grid-item .slick-slide:nth-child(4n + 2):after, .slick-track .tws-list--grid-item .slick-slide:nth-child(4n + 3):after {

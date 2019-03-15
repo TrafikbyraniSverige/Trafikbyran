@@ -226,7 +226,9 @@ h2, h3, h4 {
 	}
 }
 .tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item{
-	background: transparent !important;
+	&:after {
+		background: transparent !important;
+	}
 	&:nth-child(8n + 2),&:nth-child(8n + 4),&:nth-child(8n + 5),&:nth-child(8n + 7) {
 		&:after {
 			background: rgba(0,0,0,0.08) !important;
