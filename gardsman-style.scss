@@ -506,7 +506,7 @@ h2, h3, h4 {
 				font-family: $light;
 			}
 			.ghost-button {
-				top: 70px;
+				// top: 70px;
 				position: relative;
 				background-color: #fff;
 				color: #00a1b4;
@@ -516,6 +516,7 @@ h2, h3, h4 {
 				border: none;
 				margin: 0;
 				left: -43px;
+				text-decoration: underline;
 			}
 		} /* Service kategorierna bilderna */
 		&#service-robot {
@@ -700,6 +701,8 @@ h2, h3, h4 {
 				overflow: hidden;
 				position: relative;
 			    display: inline-block;
+			    width: 33%;
+			    min-width: 225px;
 			    max-width: 365px;
 			    margin: -2px;
 			    padding: 35px;
@@ -707,7 +710,7 @@ h2, h3, h4 {
 			    vertical-align: top;
 			    text-align: left;
 			    color: #fff;
-			    @media screen and (max-width: 370px) {
+			    @media screen and (max-width: $min-mob) {
 					padding: 15px;
 				}
 			    @media screen and (min-width: 800px) {

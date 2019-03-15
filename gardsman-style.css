@@ -335,7 +335,6 @@ h2, h3, h4 {
         color: #fff;
         font-family: "Univia Pro UltraLight" !important; }
       .service-content .service-kategorier-cont .service-kategori.service-kategori-inner-header .ghost-button {
-        top: 70px;
         position: relative;
         background-color: #fff;
         color: #00a1b4;
@@ -344,7 +343,8 @@ h2, h3, h4 {
         padding: 11px 26px;
         border: none;
         margin: 0;
-        left: -43px; }
+        left: -43px;
+        text-decoration: underline; }
     .service-content .service-kategorier-cont .service-kategori#service-robot {
       background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-robotgrasklippare.jpg); }
     .service-content .service-kategorier-cont .service-kategori#service-handburet {
@@ -493,6 +493,8 @@ h2, h3, h4 {
         overflow: hidden;
         position: relative;
         display: inline-block;
+        width: 33%;
+        min-width: 225px;
         max-width: 365px;
         margin: -2px;
         padding: 35px;
@@ -501,7 +503,7 @@ h2, h3, h4 {
         text-align: left;
         color: #fff;
         /* Individuella skillnader */ }
-        @media screen and (max-width: 370px) {
+        @media screen and (max-width: 567px) {
           .service-undersida-content .service-automower-tabeller div ul {
             padding: 15px; } }
         @media screen and (min-width: 800px) {
