@@ -192,4 +192,7 @@ h2, h3, h4 {
 .tws-article-list--delivery-info-body {
   color: #b6c628 !important; }
 
+#mfPreviewBar {
+  display: none !important; }
+
 /*# sourceMappingURL=gardsman-style.css.map */
