@@ -1,11 +1,291 @@
 @charset "UTF-8";
-.ghost-button {
+.ghost-button-blue {
+  text-decoration: none;
+  background: #fff;
+  color: #00a1b4;
+  border-color: #fff !important;
   padding: 10px 21px;
   border: 2px solid;
   margin: 5px 5px 5px 0;
   display: inline-block;
-  text-decoration: none;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+  .ghost-button-blue span {
+    color: #00a1b4; }
+  .ghost-button-blue:hover {
+    color: #fff;
+    background: transparent;
+    text-decoration: none; }
+    .ghost-button-blue:hover span {
+      color: #fff; }
+  .ghost-button-blue a {
+    text-decoration: none;
+    background: #fff;
+    color: #00a1b4;
+    border-color: #fff !important;
+    padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+    .ghost-button-blue a span {
+      color: #00a1b4; }
+    .ghost-button-blue a:hover {
+      color: #fff;
+      background: transparent;
+      text-decoration: none; }
+      .ghost-button-blue a:hover span {
+        color: #fff; }
+
+.ghost-button-green {
+  text-decoration: none;
+  background: #fff;
+  color: #b6c628;
+  border-color: #fff !important;
+  padding: 10px 21px;
+  border: 2px solid;
+  margin: 5px 5px 5px 0;
+  display: inline-block;
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+  .ghost-button-green span {
+    color: #b6c628; }
+  .ghost-button-green:hover {
+    color: #fff;
+    background: transparent;
+    text-decoration: none; }
+    .ghost-button-green:hover span {
+      color: #fff; }
+  .ghost-button-green a {
+    text-decoration: none;
+    background: #fff;
+    color: #b6c628;
+    border-color: #fff !important;
+    padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+    .ghost-button-green a span {
+      color: #b6c628; }
+    .ghost-button-green a:hover {
+      color: #fff;
+      background: transparent;
+      text-decoration: none; }
+      .ghost-button-green a:hover span {
+        color: #fff; }
+
+.ghost-button-yellow {
+  text-decoration: none;
+  background: #fff;
+  color: #f2b029;
+  border-color: #fff !important;
+  padding: 10px 21px;
+  border: 2px solid;
+  margin: 5px 5px 5px 0;
+  display: inline-block;
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+  .ghost-button-yellow span {
+    color: #f2b029; }
+  .ghost-button-yellow:hover {
+    color: #fff;
+    background: transparent;
+    text-decoration: none; }
+    .ghost-button-yellow:hover span {
+      color: #fff; }
+  .ghost-button-yellow a {
+    text-decoration: none;
+    background: #fff;
+    color: #f2b029;
+    border-color: #fff !important;
+    padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+    .ghost-button-yellow a span {
+      color: #f2b029; }
+    .ghost-button-yellow a:hover {
+      color: #fff;
+      background: transparent;
+      text-decoration: none; }
+      .ghost-button-yellow a:hover span {
+        color: #fff; }
+
+.ghost-button-red {
+  text-decoration: none;
+  background: #fff;
+  color: #c05240;
+  border-color: #fff !important;
+  padding: 10px 21px;
+  border: 2px solid;
+  margin: 5px 5px 5px 0;
+  display: inline-block;
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+  .ghost-button-red span {
+    color: #c05240; }
+  .ghost-button-red:hover {
+    color: #fff;
+    background: transparent;
+    text-decoration: none; }
+    .ghost-button-red:hover span {
+      color: #fff; }
+  .ghost-button-red a {
+    text-decoration: none;
+    background: #fff;
+    color: #c05240;
+    border-color: #fff !important;
+    padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+    .ghost-button-red a span {
+      color: #c05240; }
+    .ghost-button-red a:hover {
+      color: #fff;
+      background: transparent;
+      text-decoration: none; }
+      .ghost-button-red a:hover span {
+        color: #fff; }
+
+.ghost-button-blue-notfilled {
+  text-decoration: none;
+  background: transparent;
+  color: #fff;
+  padding: 10px 21px;
+  border: 2px solid;
+  margin: 5px 5px 5px 0;
+  display: inline-block;
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+  .ghost-button-blue-notfilled span {
+    color: #fff; }
+  .ghost-button-blue-notfilled:hover {
+    border-color: #fff;
+    color: #00a1b4;
+    background: #fff; }
+    .ghost-button-blue-notfilled:hover span {
+      color: #00a1b4; }
+  .ghost-button-blue-notfilled a {
+    text-decoration: none;
+    background: transparent;
+    color: #fff;
+    padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+    .ghost-button-blue-notfilled a span {
+      color: #fff; }
+    .ghost-button-blue-notfilled a:hover {
+      border-color: #fff;
+      color: #00a1b4;
+      background: #fff; }
+      .ghost-button-blue-notfilled a:hover span {
+        color: #00a1b4; }
+
+.ghost-button-green-notfilled {
+  text-decoration: none;
+  background: transparent;
+  color: #fff;
+  padding: 10px 21px;
+  border: 2px solid;
+  margin: 5px 5px 5px 0;
+  display: inline-block;
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+  .ghost-button-green-notfilled span {
+    color: #fff; }
+  .ghost-button-green-notfilled:hover {
+    border-color: #fff;
+    color: #b6c628;
+    background: #fff; }
+    .ghost-button-green-notfilled:hover span {
+      color: #b6c628; }
+  .ghost-button-green-notfilled a {
+    text-decoration: none;
+    background: transparent;
+    color: #fff;
+    padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+    .ghost-button-green-notfilled a span {
+      color: #fff; }
+    .ghost-button-green-notfilled a:hover {
+      border-color: #fff;
+      color: #b6c628;
+      background: #fff; }
+      .ghost-button-green-notfilled a:hover span {
+        color: #b6c628; }
+
+.ghost-button-yellow-notfilled {
+  text-decoration: none;
+  background: transparent;
+  color: #fff;
+  padding: 10px 21px;
+  border: 2px solid;
+  margin: 5px 5px 5px 0;
+  display: inline-block;
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+  .ghost-button-yellow-notfilled span {
+    color: #fff; }
+  .ghost-button-yellow-notfilled:hover {
+    border-color: #fff;
+    color: #f2b029;
+    background: #fff; }
+    .ghost-button-yellow-notfilled:hover span {
+      color: #f2b029; }
+  .ghost-button-yellow-notfilled a {
+    text-decoration: none;
+    background: transparent;
+    color: #fff;
+    padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+    .ghost-button-yellow-notfilled a span {
+      color: #fff; }
+    .ghost-button-yellow-notfilled a:hover {
+      border-color: #fff;
+      color: #f2b029;
+      background: #fff; }
+      .ghost-button-yellow-notfilled a:hover span {
+        color: #f2b029; }
+
+.ghost-button-red-notfilled {
+  text-decoration: none;
+  background: transparent;
+  color: #fff;
+  padding: 10px 21px;
+  border: 2px solid;
+  margin: 5px 5px 5px 0;
+  display: inline-block;
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+  .ghost-button-red-notfilled span {
+    color: #fff; }
+  .ghost-button-red-notfilled:hover {
+    border-color: #fff;
+    color: #c05240;
+    background: #fff; }
+    .ghost-button-red-notfilled:hover span {
+      color: #c05240; }
+  .ghost-button-red-notfilled a {
+    text-decoration: none;
+    background: transparent;
+    color: #fff;
+    padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+    .ghost-button-red-notfilled a span {
+      color: #fff; }
+    .ghost-button-red-notfilled a:hover {
+      border-color: #fff;
+      color: #c05240;
+      background: #fff; }
+      .ghost-button-red-notfilled a:hover span {
+        color: #c05240; }
 
 h1 {
   font-family: "Univia Pro Regular" !important; }
@@ -228,9 +508,6 @@ h2, h3, h4 {
 
 #mfPreviewBar {
   display: none !important; }
-
-.custompage-8386089 .fabrikk--content-wrapper, .custompage-8386397 .fabrikk--content-wrapper {
-  margin-top: -62px; }
 
 .service-banner {
   background: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/Grupp-wide.jpg);
@@ -553,13 +830,6 @@ h2, h3, h4 {
           font-family: "Univia Pro Bold" !important;
           font-size: 22px;
           list-style: none; }
-        .service-undersida-content .service-automower-tabeller div ul .ghost-button a {
-          color: #fff; }
-        .service-undersida-content .service-automower-tabeller div ul .ghost-button:hover {
-          background: #fff; }
-          .service-undersida-content .service-automower-tabeller div ul .ghost-button:hover a {
-            color: #999;
-            text-decoration: none; }
         .service-undersida-content .service-automower-tabeller div ul.service-all-inclusive {
           background: #f2b029; }
           @media screen and (max-width: 800px) {

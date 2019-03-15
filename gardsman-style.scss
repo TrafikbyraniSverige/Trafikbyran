@@ -31,58 +31,95 @@ $bold: 'Univia Pro Bold' !important;
 $regular: 'Univia Pro Regular'!important;
 
 @mixin ghost-button-filled($color, $second-color) {
-	.ghost-button, .btn, &.ghost-button, &.btn,  {
-		background: $second-color;
+	text-decoration: none;
+	background: $second-color;
+	color: $color;
+	span {
 		color: $color;
-		span {
-			color: $color;
-		}
-		border-color: $second-color !important;
-		padding: 10px 21px;
-	    border: 2px solid;
-	    margin: 5px 5px 5px 0;
-	    display: inline-block;
-	    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
-		&:hover {
-			color: $second-color;
-			span {
-				color: $second-color;
-			}
-			background: transparent;
-			text-decoration: none;
-		}
 	}
-}
-@mixin ghost-button-notfilled($color, $second-color) {
-	.ghost-button, .btn, &.ghost-button, &.btn,  {
-		background: transparent;
-		color: $second-color;
-		span {
-			color: $second-color;
-		}
-		padding: 10px 21px;
-	    border: 2px solid;
-	    margin: 5px 5px 5px 0;
-	    display: inline-block;
-	    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
-		&:hover {
-			border-color: $second-color;
-			color: $color;
-			span {
-				color: $color;
-			}
-			background: $second-color;
-			text-decoration: none;
-		}
-	}
-}
-.ghost-button  {
+	border-color: $second-color !important;
 	padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
-    text-decoration: none;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+	&:hover {
+		color: $second-color;
+		span {
+			color: $second-color;
+		}
+		background: transparent;
+		text-decoration: none;
+	}
+}
+@mixin ghost-button-notfilled($color, $second-color) {
+	text-decoration: none;
+	background: transparent;
+	color: $second-color;
+	span {
+		color: $second-color;
+	}
+	padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+	&:hover {
+		border-color: $second-color;
+		color: $color;
+		span {
+			color: $color;
+		}
+		background: $second-color;
+	}
+}
+.ghost-button-blue{
+	@include ghost-button-filled($blue,$white);
+	a {
+		@include ghost-button-filled($blue,$white);
+	}
+}
+.ghost-button-green{
+	@include ghost-button-filled($green,$white);
+	a {
+		@include ghost-button-filled($green,$white);
+	}
+}
+.ghost-button-yellow{
+	@include ghost-button-filled($yellow,$white);
+	a {
+		@include ghost-button-filled($yellow,$white);
+	}
+}
+.ghost-button-red{
+	@include ghost-button-filled($red,$white);
+	a {
+		@include ghost-button-filled($red,$white);
+	}
+}
+.ghost-button-blue-notfilled{
+	@include ghost-button-notfilled($blue,$white);
+	a {
+		@include ghost-button-notfilled($blue,$white);
+	}
+}
+.ghost-button-green-notfilled{
+	@include ghost-button-notfilled($green,$white);
+	a {
+		@include ghost-button-notfilled($green,$white);
+	}
+}
+.ghost-button-yellow-notfilled{
+	@include ghost-button-notfilled($yellow,$white);
+	a {
+		@include ghost-button-notfilled($yellow,$white);
+	}
+}
+.ghost-button-red-notfilled{
+	@include ghost-button-notfilled($red,$white);
+	a {
+		@include ghost-button-notfilled($red,$white);
+	}
 }
 
 h1{
@@ -437,12 +474,7 @@ h2, h3, h4 {
 	display: none !important;
 }
 
-.custompage-8386089 .fabrikk--content-wrapper, .custompage-8386397 .fabrikk--content-wrapper {
-  margin-top: -62px;
-} 
-// .custompage-8386397 .tws-breadcrumbs--text, .custompage-8386397 .tws-breadcrumbs--home-icon, .custompage-8386397 .tws-breadcrumbs--spacer, .custompage-8386089 .tws-breadcrumbs--text, .custompage-8386089 .tws-breadcrumbs--home-icon, .custompage-8386089 .tws-breadcrumbs--spacer {
-// 	color: #fff;
-// }
+
 .service-banner /* Service banern och texten */{
 	background: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/Grupp-wide.jpg);
 	background-position: center;
@@ -500,7 +532,6 @@ h2, h3, h4 {
 		}
 	}
 }
-
 
 .service-content{
 	.service-intro /* Service introt under bannern */{
@@ -823,18 +854,7 @@ h2, h3, h4 {
 					font-size: 22px;
 					list-style: none;
 				}
-				.ghost-button {
-					a {
-						color: #fff;
-					}
-					&:hover {
-						background: #fff;
-						a {
-							color: #999;
-							text-decoration: none;
-						}
-					}
-				}
+				
 				/* Individuella skillnader */
 				&.service-all-inclusive {
 					background: $yellow;
