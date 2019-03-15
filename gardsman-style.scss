@@ -50,15 +50,16 @@ h2, h3, h4 {
 			ul.dropdown-menu {
 				border-radius: 0;
 				background-color: $black;
-				transition: background-color 0.2s;
-				&:hover{
-					background-color: #333;
-				}
+				
 				li.tws-top-menu--sub-item {
 					padding: 4px 1px;
 					a {
 						font-weight: 100;
 						color: $white; 
+					}
+					transition: background-color 0.2s;
+					&:hover{
+						background-color: #333;
 					}
 					&.dropdown-submenu {
 
@@ -66,15 +67,9 @@ h2, h3, h4 {
 					ul.dropdown-menu {
 						border-radius: 0;
 						background-color: $black;
-						&:hover{
-							background-color: #333;
-						}
 						ul.dropdown-menu {
 							border-radius: 0;
 							background-color: $black;
-							&:hover{
-								background-color: #333;
-							}
 						}
 					}
 				}
