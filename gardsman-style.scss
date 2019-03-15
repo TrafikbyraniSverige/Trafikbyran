@@ -59,6 +59,14 @@ h2, h3, h4 {
 					&.dropdown-submenu {
 
 					}
+					ul.dropdown-menu {
+						border-radius: 0;
+						background-color: $black;
+						ul.dropdown-menu {
+							border-radius: 0;
+							background-color: $black;
+						}
+					}
 				}
 			}
 		}
