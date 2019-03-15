@@ -91,7 +91,7 @@ h2, h3, h4 {
           font-family: "Univia Pro Regular" !important;
           font-size: 1.2rem;
           letter-spacing: 0.5px; }
-        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button {
+        .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button .btn, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button .btn {
           border-radius: 0; }
           .tws-list--type-grid .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button .btn:after, .slick-track .tws-list--grid-item .thumbnail .caption .tws-article-list--buy-button .btn:after {
             display: none; }
