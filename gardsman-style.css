@@ -12,7 +12,10 @@ h2, h3, h4 {
 
 .navbar.tws-top-menu ul.nav ul.dropdown-menu {
   border-radius: 0;
-  background-color: #111; }
+  background-color: #111;
+  transition: background-color 0.2s; }
+  .navbar.tws-top-menu ul.nav ul.dropdown-menu:hover {
+    background-color: #333; }
   .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item {
     padding: 4px 1px; }
     .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item a {
@@ -21,9 +24,13 @@ h2, h3, h4 {
     .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item ul.dropdown-menu {
       border-radius: 0;
       background-color: #111; }
+      .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item ul.dropdown-menu:hover {
+        background-color: #333; }
       .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item ul.dropdown-menu ul.dropdown-menu {
         border-radius: 0;
         background-color: #111; }
+        .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item ul.dropdown-menu ul.dropdown-menu:hover {
+          background-color: #333; }
 
 .bountiful--main-wrapper {
   padding-top: 0 !important; }
