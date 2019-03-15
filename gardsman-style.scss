@@ -380,3 +380,460 @@ h2, h3, h4 {
 #mfPreviewBar {
 	display: none !important;
 }
+
+.custompage-8386089 .fabrikk--content-wrapper, .custompage-8386397 .fabrikk--content-wrapper {
+  margin-top: -62px;
+} 
+.custompage-8386397 .tws-breadcrumbs--text, .custompage-8386397 .tws-breadcrumbs--home-icon, .custompage-8386397 .tws-breadcrumbs--spacer, .custompage-8386089 .tws-breadcrumbs--text, .custompage-8386089 .tws-breadcrumbs--home-icon, .custompage-8386089 .tws-breadcrumbs--spacer {
+	color: #fff;
+}
+.service-banner /* Service banern och texten */{
+	background: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/Grupp-wide.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 95px 70px 95px 59%;
+
+	@media screen and (max-width: 1070px) {
+		padding: 0;
+		height: 275px;
+		background-position: initial;
+	}
+	@media screen and (max-width: 900px) {
+		background: url( https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/gardsman-service-personal.jpg);
+		background-position: center top;
+		background-size: cover;
+		height: 450px;
+	}
+	@media screen and (max-width: 600px) {
+		height: 275px;
+	}
+ 	.banner-text {
+    	max-width: 65%;
+    	@media screen and (max-width: 1200px) {
+			max-width: 100%;
+		}
+		@media screen and (max-width: 1070px) {
+		    position: relative;
+		    top: 275px;
+		    background-color: #c3c3c3;
+		    padding: 25px 40px 50px 45px;
+		}
+		@media screen and (max-width: 900px) {
+			top: 450px;
+		}
+    	@media screen and (max-width: 600px) {
+			top: 275px;
+		}
+    	.service-titel {
+			font-size: 54px;
+			line-height: 56px;
+			margin-bottom: 10px;
+			color: #fff;
+			@media screen and (max-width: 1070px) {
+			    font-size: 43px;
+			    padding-top: 20px;
+			}
+			@media screen and (max-width: 450px) {
+				font-size: 33px;
+				line-height: 33px;
+			}
+		}
+		.service-ingress {
+			font-size: 18px;
+			color: #fff;
+		}
+	}
+}
+
+
+.service-content{
+	.service-intro /* Service introt under bannern */{
+		width: 50%;
+		margin: 80px auto;
+		text-align: center;
+		@media screen and (max-width: 1070px) {
+			width: 72%;
+			margin-top: 360px; 
+		}
+		@media screen and (max-width: 900px) {
+			width: 100%;
+		}
+		@media screen and (max-width: 750px) {
+			margin-top: 450px; 
+		}
+		@media screen and (max-width: 450px) {
+			width: 100%;
+		}
+		.service-intro-titel {
+			font-size: 35px;
+			line-height: 35px;
+		}
+		.service-intro-ingress {
+			font-size: 16px;
+			max-width: 55%;
+			margin: auto;
+			@media screen and (max-width: 900px) {
+				max-width: 71%;
+			}
+			@media screen and (max-width: 450px) {
+				max-width: 66%;
+			}
+		}
+	}
+	.service-kategorier-cont {
+		text-align: center;
+		.service-kategori {
+		    display: inline-block;
+		    margin: 25px;
+		    width: 260px;
+		&.service-kategori-inner-header /* Service kategorierna */{
+			height: 215px;
+			background-size: cover;
+			.service-kategori-inner-titel {
+				color: #fff;
+			    font-size: 22px;
+			    font-weight: 100;
+			    position: relative;
+			    font-family: $bold;
+			    text-align: left;
+			    padding: 10px 0 0 25px;
+			}
+			.service-kategori-inner-titel-liten {
+				text-align: left;
+				padding: 0 0 0 25px;
+				position: relative;
+				color: #fff;
+				font-family: $light;
+			}
+			.ghost-button {
+				top: 70px;
+				position: relative;
+				background-color: #fff;
+				color: #00a1b4;
+				font-size: 19px;
+				font-weight: 100;
+				padding: 11px 26px;
+				border: none;
+				margin: 0;
+				left: -43px;
+			}
+		} /* Service kategorierna bilderna */
+		&#service-robot {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-robotgrasklippare.jpg);
+		}
+		&#service-handburet{
+		background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-handburet.jpg);
+		}
+		&#service-hjulburet {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-hjulburet.jpg);
+		}
+		&#service-atv {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-atv.jpg);
+		}
+		&#service-slapvagnar {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-slapvagn.jpg);
+		}
+		&#service-ovrigt {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-ovrigt.jpg);
+		}
+			.service-kategori-inner-profile /* Presentationerna av experterna */{
+				text-align: left;
+				margin-top: 10px;
+				em {
+					background: #00a1b4;
+				    display: block;
+				    padding: 15px;
+				    font-size: 16px;
+				    color: white;
+				    font-style: normal;
+				}
+				img.service-bild {
+					width: 100%;
+					display: block;
+					padding-bottom: 12px;
+				}
+				h3 {
+					margin: 5px 0;
+					font-size: 25px;
+					font-family: $bold;
+				}
+				a {
+					font-family: $bold;
+				    color: #000;
+				    font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+/* Service Automower Undersida */
+
+.banner-automower {
+	background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/automoer-service-3.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.banner-undersida-text {
+	    color: #fff;
+	    padding: 140px 25% 75px 5%;
+	    .service-automower-titel {
+			font-size: 57px;
+			line-height: 56px;
+			margin-bottom: 10px;
+			color: #fff;
+			@media screen and (max-width: 500px) {
+				font-size: 40px;
+			}
+		}
+		.service-automower-ingress {
+			font-size: 18px;
+			max-width: 550px;
+		}
+	}
+}
+.service-undersida-content {
+	max-width: 1090px;
+	margin: auto;
+	@media screen and (min-width: 599px) {
+		width: 90%;
+	}
+	.service-undersida-intro /* huvudtexten */{
+		width: 68%;
+		padding-right: 30px;
+		vertical-align: top;
+		margin: 50px auto;
+		display: inline-block;
+		text-align: left;
+		@media screen and (max-width: 900px) {
+			width: 59%;
+		}
+		@media screen and (max-width: 600px) {
+			width: 90%;
+			padding-right: 0;
+			display: block;
+		}
+		.service-undersida-intro-titel {
+			font-size: 30px;
+			line-height: 31px;
+		}
+		.service-undersida-intro-ingress {
+			font-size: 16px;
+			max-width: 450px;
+		    margin-top: 15px;
+		    iframe{
+		    	width: 100%;
+				max-width: 350px;
+				margin-top: 40px;
+		    }
+		}
+	}
+	.service-undersida-kategorier-cont /* experttips */{
+	    text-align: center;
+	    width: 31%;
+	    display: inline-block;
+	    margin-top: -49px;
+	    color: #fff;
+		@media screen and (max-width: 900px) {
+			width: 40%;
+		}
+		@media screen and (max-width: 600px) {
+			width: 90%;
+			margin: auto;
+			display: block;
+		}
+	    .service-undersida-kategori {
+		    display: inline-block;
+		    width: 100%;
+		    .service-undersida-kategori-inner-header /* experttips headern */{
+			    background-color: #00a1b4;
+			    .service-undersida-kategori-inner-titel {
+				    margin: 0;
+				    text-align: left;
+				    padding: 15px 15px 15px 20px;
+				    color: #fff;
+				    font-family: $regular;
+				}
+			}
+			.service-undersida-kategori-inner-profile /* experttips innehall */{
+			    background-color: #d7d7d7;
+			    text-align: left;
+			    padding: 40px 45px;
+			    h5 /* titel */{
+			    	font-size: 16px;
+					padding-bottom: 5px;
+					margin: 0;
+				}
+				p {
+				    font-size: 14px;
+				    color: #000;
+				}
+				img {
+					margin: 10px 0;
+				}
+				em {
+					display: block;
+					color: #222;
+					font-size: 14px;
+					font-style: normal;
+				}
+				h3 /* person titel */{
+					font-family: $bold;
+					margin: 5px 0;
+				}
+				a {
+					color: #555;
+					word-break: break-all;
+					font-family: $bold;
+				}
+			}
+		}
+	}
+	.service-automower-tabeller /* Service tabellerna */{
+		text-align: center;
+		.service-automower-tabeller-h2 {
+			margin: 25px 1.5%;
+		}
+		div {
+			font-size: 0px;
+			ul {
+				overflow: hidden;
+				position: relative;
+			    display: inline-block;
+			    max-width: 365px;
+			    margin: -2px;
+			    padding: 35px;
+			    font-size: 16px;
+			    vertical-align: top;
+			    text-align: left;
+			    color: #fff;
+			    @media screen and (max-width: 370px) {
+					padding: 15px;
+				}
+			    @media screen and (min-width: 800px) {
+					height: 1200px;
+				}
+				.service-automower-info-titel {
+				    list-style: none;
+				    background: #47bffa;
+				    font-size: 22px;
+				    color: #fff;
+				    margin: -35px -35px 20px -35px;
+				    padding: 35px 35px 25px 35px;
+					font-family: $bold;
+				}
+				.service-automower-third-titel, .service-automower-second-titel {
+				    list-style: none;
+				    margin: 45px 0 5px 0;
+				    font-family: $bold;
+				}
+				.service-automower-ingress  {
+				    list-style: none;
+				    font-family: $light;
+				}
+				.service-automower-checks /* ovrelistan */{
+					margin: 15px 10px;
+					list-style: none;
+					font-family: $light;
+					em {
+					    display: block;
+					    padding-left: 24px;
+					    font-size: 13px;
+					    color: #efefef;
+					}
+					&:before {
+						content: "\2713 ";
+						padding-right: 10px;
+						font-size: 16px;
+						color: #efefef;
+					}
+				}
+				.service-automower-info /* nedre listan */{
+					margin: 15px 10px;
+					list-style: none;
+					font-family: $light;
+					&:before {
+						content: "- ";
+						padding-right: 10px;
+						color: #efefef;
+					}
+				}
+				.service-automower-pris {
+					margin: 15px 10px 15px 0;
+					font-family: $bold;
+					font-size: 22px;
+					list-style: none;
+				}
+				.ghost-button {
+					a {
+						color: #fff;
+					}
+					&:hover {
+						background: #fff;
+						a {
+							color: #999;
+							text-decoration: none;
+						}
+					}
+				}
+				/* Individuella skillnader */
+				&.service-all-inclusive {
+					background: $yellow;
+					@media screen and (max-width: 800px) {
+						padding-bottom: 100px;
+					}
+					.service-automower-info-titel {
+						background: $yellow;
+					}
+					.erbjudande {
+						list-style: none;
+						position: absolute;
+						bottom: -65px;
+						right: -100px;
+						img {
+							width: 330px;
+						}
+						.push-blob {
+							width: 130px;
+							left: 0px;
+				    		top: 45px;
+						}
+					}
+				}
+				&.service-premium  {
+					background: $blue;
+					.service-automower-info-titel {
+						background: $blue;
+					}
+				}
+				&.service-originalservice {
+					background: $green;
+					.service-automower-info-titel {
+						background: $green;
+					}
+				}
+
+				&.service-onlineservice {
+					background: #999;
+					.service-automower-info-titel {
+						background: #888;
+					}
+				}
+				&.service-onlinepremium {
+					background: $red;
+					.service-automower-info-titel {
+						background: $red;
+					}
+				}
+
+				&.service-lightservice{
+					background: #bbb;
+					.service-automower-info-titel {
+						background: #aaa;
+					}
+				}
+			}
+		}
+	}
+}
+
