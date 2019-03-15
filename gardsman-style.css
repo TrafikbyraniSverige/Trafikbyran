@@ -156,4 +156,7 @@ h2, h3, h4 {
   .tws-article-price .twsPriceRegular:before {
     content: 'ord: '; }
 
+.alert-warning {
+  color: #b6c628 !important; }
+
 /*# sourceMappingURL=gardsman-style.css.map */
