@@ -4,9 +4,8 @@
   border: 2px solid;
   margin: 5px 5px 5px 0;
   display: inline-block;
+  text-decoration: none;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
-  .ghost-button:hover {
-    text-decoration: none; }
 
 h1 {
   font-family: "Univia Pro Regular" !important; }
@@ -503,7 +502,7 @@ h2, h3, h4 {
         position: relative;
         display: inline-block;
         width: 33%;
-        min-width: 225px;
+        min-width: 200px;
         max-width: 365px;
         margin: -2px;
         padding: 35px;
@@ -512,12 +511,9 @@ h2, h3, h4 {
         text-align: left;
         color: #fff;
         /* Individuella skillnader */ }
-        @media screen and (max-width: 567px) {
+        @media screen and (max-width: 766px) {
           .service-undersida-content .service-automower-tabeller div ul {
             padding: 15px; } }
-        @media screen and (min-width: 800px) {
-          .service-undersida-content .service-automower-tabeller div ul {
-            height: 1200px; } }
         .service-undersida-content .service-automower-tabeller div ul .service-automower-info-titel {
           list-style: none;
           background: #47bffa;

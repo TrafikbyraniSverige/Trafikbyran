@@ -81,10 +81,8 @@ $regular: 'Univia Pro Regular'!important;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
+    text-decoration: none;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s;
-	&:hover {
-		text-decoration: none;
-	}
 }
 
 h1{
@@ -760,7 +758,7 @@ h2, h3, h4 {
 				position: relative;
 			    display: inline-block;
 			    width: 33%;
-			    min-width: 225px;
+			    min-width: 200px;
 			    max-width: 365px;
 			    margin: -2px;
 			    padding: 35px;
@@ -768,11 +766,11 @@ h2, h3, h4 {
 			    vertical-align: top;
 			    text-align: left;
 			    color: #fff;
-			    @media screen and (max-width: $min-mob) {
+			    @media screen and (max-width: $max-pad) {
 					padding: 15px;
 				}
 			    @media screen and (min-width: 800px) {
-					height: 1200px;
+					// height: 1200px;
 				}
 				.service-automower-info-titel {
 				    list-style: none;
