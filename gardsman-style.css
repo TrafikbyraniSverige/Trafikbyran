@@ -425,7 +425,7 @@ h2, h3, h4 {
     @media screen and (max-width: 900px) {
       .service-undersida-content .service-undersida-intro {
         width: 59%; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 767px) {
       .service-undersida-content .service-undersida-intro {
         width: 90%;
         padding-right: 0;
