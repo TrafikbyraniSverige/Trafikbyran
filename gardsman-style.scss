@@ -46,35 +46,37 @@ h2, h3, h4 {
 
 .navbar {
 	&.tws-top-menu {
-		ul.nav {
-			ul.dropdown-menu {
-				border-radius: 0;
-				background-color: $black;
-				li.tws-top-menu--sub-item {
-					// padding: 4px 1px;
-					a {
-						font-weight: 100;
-						color: $white; 
-						padding: 9px 0;
-						border-bottom: 1px solid rgba(250,250,250,0.16);
-						margin: 0px 12px;
-						&:after {
-							border-left-color: $white;
+		@media screen and (min-width: $min-mob) {
+			ul.nav {
+				ul.dropdown-menu {
+					border-radius: 0;
+					background-color: $black;
+					li.tws-top-menu--sub-item {
+						// padding: 4px 1px;
+						a {
+							font-weight: 100;
+							color: $white; 
+							padding: 9px 0;
+							border-bottom: 1px solid rgba(250,250,250,0.16);
+							margin: 0px 12px;
+							&:after {
+								border-left-color: $white;
+							}
 						}
-					}
-					transition: background-color 0.2s;
-					&:hover{
-						background-color: rgba(250,250,250,0.16);
-					}
-					&.dropdown-submenu {
+						transition: background-color 0.2s;
+						&:hover{
+							background-color: rgba(250,250,250,0.16);
+						}
+						&.dropdown-submenu {
 
-					}
-					ul.dropdown-menu {
-						border-radius: 0;
-						background-color: $black;
+						}
 						ul.dropdown-menu {
 							border-radius: 0;
 							background-color: $black;
+							ul.dropdown-menu {
+								border-radius: 0;
+								background-color: $black;
+							}
 						}
 					}
 				}

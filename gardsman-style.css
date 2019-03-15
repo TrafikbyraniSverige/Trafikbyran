@@ -10,27 +10,28 @@ h2, h3, h4 {
 * {
   box-shadow: none !important; }
 
-.navbar.tws-top-menu ul.nav ul.dropdown-menu {
-  border-radius: 0;
-  background-color: #111; }
-  .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item {
-    transition: background-color 0.2s; }
-    .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item a {
-      font-weight: 100;
-      color: #fff;
-      padding: 9px 0;
-      border-bottom: 1px solid rgba(250, 250, 250, 0.16);
-      margin: 0px 12px; }
-      .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item a:after {
-        border-left-color: #fff; }
-    .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item:hover {
-      background-color: rgba(250, 250, 250, 0.16); }
-    .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item ul.dropdown-menu {
-      border-radius: 0;
-      background-color: #111; }
-      .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item ul.dropdown-menu ul.dropdown-menu {
+@media screen and (min-width: 567px) {
+  .navbar.tws-top-menu ul.nav ul.dropdown-menu {
+    border-radius: 0;
+    background-color: #111; }
+    .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item {
+      transition: background-color 0.2s; }
+      .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item a {
+        font-weight: 100;
+        color: #fff;
+        padding: 9px 0;
+        border-bottom: 1px solid rgba(250, 250, 250, 0.16);
+        margin: 0px 12px; }
+        .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item a:after {
+          border-left-color: #fff; }
+      .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item:hover {
+        background-color: rgba(250, 250, 250, 0.16); }
+      .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item ul.dropdown-menu {
         border-radius: 0;
         background-color: #111; }
+        .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item ul.dropdown-menu ul.dropdown-menu {
+          border-radius: 0;
+          background-color: #111; } }
 
 .bountiful--main-wrapper {
   padding-top: 0 !important; }
