@@ -51,7 +51,11 @@ h2, h3, h4 {
 				border-radius: 0;
 				background-color: $black;
 				li.tws-top-menu--sub-item {
-					color: $white;
+					padding: 4px 1px;
+					a {
+						font-weight: 100;
+						color: $white; 
+					}
 					&.dropdown-submenu {
 
 					}

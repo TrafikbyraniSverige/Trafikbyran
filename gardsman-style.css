@@ -14,7 +14,10 @@ h2, h3, h4 {
   border-radius: 0;
   background-color: #111; }
   .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item {
-    color: #fff; }
+    padding: 4px 1px; }
+    .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item a {
+      font-weight: 100;
+      color: #fff; }
 
 .bountiful--main-wrapper {
   padding-top: 0 !important; }
