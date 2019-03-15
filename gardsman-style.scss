@@ -44,10 +44,23 @@ h2, h3, h4 {
 	box-shadow: none !important;
 }
 
+
 .navbar {
 	&.tws-top-menu {
-		@media screen and (min-width: $min-mob) {
-			ul.nav {
+		ul.nav {
+			&:before {
+				content: 'Säsong';
+				width: 100%;
+				display: block;
+				padding: 7px 15px;
+				border-bottom: 1px solid #ebebeb;
+				@media screen and (min-width: $min-mob) {
+					width: auto;
+					display: inline-block;
+					border-bottom: 0;
+				}
+			}
+			@media screen and (min-width: $min-mob) {
 				ul.dropdown-menu {
 					border-radius: 0;
 					background-color: $black;
@@ -92,6 +105,9 @@ h2, h3, h4 {
 }
 .bountiful--sidebar {
 	.bountiful--sidebar-wrapper {
+		.bountiful--sidebar-controls {
+			border-bottom: 0 !important;
+		}
 		.slot--sidebar {
 			.tws-vertical-menu-light {
 				background-color: #efefef;
