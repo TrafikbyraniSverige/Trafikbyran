@@ -119,8 +119,8 @@ h2, h3, h4 {
     right: 0;
     width: 100%;
     font-size: 0.8rem; }
-@media screen and (max-width: 991px) {
-  .tws-list--type-grid .tws-list--grid-item:nth-child(4n + 2):after, .tws-list--type-grid .tws-list--grid-item:nth-child(4n + 3):after {
+@media screen and (min-width: 992px) {
+  .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 2):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 4):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 5):after, .tws-list--type-grid .tws-list--grid-item:nth-child(8n + 7):after {
     background: rgba(0, 0, 0, 0.08); } }
 .tws-list--type-grid .tws-list--grid-item:hover:after {
   background: rgba(0, 0, 0, 0.1); }
