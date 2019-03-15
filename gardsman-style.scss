@@ -212,11 +212,11 @@ h2, h3, h4 {
 			}
 		}
 		@media screen and (min-width: $min-lap) {
-			&:nth-child(8n + 2),&:nth-child(8n + 4),&:nth-child(8n + 5),&:nth-child(8n + 7) {
-				&:after {
-					background: rgba(0,0,0,0.08);
-				}
-			}
+			// &:nth-child(8n + 2),&:nth-child(8n + 4),&:nth-child(8n + 5),&:nth-child(8n + 7) {
+			// 	&:after {
+			// 		background: rgba(0,0,0,0.08);
+			// 	}
+			// }
 		}
 		&:hover{
 			&:after {
