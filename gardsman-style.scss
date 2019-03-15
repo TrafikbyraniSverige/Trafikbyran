@@ -49,7 +49,7 @@ h2, h3, h4 {
 	&.tws-top-menu {
 		ul.nav {
 			&:before {
-				content: 'Säsong';
+				content: 'Säsong:';
 				width: 100%;
 				display: block;
 				padding: 7px 15px;
@@ -59,6 +59,9 @@ h2, h3, h4 {
 					display: inline-block;
 					border-bottom: 0;
 				}
+			}
+			.dropdown-toggle {
+				font-family: $regular;
 			}
 			@media screen and (min-width: $min-mob) {
 				ul.dropdown-menu {
@@ -95,6 +98,11 @@ h2, h3, h4 {
 				}
 			}
 		}
+	}
+}
+.bountiful--header {
+	.slot--header-shipping-notice {
+		background-color: transparent;
 	}
 }
 .bountiful--main-wrapper {

@@ -12,7 +12,7 @@ h2, h3, h4 {
   box-shadow: none !important; }
 
 .navbar.tws-top-menu ul.nav:before {
-  content: 'Säsong';
+  content: 'Säsong:';
   width: 100%;
   display: block;
   padding: 7px 15px;
@@ -22,6 +22,8 @@ h2, h3, h4 {
       width: auto;
       display: inline-block;
       border-bottom: 0; } }
+.navbar.tws-top-menu ul.nav .dropdown-toggle {
+  font-family: "Univia Pro Regular" !important; }
 @media screen and (min-width: 567px) {
   .navbar.tws-top-menu ul.nav ul.dropdown-menu {
     border-radius: 0;
@@ -44,6 +46,9 @@ h2, h3, h4 {
         .navbar.tws-top-menu ul.nav ul.dropdown-menu li.tws-top-menu--sub-item ul.dropdown-menu ul.dropdown-menu {
           border-radius: 0;
           background-color: #111; } }
+
+.bountiful--header .slot--header-shipping-notice {
+  background-color: transparent; }
 
 .bountiful--main-wrapper {
   padding-top: 0 !important; }
