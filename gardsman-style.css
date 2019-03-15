@@ -158,12 +158,8 @@ h2, h3, h4 {
   .bountiful--article .bountiful--article-left-col .slot--article-labels {
     box-shadow: none;
     transform: rotate(-45deg);
-    left: -50px;
-    top: -10px; }
-    @media screen and (min-width: 567px) {
-      .bountiful--article .bountiful--article-left-col .slot--article-labels {
-        left: -50px;
-        top: -25px; } }
+    left: -36px;
+    top: 3px; }
     .bountiful--article .bountiful--article-left-col .slot--article-labels .tws-article-labels--new {
       margin: 0; }
       .bountiful--article .bountiful--article-left-col .slot--article-labels .tws-article-labels--new .tws-article-labels--label-text {

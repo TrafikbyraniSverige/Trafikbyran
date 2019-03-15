@@ -284,12 +284,8 @@ h2, h3, h4 {
 		.slot--article-labels {
 			box-shadow: none;
 			transform: rotate(-45deg);
-			left: -50px;
-			top: -10px;
-			@media screen and (min-width: $min-mob) {
-				left: -50px;
-				top: -25px;
-			}
+			left: -36px;
+			top: 3px;
 			.tws-article-labels--new {
 				margin: 0;
 				.tws-article-labels--label-text {
