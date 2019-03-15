@@ -44,6 +44,22 @@ h2, h3, h4 {
 	box-shadow: none !important;
 }
 
+.navbar {
+	&.tws-top-menu {
+		ul.nav {
+			ul.dropdown-menu {
+				border-radius: 0;
+				background-color: $black;
+				li.tws-top-menu--sub-item {
+					color: $white;
+					&.dropdown-submenu {
+
+					}
+				}
+			}
+		}
+	}
+}
 .bountiful--main-wrapper {
 	padding-top: 0 !important;
 	// @media screen and (min-width: $min-mob) {
