@@ -29,6 +29,64 @@ $max-lap: 991px;
 $light: 'Univia Pro UltraLight'!important;
 $bold: 'Univia Pro Bold' !important;
 $regular: 'Univia Pro Regular'!important;
+
+@mixin ghost-button-filled($color, $second-color) {
+	.ghost-button, .btn, &.ghost-button, &.btn,  {
+		background: $second-color;
+		color: $color;
+		span {
+			color: $color;
+		}
+		border-color: $second-color !important;
+		padding: 10px 21px;
+	    border: 2px solid;
+	    margin: 5px 5px 5px 0;
+	    display: inline-block;
+	    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+		&:hover {
+			color: $second-color;
+			span {
+				color: $second-color;
+			}
+			background: transparent;
+			text-decoration: none;
+		}
+	}
+}
+@mixin ghost-button-notfilled($color, $second-color) {
+	.ghost-button, .btn, &.ghost-button, &.btn,  {
+		background: transparent;
+		color: $second-color;
+		span {
+			color: $second-color;
+		}
+		padding: 10px 21px;
+	    border: 2px solid;
+	    margin: 5px 5px 5px 0;
+	    display: inline-block;
+	    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+		&:hover {
+			border-color: $second-color;
+			color: $color;
+			span {
+				color: $color;
+			}
+			background: $second-color;
+			text-decoration: none;
+		}
+	}
+}
+.ghost-button  {
+	padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 h1{
 	font-family: $regular;
 }

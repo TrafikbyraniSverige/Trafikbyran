@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.ghost-button {
+  padding: 10px 21px;
+  border: 2px solid;
+  margin: 5px 5px 5px 0;
+  display: inline-block;
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
+  .ghost-button:hover {
+    text-decoration: none; }
+
 h1 {
   font-family: "Univia Pro Regular" !important; }
 
