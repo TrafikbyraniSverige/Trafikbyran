@@ -12,11 +12,10 @@
   .ghost-button-blue span {
     color: #fff !important; }
   .ghost-button-blue:hover {
-    color: #fff !important;
-    background: transparent;
-    text-decoration: none; }
+    color: #00a1b4 !important;
+    background: transparent !important; }
     .ghost-button-blue:hover span {
-      color: #fff !important; }
+      color: #00a1b4 !important; }
   .ghost-button-blue a {
     text-decoration: none !important;
     background: #00a1b4 !important;
@@ -30,11 +29,10 @@
     .ghost-button-blue a span {
       color: #fff !important; }
     .ghost-button-blue a:hover {
-      color: #fff !important;
-      background: transparent;
-      text-decoration: none; }
+      color: #00a1b4 !important;
+      background: transparent !important; }
       .ghost-button-blue a:hover span {
-        color: #fff !important; }
+        color: #00a1b4 !important; }
 
 .ghost-button-green {
   text-decoration: none !important;
@@ -49,11 +47,10 @@
   .ghost-button-green span {
     color: #fff !important; }
   .ghost-button-green:hover {
-    color: #fff !important;
-    background: transparent;
-    text-decoration: none; }
+    color: #b6c628 !important;
+    background: transparent !important; }
     .ghost-button-green:hover span {
-      color: #fff !important; }
+      color: #b6c628 !important; }
   .ghost-button-green a {
     text-decoration: none !important;
     background: #b6c628 !important;
@@ -67,11 +64,10 @@
     .ghost-button-green a span {
       color: #fff !important; }
     .ghost-button-green a:hover {
-      color: #fff !important;
-      background: transparent;
-      text-decoration: none; }
+      color: #b6c628 !important;
+      background: transparent !important; }
       .ghost-button-green a:hover span {
-        color: #fff !important; }
+        color: #b6c628 !important; }
 
 .ghost-button-yellow {
   text-decoration: none !important;
@@ -86,11 +82,10 @@
   .ghost-button-yellow span {
     color: #fff !important; }
   .ghost-button-yellow:hover {
-    color: #fff !important;
-    background: transparent;
-    text-decoration: none; }
+    color: #f2b029 !important;
+    background: transparent !important; }
     .ghost-button-yellow:hover span {
-      color: #fff !important; }
+      color: #f2b029 !important; }
   .ghost-button-yellow a {
     text-decoration: none !important;
     background: #f2b029 !important;
@@ -104,11 +99,10 @@
     .ghost-button-yellow a span {
       color: #fff !important; }
     .ghost-button-yellow a:hover {
-      color: #fff !important;
-      background: transparent;
-      text-decoration: none; }
+      color: #f2b029 !important;
+      background: transparent !important; }
       .ghost-button-yellow a:hover span {
-        color: #fff !important; }
+        color: #f2b029 !important; }
 
 .ghost-button-red {
   text-decoration: none !important;
@@ -123,11 +117,10 @@
   .ghost-button-red span {
     color: #fff !important; }
   .ghost-button-red:hover {
-    color: #fff !important;
-    background: transparent;
-    text-decoration: none; }
+    color: #c05240 !important;
+    background: transparent !important; }
     .ghost-button-red:hover span {
-      color: #fff !important; }
+      color: #c05240 !important; }
   .ghost-button-red a {
     text-decoration: none !important;
     background: #c05240 !important;
@@ -141,11 +134,10 @@
     .ghost-button-red a span {
       color: #fff !important; }
     .ghost-button-red a:hover {
-      color: #fff !important;
-      background: transparent;
-      text-decoration: none; }
+      color: #c05240 !important;
+      background: transparent !important; }
       .ghost-button-red a:hover span {
-        color: #fff !important; }
+        color: #c05240 !important; }
 
 .ghost-button-blue-notfilled {
   text-decoration: none !important;

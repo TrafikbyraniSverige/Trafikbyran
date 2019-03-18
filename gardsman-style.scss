@@ -44,12 +44,11 @@ $regular: 'Univia Pro Regular'!important;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s;
 	&:hover {
-		color: $second-color  !important;
+		color: $color  !important;
 		span {
-			color: $second-color  !important;
+			color: $color  !important;
 		}
-		background: transparent;
-		text-decoration: none;
+		background: transparent !important;
 	}
 }
 @mixin ghost-button-notfilled($color, $second-color) {
