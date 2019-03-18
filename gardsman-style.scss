@@ -32,21 +32,21 @@ $regular: 'Univia Pro Regular'!important;
 
 @mixin ghost-button-filled($color, $second-color) {
 	text-decoration: none !important;
-	background: $second-color;
-	color: $color  !important;;
+	background:  $color !important;
+	color: $second-color  !important;
 	span {
-		color: $color  !important;;
+		color: $second-color  !important;
 	}
-	border-color: $second-color !important;
+	border-color: $color !important;
 	padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s;
 	&:hover {
-		color: $second-color  !important;;
+		color: $second-color  !important;
 		span {
-			color: $second-color  !important;;
+			color: $second-color  !important;
 		}
 		background: transparent;
 		text-decoration: none;
@@ -55,22 +55,22 @@ $regular: 'Univia Pro Regular'!important;
 @mixin ghost-button-notfilled($color, $second-color) {
 	text-decoration: none !important;
 	background: transparent;
-	color: $color  !important;;
+	color: $color  !important;
 	span {
-		color: $color  !important;;
+		color: $color  !important;
 	}
 	padding: 10px 21px;
-    border: 2px solid;
+    border: 2px solid $color !important;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s;
 	&:hover {
-		border-color: $color;
-		color: $second-color  !important;;
+		border-color: $color !important;
+		color: $second-color  !important;
 		span {
-			color: $second-color  !important;;
+			color: $second-color  !important;
 		}
-		background: $color;
+		background: $color !important;
 	}
 }
 .ghost-button-blue{
