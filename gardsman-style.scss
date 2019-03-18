@@ -31,11 +31,11 @@ $bold: 'Univia Pro Bold' !important;
 $regular: 'Univia Pro Regular'!important;
 
 @mixin ghost-button-filled($color, $second-color) {
-	text-decoration: none;
+	text-decoration: none !important;
 	background: $second-color;
-	color: $color;
+	color: $color  !important;;
 	span {
-		color: $color;
+		color: $color  !important;;
 	}
 	border-color: $second-color !important;
 	padding: 10px 21px;
@@ -44,20 +44,20 @@ $regular: 'Univia Pro Regular'!important;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s;
 	&:hover {
-		color: $second-color;
+		color: $second-color  !important;;
 		span {
-			color: $second-color;
+			color: $second-color  !important;;
 		}
 		background: transparent;
 		text-decoration: none;
 	}
 }
 @mixin ghost-button-notfilled($color, $second-color) {
-	text-decoration: none;
+	text-decoration: none !important;
 	background: transparent;
-	color: $color;
+	color: $color  !important;;
 	span {
-		color: $color;
+		color: $color  !important;;
 	}
 	padding: 10px 21px;
     border: 2px solid;
@@ -66,9 +66,9 @@ $regular: 'Univia Pro Regular'!important;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s;
 	&:hover {
 		border-color: $color;
-		color: $second-color;
+		color: $second-color  !important;;
 		span {
-			color: $second-color;
+			color: $second-color  !important;;
 		}
 		background: $color;
 	}

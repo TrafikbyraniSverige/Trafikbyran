@@ -1,8 +1,8 @@
 @charset "UTF-8";
 .ghost-button-blue {
-  text-decoration: none;
+  text-decoration: none !important;
   background: #fff;
-  color: #00a1b4;
+  color: #00a1b4 !important;
   border-color: #fff !important;
   padding: 10px 21px;
   border: 2px solid;
@@ -10,17 +10,17 @@
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-blue span {
-    color: #00a1b4; }
+    color: #00a1b4 !important; }
   .ghost-button-blue:hover {
-    color: #fff;
+    color: #fff !important;
     background: transparent;
     text-decoration: none; }
     .ghost-button-blue:hover span {
-      color: #fff; }
+      color: #fff !important; }
   .ghost-button-blue a {
-    text-decoration: none;
+    text-decoration: none !important;
     background: #fff;
-    color: #00a1b4;
+    color: #00a1b4 !important;
     border-color: #fff !important;
     padding: 10px 21px;
     border: 2px solid;
@@ -28,18 +28,18 @@
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-blue a span {
-      color: #00a1b4; }
+      color: #00a1b4 !important; }
     .ghost-button-blue a:hover {
-      color: #fff;
+      color: #fff !important;
       background: transparent;
       text-decoration: none; }
       .ghost-button-blue a:hover span {
-        color: #fff; }
+        color: #fff !important; }
 
 .ghost-button-green {
-  text-decoration: none;
+  text-decoration: none !important;
   background: #fff;
-  color: #b6c628;
+  color: #b6c628 !important;
   border-color: #fff !important;
   padding: 10px 21px;
   border: 2px solid;
@@ -47,17 +47,17 @@
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-green span {
-    color: #b6c628; }
+    color: #b6c628 !important; }
   .ghost-button-green:hover {
-    color: #fff;
+    color: #fff !important;
     background: transparent;
     text-decoration: none; }
     .ghost-button-green:hover span {
-      color: #fff; }
+      color: #fff !important; }
   .ghost-button-green a {
-    text-decoration: none;
+    text-decoration: none !important;
     background: #fff;
-    color: #b6c628;
+    color: #b6c628 !important;
     border-color: #fff !important;
     padding: 10px 21px;
     border: 2px solid;
@@ -65,18 +65,18 @@
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-green a span {
-      color: #b6c628; }
+      color: #b6c628 !important; }
     .ghost-button-green a:hover {
-      color: #fff;
+      color: #fff !important;
       background: transparent;
       text-decoration: none; }
       .ghost-button-green a:hover span {
-        color: #fff; }
+        color: #fff !important; }
 
 .ghost-button-yellow {
-  text-decoration: none;
+  text-decoration: none !important;
   background: #fff;
-  color: #f2b029;
+  color: #f2b029 !important;
   border-color: #fff !important;
   padding: 10px 21px;
   border: 2px solid;
@@ -84,17 +84,17 @@
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-yellow span {
-    color: #f2b029; }
+    color: #f2b029 !important; }
   .ghost-button-yellow:hover {
-    color: #fff;
+    color: #fff !important;
     background: transparent;
     text-decoration: none; }
     .ghost-button-yellow:hover span {
-      color: #fff; }
+      color: #fff !important; }
   .ghost-button-yellow a {
-    text-decoration: none;
+    text-decoration: none !important;
     background: #fff;
-    color: #f2b029;
+    color: #f2b029 !important;
     border-color: #fff !important;
     padding: 10px 21px;
     border: 2px solid;
@@ -102,18 +102,18 @@
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-yellow a span {
-      color: #f2b029; }
+      color: #f2b029 !important; }
     .ghost-button-yellow a:hover {
-      color: #fff;
+      color: #fff !important;
       background: transparent;
       text-decoration: none; }
       .ghost-button-yellow a:hover span {
-        color: #fff; }
+        color: #fff !important; }
 
 .ghost-button-red {
-  text-decoration: none;
+  text-decoration: none !important;
   background: #fff;
-  color: #c05240;
+  color: #c05240 !important;
   border-color: #fff !important;
   padding: 10px 21px;
   border: 2px solid;
@@ -121,17 +121,17 @@
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-red span {
-    color: #c05240; }
+    color: #c05240 !important; }
   .ghost-button-red:hover {
-    color: #fff;
+    color: #fff !important;
     background: transparent;
     text-decoration: none; }
     .ghost-button-red:hover span {
-      color: #fff; }
+      color: #fff !important; }
   .ghost-button-red a {
-    text-decoration: none;
+    text-decoration: none !important;
     background: #fff;
-    color: #c05240;
+    color: #c05240 !important;
     border-color: #fff !important;
     padding: 10px 21px;
     border: 2px solid;
@@ -139,153 +139,153 @@
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-red a span {
-      color: #c05240; }
+      color: #c05240 !important; }
     .ghost-button-red a:hover {
-      color: #fff;
+      color: #fff !important;
       background: transparent;
       text-decoration: none; }
       .ghost-button-red a:hover span {
-        color: #fff; }
+        color: #fff !important; }
 
 .ghost-button-blue-notfilled {
-  text-decoration: none;
+  text-decoration: none !important;
   background: transparent;
-  color: #00a1b4;
+  color: #00a1b4 !important;
   padding: 10px 21px;
   border: 2px solid;
   margin: 5px 5px 5px 0;
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-blue-notfilled span {
-    color: #00a1b4; }
+    color: #00a1b4 !important; }
   .ghost-button-blue-notfilled:hover {
     border-color: #00a1b4;
-    color: #fff;
+    color: #fff !important;
     background: #00a1b4; }
     .ghost-button-blue-notfilled:hover span {
-      color: #fff; }
+      color: #fff !important; }
   .ghost-button-blue-notfilled a {
-    text-decoration: none;
+    text-decoration: none !important;
     background: transparent;
-    color: #00a1b4;
+    color: #00a1b4 !important;
     padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-blue-notfilled a span {
-      color: #00a1b4; }
+      color: #00a1b4 !important; }
     .ghost-button-blue-notfilled a:hover {
       border-color: #00a1b4;
-      color: #fff;
+      color: #fff !important;
       background: #00a1b4; }
       .ghost-button-blue-notfilled a:hover span {
-        color: #fff; }
+        color: #fff !important; }
 
 .ghost-button-green-notfilled {
-  text-decoration: none;
+  text-decoration: none !important;
   background: transparent;
-  color: #b6c628;
+  color: #b6c628 !important;
   padding: 10px 21px;
   border: 2px solid;
   margin: 5px 5px 5px 0;
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-green-notfilled span {
-    color: #b6c628; }
+    color: #b6c628 !important; }
   .ghost-button-green-notfilled:hover {
     border-color: #b6c628;
-    color: #fff;
+    color: #fff !important;
     background: #b6c628; }
     .ghost-button-green-notfilled:hover span {
-      color: #fff; }
+      color: #fff !important; }
   .ghost-button-green-notfilled a {
-    text-decoration: none;
+    text-decoration: none !important;
     background: transparent;
-    color: #b6c628;
+    color: #b6c628 !important;
     padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-green-notfilled a span {
-      color: #b6c628; }
+      color: #b6c628 !important; }
     .ghost-button-green-notfilled a:hover {
       border-color: #b6c628;
-      color: #fff;
+      color: #fff !important;
       background: #b6c628; }
       .ghost-button-green-notfilled a:hover span {
-        color: #fff; }
+        color: #fff !important; }
 
 .ghost-button-yellow-notfilled {
-  text-decoration: none;
+  text-decoration: none !important;
   background: transparent;
-  color: #f2b029;
+  color: #f2b029 !important;
   padding: 10px 21px;
   border: 2px solid;
   margin: 5px 5px 5px 0;
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-yellow-notfilled span {
-    color: #f2b029; }
+    color: #f2b029 !important; }
   .ghost-button-yellow-notfilled:hover {
     border-color: #f2b029;
-    color: #fff;
+    color: #fff !important;
     background: #f2b029; }
     .ghost-button-yellow-notfilled:hover span {
-      color: #fff; }
+      color: #fff !important; }
   .ghost-button-yellow-notfilled a {
-    text-decoration: none;
+    text-decoration: none !important;
     background: transparent;
-    color: #f2b029;
+    color: #f2b029 !important;
     padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-yellow-notfilled a span {
-      color: #f2b029; }
+      color: #f2b029 !important; }
     .ghost-button-yellow-notfilled a:hover {
       border-color: #f2b029;
-      color: #fff;
+      color: #fff !important;
       background: #f2b029; }
       .ghost-button-yellow-notfilled a:hover span {
-        color: #fff; }
+        color: #fff !important; }
 
 .ghost-button-red-notfilled {
-  text-decoration: none;
+  text-decoration: none !important;
   background: transparent;
-  color: #c05240;
+  color: #c05240 !important;
   padding: 10px 21px;
   border: 2px solid;
   margin: 5px 5px 5px 0;
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-red-notfilled span {
-    color: #c05240; }
+    color: #c05240 !important; }
   .ghost-button-red-notfilled:hover {
     border-color: #c05240;
-    color: #fff;
+    color: #fff !important;
     background: #c05240; }
     .ghost-button-red-notfilled:hover span {
-      color: #fff; }
+      color: #fff !important; }
   .ghost-button-red-notfilled a {
-    text-decoration: none;
+    text-decoration: none !important;
     background: transparent;
-    color: #c05240;
+    color: #c05240 !important;
     padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-red-notfilled a span {
-      color: #c05240; }
+      color: #c05240 !important; }
     .ghost-button-red-notfilled a:hover {
       border-color: #c05240;
-      color: #fff;
+      color: #fff !important;
       background: #c05240; }
       .ghost-button-red-notfilled a:hover span {
-        color: #fff; }
+        color: #fff !important; }
 
 h1 {
   font-family: "Univia Pro Regular" !important; }
@@ -358,22 +358,22 @@ h2, h3, h4 {
   .bountiful--sidebar #prisjakt img {
     display: none; }
   .bountiful--sidebar #prisjakt a {
-    text-decoration: none;
+    text-decoration: none !important;
     background: transparent;
-    color: #c05240;
+    color: #c05240 !important;
     padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .bountiful--sidebar #prisjakt a span {
-      color: #c05240; }
+      color: #c05240 !important; }
     .bountiful--sidebar #prisjakt a:hover {
       border-color: #c05240;
-      color: #fff;
+      color: #fff !important;
       background: #c05240; }
       .bountiful--sidebar #prisjakt a:hover span {
-        color: #fff; }
+        color: #fff !important; }
 
 .tws-list--type-grid, .slick-track {
   margin: 0 -15px 0 0; }
