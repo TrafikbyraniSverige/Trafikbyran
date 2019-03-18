@@ -55,9 +55,9 @@ $regular: 'Univia Pro Regular'!important;
 @mixin ghost-button-notfilled($color, $second-color) {
 	text-decoration: none;
 	background: transparent;
-	color: $second-color;
+	color: $color;
 	span {
-		color: $second-color;
+		color: $color;
 	}
 	padding: 10px 21px;
     border: 2px solid;
@@ -65,12 +65,12 @@ $regular: 'Univia Pro Regular'!important;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s;
 	&:hover {
-		border-color: $second-color;
-		color: $color;
+		border-color: $color;
+		color: $second-color;
 		span {
-			color: $color;
+			color: $second-color;
 		}
-		background: $second-color;
+		background: $color;
 	}
 }
 .ghost-button-blue{

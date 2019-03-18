@@ -150,142 +150,142 @@
 .ghost-button-blue-notfilled {
   text-decoration: none;
   background: transparent;
-  color: #fff;
+  color: #00a1b4;
   padding: 10px 21px;
   border: 2px solid;
   margin: 5px 5px 5px 0;
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-blue-notfilled span {
-    color: #fff; }
+    color: #00a1b4; }
   .ghost-button-blue-notfilled:hover {
-    border-color: #fff;
-    color: #00a1b4;
-    background: #fff; }
+    border-color: #00a1b4;
+    color: #fff;
+    background: #00a1b4; }
     .ghost-button-blue-notfilled:hover span {
-      color: #00a1b4; }
+      color: #fff; }
   .ghost-button-blue-notfilled a {
     text-decoration: none;
     background: transparent;
-    color: #fff;
+    color: #00a1b4;
     padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-blue-notfilled a span {
-      color: #fff; }
+      color: #00a1b4; }
     .ghost-button-blue-notfilled a:hover {
-      border-color: #fff;
-      color: #00a1b4;
-      background: #fff; }
+      border-color: #00a1b4;
+      color: #fff;
+      background: #00a1b4; }
       .ghost-button-blue-notfilled a:hover span {
-        color: #00a1b4; }
+        color: #fff; }
 
 .ghost-button-green-notfilled {
   text-decoration: none;
   background: transparent;
-  color: #fff;
+  color: #b6c628;
   padding: 10px 21px;
   border: 2px solid;
   margin: 5px 5px 5px 0;
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-green-notfilled span {
-    color: #fff; }
+    color: #b6c628; }
   .ghost-button-green-notfilled:hover {
-    border-color: #fff;
-    color: #b6c628;
-    background: #fff; }
+    border-color: #b6c628;
+    color: #fff;
+    background: #b6c628; }
     .ghost-button-green-notfilled:hover span {
-      color: #b6c628; }
+      color: #fff; }
   .ghost-button-green-notfilled a {
     text-decoration: none;
     background: transparent;
-    color: #fff;
+    color: #b6c628;
     padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-green-notfilled a span {
-      color: #fff; }
+      color: #b6c628; }
     .ghost-button-green-notfilled a:hover {
-      border-color: #fff;
-      color: #b6c628;
-      background: #fff; }
+      border-color: #b6c628;
+      color: #fff;
+      background: #b6c628; }
       .ghost-button-green-notfilled a:hover span {
-        color: #b6c628; }
+        color: #fff; }
 
 .ghost-button-yellow-notfilled {
   text-decoration: none;
   background: transparent;
-  color: #fff;
+  color: #f2b029;
   padding: 10px 21px;
   border: 2px solid;
   margin: 5px 5px 5px 0;
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-yellow-notfilled span {
-    color: #fff; }
+    color: #f2b029; }
   .ghost-button-yellow-notfilled:hover {
-    border-color: #fff;
-    color: #f2b029;
-    background: #fff; }
+    border-color: #f2b029;
+    color: #fff;
+    background: #f2b029; }
     .ghost-button-yellow-notfilled:hover span {
-      color: #f2b029; }
+      color: #fff; }
   .ghost-button-yellow-notfilled a {
     text-decoration: none;
     background: transparent;
-    color: #fff;
+    color: #f2b029;
     padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-yellow-notfilled a span {
-      color: #fff; }
+      color: #f2b029; }
     .ghost-button-yellow-notfilled a:hover {
-      border-color: #fff;
-      color: #f2b029;
-      background: #fff; }
+      border-color: #f2b029;
+      color: #fff;
+      background: #f2b029; }
       .ghost-button-yellow-notfilled a:hover span {
-        color: #f2b029; }
+        color: #fff; }
 
 .ghost-button-red-notfilled {
   text-decoration: none;
   background: transparent;
-  color: #fff;
+  color: #c05240;
   padding: 10px 21px;
   border: 2px solid;
   margin: 5px 5px 5px 0;
   display: inline-block;
   transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
   .ghost-button-red-notfilled span {
-    color: #fff; }
+    color: #c05240; }
   .ghost-button-red-notfilled:hover {
-    border-color: #fff;
-    color: #c05240;
-    background: #fff; }
+    border-color: #c05240;
+    color: #fff;
+    background: #c05240; }
     .ghost-button-red-notfilled:hover span {
-      color: #c05240; }
+      color: #fff; }
   .ghost-button-red-notfilled a {
     text-decoration: none;
     background: transparent;
-    color: #fff;
+    color: #c05240;
     padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .ghost-button-red-notfilled a span {
-      color: #fff; }
+      color: #c05240; }
     .ghost-button-red-notfilled a:hover {
-      border-color: #fff;
-      color: #c05240;
-      background: #fff; }
+      border-color: #c05240;
+      color: #fff;
+      background: #c05240; }
       .ghost-button-red-notfilled a:hover span {
-        color: #c05240; }
+        color: #fff; }
 
 h1 {
   font-family: "Univia Pro Regular" !important; }
@@ -360,20 +360,20 @@ h2, h3, h4 {
   .bountiful--sidebar #prisjakt a {
     text-decoration: none;
     background: transparent;
-    color: #fff;
+    color: #c05240;
     padding: 10px 21px;
     border: 2px solid;
     margin: 5px 5px 5px 0;
     display: inline-block;
     transition: color 0.4s, background-color 0.4s, border-color 0.4s; }
     .bountiful--sidebar #prisjakt a span {
-      color: #fff; }
+      color: #c05240; }
     .bountiful--sidebar #prisjakt a:hover {
-      border-color: #fff;
-      color: #c05240;
-      background: #fff; }
+      border-color: #c05240;
+      color: #fff;
+      background: #c05240; }
       .bountiful--sidebar #prisjakt a:hover span {
-        color: #c05240; }
+        color: #fff; }
 
 .tws-list--type-grid, .slick-track {
   margin: 0 -15px 0 0; }
