@@ -457,6 +457,12 @@ h2, h3, h4 {
 			}
 		}
 	}
+	.tws-article-stock-shipping--wrapper {
+		span {
+			color: $green;
+			font-weight: 600;
+		}
+	}
 	.tws-article-price {
 		.twsPriceCurrent {
 			color: $green;
