@@ -539,6 +539,9 @@ h2, h3, h4 {
 #mfPreviewBar {
   display: none !important; }
 
+.tws-article-buy-button-with-modal--cart-messages {
+  display: none !important; }
+
 .service-banner {
   background: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/Grupp-wide.jpg);
   background-position: center;
