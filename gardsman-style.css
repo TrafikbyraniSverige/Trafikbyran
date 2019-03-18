@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .ghost-button-blue {
   text-decoration: none !important;
+  font-family: "Univia Pro Regular" !important;
   background: #00a1b4 !important;
   color: #fff !important;
   border-color: #00a1b4 !important;
@@ -18,6 +19,7 @@
       color: #00a1b4 !important; }
   .ghost-button-blue a {
     text-decoration: none !important;
+    font-family: "Univia Pro Regular" !important;
     background: #00a1b4 !important;
     color: #fff !important;
     border-color: #00a1b4 !important;
@@ -36,6 +38,7 @@
 
 .ghost-button-green {
   text-decoration: none !important;
+  font-family: "Univia Pro Regular" !important;
   background: #b6c628 !important;
   color: #fff !important;
   border-color: #b6c628 !important;
@@ -53,6 +56,7 @@
       color: #b6c628 !important; }
   .ghost-button-green a {
     text-decoration: none !important;
+    font-family: "Univia Pro Regular" !important;
     background: #b6c628 !important;
     color: #fff !important;
     border-color: #b6c628 !important;
@@ -71,6 +75,7 @@
 
 .ghost-button-yellow {
   text-decoration: none !important;
+  font-family: "Univia Pro Regular" !important;
   background: #f2b029 !important;
   color: #fff !important;
   border-color: #f2b029 !important;
@@ -88,6 +93,7 @@
       color: #f2b029 !important; }
   .ghost-button-yellow a {
     text-decoration: none !important;
+    font-family: "Univia Pro Regular" !important;
     background: #f2b029 !important;
     color: #fff !important;
     border-color: #f2b029 !important;
@@ -106,6 +112,7 @@
 
 .ghost-button-red {
   text-decoration: none !important;
+  font-family: "Univia Pro Regular" !important;
   background: #c05240 !important;
   color: #fff !important;
   border-color: #c05240 !important;
@@ -123,6 +130,7 @@
       color: #c05240 !important; }
   .ghost-button-red a {
     text-decoration: none !important;
+    font-family: "Univia Pro Regular" !important;
     background: #c05240 !important;
     color: #fff !important;
     border-color: #c05240 !important;
@@ -141,6 +149,7 @@
 
 .ghost-button-blue-notfilled {
   text-decoration: none !important;
+  font-family: "Univia Pro Regular" !important;
   background: transparent;
   color: #00a1b4 !important;
   padding: 10px 21px;
@@ -158,6 +167,7 @@
       color: #fff !important; }
   .ghost-button-blue-notfilled a {
     text-decoration: none !important;
+    font-family: "Univia Pro Regular" !important;
     background: transparent;
     color: #00a1b4 !important;
     padding: 10px 21px;
@@ -176,6 +186,7 @@
 
 .ghost-button-green-notfilled {
   text-decoration: none !important;
+  font-family: "Univia Pro Regular" !important;
   background: transparent;
   color: #b6c628 !important;
   padding: 10px 21px;
@@ -193,6 +204,7 @@
       color: #fff !important; }
   .ghost-button-green-notfilled a {
     text-decoration: none !important;
+    font-family: "Univia Pro Regular" !important;
     background: transparent;
     color: #b6c628 !important;
     padding: 10px 21px;
@@ -211,6 +223,7 @@
 
 .ghost-button-yellow-notfilled {
   text-decoration: none !important;
+  font-family: "Univia Pro Regular" !important;
   background: transparent;
   color: #f2b029 !important;
   padding: 10px 21px;
@@ -228,6 +241,7 @@
       color: #fff !important; }
   .ghost-button-yellow-notfilled a {
     text-decoration: none !important;
+    font-family: "Univia Pro Regular" !important;
     background: transparent;
     color: #f2b029 !important;
     padding: 10px 21px;
@@ -246,6 +260,7 @@
 
 .ghost-button-red-notfilled {
   text-decoration: none !important;
+  font-family: "Univia Pro Regular" !important;
   background: transparent;
   color: #c05240 !important;
   padding: 10px 21px;
@@ -263,6 +278,7 @@
       color: #fff !important; }
   .ghost-button-red-notfilled a {
     text-decoration: none !important;
+    font-family: "Univia Pro Regular" !important;
     background: transparent;
     color: #c05240 !important;
     padding: 10px 21px;
@@ -351,6 +367,7 @@ h2, h3, h4 {
     display: none; }
   .bountiful--sidebar #prisjakt a {
     text-decoration: none !important;
+    font-family: "Univia Pro Regular" !important;
     background: transparent;
     color: #c05240 !important;
     padding: 10px 21px;

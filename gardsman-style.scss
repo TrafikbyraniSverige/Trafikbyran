@@ -32,6 +32,7 @@ $regular: 'Univia Pro Regular'!important;
 
 @mixin ghost-button-filled($color, $second-color) {
 	text-decoration: none !important;
+	font-family: $regular;
 	background:  $color !important;
 	color: $second-color  !important;
 	span {
@@ -53,6 +54,7 @@ $regular: 'Univia Pro Regular'!important;
 }
 @mixin ghost-button-notfilled($color, $second-color) {
 	text-decoration: none !important;
+	font-family: $regular;
 	background: transparent;
 	color: $color  !important;
 	span {
