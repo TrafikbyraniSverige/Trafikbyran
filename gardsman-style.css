@@ -425,11 +425,15 @@ h2, h3, h4 {
   @media screen and (min-width: 567px) {
     .tws-list--type-grid .tws-list--grid-item .thumbnail {
       margin: 25px; } }
-  .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-articlegroup-list--article-name .tws-util-heading--heading a:before {
-    display: block;
-    content: 'Kategori: ';
-    font-size: 0.8rem;
-    opacity: 0.5; }
+  .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-articlegroup-list--article-name {
+    margin-right: 0; }
+    .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-articlegroup-list--article-name .tws-util-heading--heading {
+      text-align: left; }
+      .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-articlegroup-list--article-name .tws-util-heading--heading a:before {
+        display: block;
+        content: 'Kategori: ';
+        font-size: 0.8rem;
+        opacity: 0.5; }
   .tws-list--type-grid .tws-list--grid-item .thumbnail .tws-article-list--grid-item-link {
     margin: 15px 0 85px 0; }
     @media screen and (min-width: 567px) {
@@ -454,6 +458,10 @@ h2, h3, h4 {
     background: rgba(0, 0, 0, 0.08); } }
 .tws-list--type-grid .tws-list--grid-item:hover:after {
   background: rgba(0, 0, 0, 0.1); }
+
+.tws-articlegroups .tws-list--type-grid .thumbnail .caption {
+  justify-content: flex-start;
+  text-align: left; }
 
 .tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item:after {
   background: transparent !important; }

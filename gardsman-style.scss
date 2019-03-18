@@ -121,7 +121,6 @@ $regular: 'Univia Pro Regular'!important;
 		@include ghost-button-notfilled($red,$white);
 	}
 }
-
 h1{
 	font-family: $regular;
 }
@@ -320,7 +319,9 @@ h2, h3, h4 {
 				margin: 25px;
 			}
 			.tws-articlegroup-list--article-name {
+				margin-right: 0;
 				.tws-util-heading--heading {
+					text-align: left;
 					a:before {
 						display: block;
 						content: 'Kategori: ';
@@ -368,6 +369,16 @@ h2, h3, h4 {
 		&:hover{
 			&:after {
 				background: rgba(0,0,0,0.10);
+			}
+		}
+	}
+}
+.tws-articlegroups {
+	.tws-list--type-grid {
+		.thumbnail {
+			.caption {
+				justify-content: flex-start;
+				text-align: left;
 			}
 		}
 	}
