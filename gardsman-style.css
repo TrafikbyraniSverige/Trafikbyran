@@ -386,7 +386,7 @@ h2, h3, h4 {
       background: #c05240 !important; }
       .bountiful--sidebar #prisjakt a:hover span {
         color: #fff !important; }
-@media screen and (max-width: 766px) {
+@media screen and (min-width: 767px) {
   .bountiful--sidebar .tws-container--tws-custom-html:after {
     content: '';
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
