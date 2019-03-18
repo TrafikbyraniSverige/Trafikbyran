@@ -225,7 +225,11 @@ h2, h3, h4 {
 			}
 		}
 	}
+	.prisjaktlogo {
+		text-align: center;
+	}
 	#prisjakt {
+		text-align: center;
 		font-size: 16px;
    		font-family: $bold;
    		img {
@@ -233,6 +237,15 @@ h2, h3, h4 {
    		}
    		a{
    			@include ghost-button-notfilled($red,$white);
+   		}
+   		
+	}
+	.tws-container--tws-custom-html {
+		&:after {
+   			content: '';
+   			border-bottom: 1px solid rgba(0,0,0,0.1);
+   			display: block;
+   			margin: 20px;
    		}
 	}
 }

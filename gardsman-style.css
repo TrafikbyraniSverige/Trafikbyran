@@ -360,7 +360,10 @@ h2, h3, h4 {
     background-color: #efefef; }
   .bountiful--sidebar .bountiful--sidebar-wrapper .slot--sidebar .tws-vertical-menu-light .tws-vertical-menu-light--articlegroup-wrapper a {
     background-color: #efefef; }
+.bountiful--sidebar .prisjaktlogo {
+  text-align: center; }
 .bountiful--sidebar #prisjakt {
+  text-align: center;
   font-size: 16px;
   font-family: "Univia Pro Bold" !important; }
   .bountiful--sidebar #prisjakt img {
@@ -383,6 +386,11 @@ h2, h3, h4 {
       background: #c05240 !important; }
       .bountiful--sidebar #prisjakt a:hover span {
         color: #fff !important; }
+.bountiful--sidebar .tws-container--tws-custom-html:after {
+  content: '';
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 20px; }
 
 .tws-list--type-grid, .slick-track {
   margin: 0 -15px 0 0; }
