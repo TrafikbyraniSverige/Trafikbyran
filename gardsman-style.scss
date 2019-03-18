@@ -227,6 +227,9 @@ h2, h3, h4 {
 	#prisjakt {
 		font-size: 16px;
    		font-family: $bold;
+   		img {
+   			display: none;
+   		}
    		a{
    			@include ghost-button-notfilled($red,$white);
    		}

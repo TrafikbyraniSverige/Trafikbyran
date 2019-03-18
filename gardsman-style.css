@@ -355,6 +355,8 @@ h2, h3, h4 {
 .bountiful--sidebar #prisjakt {
   font-size: 16px;
   font-family: "Univia Pro Bold" !important; }
+  .bountiful--sidebar #prisjakt img {
+    display: none; }
   .bountiful--sidebar #prisjakt a {
     text-decoration: none;
     background: transparent;
