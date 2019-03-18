@@ -241,12 +241,14 @@ h2, h3, h4 {
    		
 	}
 	.tws-container--tws-custom-html {
-		&:after {
-   			content: '';
-   			border-bottom: 1px solid rgba(0,0,0,0.1);
-   			display: block;
-   			margin: 20px;
-   		}
+		@media screen and (max-width: $max-pad) {
+			&:after {
+	   			content: '';
+	   			border-bottom: 1px solid rgba(0,0,0,0.1);
+	   			display: block;
+	   			margin: 30px 40px -30px  40px
+	   		}
+		}
 	}
 }
 .tws-list--type-grid, .slick-track{

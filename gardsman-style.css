@@ -386,11 +386,12 @@ h2, h3, h4 {
       background: #c05240 !important; }
       .bountiful--sidebar #prisjakt a:hover span {
         color: #fff !important; }
-.bountiful--sidebar .tws-container--tws-custom-html:after {
-  content: '';
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 20px; }
+@media screen and (max-width: 766px) {
+  .bountiful--sidebar .tws-container--tws-custom-html:after {
+    content: '';
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 30px 40px -30px 40px; } }
 
 .tws-list--type-grid, .slick-track {
   margin: 0 -15px 0 0; }
