@@ -357,24 +357,24 @@ h2, h3, h4 {
 				}
 			}
 			.tws-article-list--grid-item-link{
-				margin: 15px 0 85px 0;
-				@media screen and (min-width: $min-mob) {
-					margin: 35px 0 75px 0;
-				}
+				// margin: 15px 0 85px 0;
+				// @media screen and (min-width: $min-mob) {
+				// 	margin: 35px 0 75px 0;
+				// }
 			}
 			.caption {
 				.tws-article-list--price {
-					position: absolute;
-					bottom: 30px;
-					left: 0;
+					// position: absolute;
+					// bottom: 30px;
+					// left: 0;
 				}
 				.tws-article-list--delivery-info{
-					position: absolute;
-					bottom: 0px;
-					height: 30px;
-					right: 0;
-					width: 100%;
-					font-size: 0.8rem;
+					// position: absolute;
+					// bottom: 0px;
+					// height: 30px;
+					// right: 0;
+					// width: 100%;
+					// font-size: 0.8rem;
 				}
 			}
 		}
