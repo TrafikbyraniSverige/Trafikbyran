@@ -524,9 +524,10 @@ h2, h3, h4 {
       position: static; }
     .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-container-closed {
       max-height: 2px; }
-      .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-container-closed > div {
+      .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-container-closed .tws-article-filter--filter-content, .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-container-closed .filter-select-wrapper {
+        transition: background-color .3s;
         background-color: #ccc; }
-        .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-container-closed > div button.active:before {
+        .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-container-closed .tws-article-filter--filter-content button.active:before, .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-container-closed .filter-select-wrapper button.active:before {
           position: absolute;
           content: '';
           top: 0px;
