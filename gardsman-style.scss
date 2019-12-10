@@ -450,53 +450,55 @@ h2, h3, h4 {
 		}
 	}
 }
-.tws-article-filter {
-	.tws-article-filter--filter-control-container{
-		background-color: #efefef;
-		padding: 25px;
-		&:before {
-			content: 'filter';
-			display: block;
-			width: 100%;
-			margin-bottom: 10px;
-			text-align: center;
-			font-weight: 600;
-			text-transform: uppercase;
-			font-size: 1.2em;
-		}
-		.tws-article-filter--dropdown {
-			.filter-select-name {
-				background-color: #efefef;
+@media screen and (max-width: 1100px) {
+	.tws-article-filter {
+		.tws-article-filter--filter-control-container{
+			background-color: #efefef;
+			padding: 25px;
+			&:before {
+				content: 'filter';
+				display: block;
+				width: 100%;
+				margin-bottom: 10px;
+				text-align: center;
+				font-weight: 600;
+				text-transform: uppercase;
+				font-size: 1.2em;
 			}
-			&:hover {
+			.tws-article-filter--dropdown {
 				.filter-select-name {
-					background-color: #ccc;
+					background-color: #efefef;
 				}
-			}
-			.filter-select-wrapper {
-				position: static;
-			}
-			.filter-select-container-closed {
-				max-height: 2px;
-				>div{
-					background-color: #ccc;
-						button.active:before {
-						position: absolute;
-						content: '';
-						top: 0px;
-						left: 0;
-						height: 2px;
-						width: 100%;
-						background: #bad555;
+				&:hover {
+					.filter-select-name {
+						background-color: #ccc;
 					}
 				}
+				.filter-select-wrapper {
+					position: static;
+				}
+				.filter-select-container-closed {
+					max-height: 2px;
+					>div{
+						background-color: #ccc;
+							button.active:before {
+							position: absolute;
+							content: '';
+							top: 0px;
+							left: 0;
+							height: 2px;
+							width: 100%;
+							background: #bad555;
+						}
+					}
+				}
+				.filter-select-container-open {
+					box-shadow: 3px 3px 8px rgba(0,0,0,0.25) !important;
+				}
+				
 			}
-			.filter-select-container-open {
-				box-shadow: 3px 3px 8px rgba(0,0,0,0.25) !important;
-			}
-			
+		
 		}
-	
 	}
 }
 .bountiful--article {
