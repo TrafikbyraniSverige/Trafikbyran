@@ -515,12 +515,24 @@ h2, h3, h4 {
     padding: 25px;
     font-size: 1.2em; }
   .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-name {
-    background-color: #efefef;
-    border-bottom: 2px solid #ccc; }
+    background-color: #efefef; }
   .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown:hover .filter-select-name {
     background-color: #ccc; }
-  .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-container-open {
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25) !important; }
+  .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-wrapper {
+    position: static; }
+    .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-wrapper .filter-select-container-closed {
+      background-color: #ccc;
+      max-height: 2px; }
+      .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-wrapper .filter-select-container-closed button.active:before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: #bad555; }
+    .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-wrapper .filter-select-container-open {
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25) !important; }
 
 .bountiful--article .bountiful--article-left-col .bountiful--article-images {
   overflow: hidden; }
