@@ -504,15 +504,16 @@ h2, h3, h4 {
   background: rgba(0, 0, 0, 0.1); }
 
 .tws-article-filter .tws-article-filter--filter-control-container {
-  background-color: #efefef; }
+  background-color: #efefef;
+  padding: 25px; }
   .tws-article-filter .tws-article-filter--filter-control-container:before {
     content: 'filter';
     display: block;
     width: 100%;
+    margin-bottom: 10px;
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 25px;
     font-size: 1.2em; }
   .tws-article-filter .tws-article-filter--filter-control-container .tws-article-filter--dropdown .filter-select-name {
     background-color: #efefef; }
