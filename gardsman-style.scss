@@ -474,22 +474,22 @@ h2, h3, h4 {
 			}
 			.filter-select-wrapper {
 				position: static;
-				.filter-select-container-closed {
-					background-color: #ccc;
-					max-height: 2px;
-					button.active:before {
-						position: absolute;
-						content: '';
-						top: 0px;
-						left: 0;
-						height: 2px;
-						width: 100%;
-						background: #bad555;
-					}
+			}
+			.filter-select-container-closed {
+				background-color: #ccc;
+				max-height: 2px;
+				button.active:before {
+					position: absolute;
+					content: '';
+					top: 0px;
+					left: 0;
+					height: 2px;
+					width: 100%;
+					background: #bad555;
 				}
-				.filter-select-container-open {
-					box-shadow: 3px 3px 8px rgba(0,0,0,0.25) !important;
-				}
+			}
+			.filter-select-container-open {
+				box-shadow: 3px 3px 8px rgba(0,0,0,0.25) !important;
 			}
 			
 		}
