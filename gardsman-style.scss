@@ -476,16 +476,18 @@ h2, h3, h4 {
 				position: static;
 			}
 			.filter-select-container-closed {
-				background-color: #ccc;
 				max-height: 2px;
-				button.active:before {
-					position: absolute;
-					content: '';
-					top: 0px;
-					left: 0;
-					height: 2px;
-					width: 100%;
-					background: #bad555;
+				.tws-article-filter--filter-content{
+					background-color: #ccc;
+						button.active:before {
+						position: absolute;
+						content: '';
+						top: 0px;
+						left: 0;
+						height: 2px;
+						width: 100%;
+						background: #bad555;
+					}
 				}
 			}
 			.filter-select-container-open {
