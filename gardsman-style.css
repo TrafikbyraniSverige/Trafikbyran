@@ -503,7 +503,7 @@ h2, h3, h4 {
 .slick-track .tws-list--grid-item .slick-slide:hover:after {
   background: rgba(0, 0, 0, 0.1); }
 
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .tws-article-filter .tws-article-filter--filter-control-container {
     background-color: #efefef;
     padding: 25px; }
