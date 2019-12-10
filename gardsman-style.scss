@@ -478,7 +478,7 @@ h2, h3, h4 {
 			}
 			.filter-select-container-closed {
 				max-height: 2px;
-				.tws-article-filter--filter-content{
+				>div{
 					background-color: #ccc;
 						button.active:before {
 						position: absolute;
