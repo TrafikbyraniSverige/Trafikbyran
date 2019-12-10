@@ -503,6 +503,11 @@ h2, h3, h4 {
 .slick-track .tws-list--grid-item .slick-slide:hover:after {
   background: rgba(0, 0, 0, 0.1); }
 
+.tws-article-filter .tws-article-filter--filter-control-container {
+  background-color: #efefef; }
+  .tws-article-filter .tws-article-filter--filter-control-container .filter-select-name {
+    background-color: #efefef; }
+
 .bountiful--article .bountiful--article-left-col .bountiful--article-images {
   overflow: hidden; }
   .bountiful--article .bountiful--article-left-col .bountiful--article-images .slot--article-labels {
