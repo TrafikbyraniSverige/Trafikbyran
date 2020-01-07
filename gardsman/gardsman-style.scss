@@ -1,0 +1,1017 @@
+@charset "utf-8";
+$green: #b6c628;
+$yellow: #f2b029;
+$red: #c05240;
+$blue: #00a1b4;
+$lightgreen: #add147;
+$lightblue: #47bffa;
+$lightyellow: #f5b83a;
+$lightgray: #f4f4f4;
+$white: #fff;
+$black: #111;
+$season: #b6c628;
+
+
+$min-mob: 567px;
+$min-pad: 767px;
+$min-lap: 992px;
+
+$max-mob: 566px;
+$max-pad: 766px;
+$max-lap: 991px;
+
+
+// font-family: 'Univia Pro Regular'
+// font-family: 'Univia Pro Medium'
+// font-family: 'Univia Pro UltraLight'
+// font-family: 'Univia Pro Bold' 
+
+$light: 'Univia Pro UltraLight'!important;
+$bold: 'Univia Pro Bold' !important;
+$regular: 'Univia Pro Regular'!important;
+
+@mixin ghost-button-filled($color, $second-color) {
+	text-decoration: none !important;
+	font-family: $regular;
+	background:  $color !important;
+	color: $second-color  !important;
+	span {
+		color: $second-color  !important;
+	}
+	border-color: $color !important;
+	padding: 10px 21px;
+    border: 2px solid;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+	&:hover {
+		color: $color  !important;
+		span {
+			color: $color  !important;
+		}
+		background: transparent !important;
+	}
+}
+@mixin ghost-button-notfilled($color, $second-color) {
+	text-decoration: none !important;
+	font-family: $regular;
+	background: transparent;
+	color: $color  !important;
+	span {
+		color: $color  !important;
+	}
+	padding: 10px 21px;
+    border: 2px solid $color !important;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+	&:hover {
+		border-color: $color !important;
+		color: $second-color  !important;
+		span {
+			color: $second-color  !important;
+		}
+		background: $color !important;
+	}
+}
+.ghost-button-blue{
+	@include ghost-button-filled($blue,$white);
+	a {
+		@include ghost-button-filled($blue,$white);
+	}
+}
+.ghost-button-green{
+	@include ghost-button-filled($green,$white);
+	a {
+		@include ghost-button-filled($green,$white);
+	}
+}
+.ghost-button-yellow{
+	@include ghost-button-filled($yellow,$white);
+	a {
+		@include ghost-button-filled($yellow,$white);
+	}
+}
+.ghost-button-red{
+	@include ghost-button-filled($red,$white);
+	a {
+		@include ghost-button-filled($red,$white);
+	}
+}
+.ghost-button-blue-notfilled{
+	@include ghost-button-notfilled($blue,$white);
+	a {
+		@include ghost-button-notfilled($blue,$white);
+	}
+}
+.ghost-button-green-notfilled{
+	@include ghost-button-notfilled($green,$white);
+	a {
+		@include ghost-button-notfilled($green,$white);
+	}
+}
+.ghost-button-yellow-notfilled{
+	@include ghost-button-notfilled($yellow,$white);
+	a {
+		@include ghost-button-notfilled($yellow,$white);
+	}
+}
+.ghost-button-red-notfilled{
+	@include ghost-button-notfilled($red,$white);
+	a {
+		@include ghost-button-notfilled($red,$white);
+	}
+}
+h1{
+	font-family: $regular;
+}
+h2, h3, h4 {
+	font-family: $bold;
+}
+.btn {
+	border: none !important;
+	// padding: 17px 10px !important;
+}
+
+* {
+	box-shadow: none !important;
+}
+
+
+.navbar {
+	&.tws-top-menu {
+		ul.nav {
+			&:before {
+				content: 'Säsong:';
+				width: 100%;
+				display: block;
+				padding: 7px 15px;
+				border-bottom: 1px solid #ebebeb;
+				@media screen and (min-width: $min-mob) {
+					width: auto;
+					display: inline-block;
+					border-bottom: 0;
+				}
+			}
+			.dropdown-toggle {
+				font-family: $regular;
+			}
+			@media screen and (min-width: $min-mob) {
+				ul.dropdown-menu {
+					border-radius: 0;
+					background-color: $black;
+					li.tws-top-menu--sub-item {
+						// padding: 4px 1px;
+						a {
+							font-weight: 100;
+							color: $white; 
+							padding: 12px 0;
+							border-bottom: 1px solid rgba(250,250,250,0.16);
+							margin: 0px 14px;
+							&:after {
+								border-left-color: $white;
+							}
+						}
+						transition: background-color 0.2s;
+						&:hover{
+							background-color: rgba(250,250,250,0.16);
+						}
+						&.dropdown-submenu {
+
+						}
+						ul.dropdown-menu {
+							border-radius: 0;
+							background-color: $black;
+							ul.dropdown-menu {
+								border-radius: 0;
+								background-color: $black;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.bountiful--header {
+	.slot--header-shipping-notice {
+		background-color: transparent;
+		color: $white;
+	}
+}
+.bountiful--main-wrapper {
+	padding-top: 0 !important;
+	// @media screen and (min-width: $min-mob) {
+	// 	padding: 30px 15px 60px 15px !important;
+	// }
+}
+.bountiful--sidebar {
+	.bountiful--sidebar-wrapper {
+		.bountiful--sidebar-controls {
+			border-bottom: 0 !important;
+		}
+		.slot--sidebar {
+			.tws-vertical-menu-light {
+				background-color: #efefef;
+				.tws-vertical-menu-light--title{
+					background-color: #efefef;
+				}
+				.tws-vertical-menu-light--custom-link a{
+					background-color: #efefef;
+				}
+				.tws-vertical-menu-light--articlegroup-wrapper a{
+					background-color: #efefef;
+				}
+			}
+		}
+	}
+	.prisjaktlogo {
+		text-align: center;
+	}
+	#prisjakt {
+		text-align: center;
+		font-size: 16px;
+   		font-family: $bold;
+   		img {
+   			display: none;
+   		}
+   		a{
+   			@include ghost-button-notfilled($red,$white);
+   		}
+   		
+	}
+	.tws-container--tws-custom-html {
+		@media screen and (min-width: $min-pad) {
+			&:after {
+	   			content: '';
+	   			border-bottom: 1px solid rgba(0,0,0,0.1);
+	   			display: block;
+	   			margin: 30px 40px -30px  40px
+	   		}
+		}
+	}
+}
+.tws-list--type-grid, .slick-track{
+	margin: 0 -15px 0 0;
+	@media screen and (min-width: $min-mob) {
+		margin: 0 -25px 0 0;
+	}
+	@media screen and (min-width: $min-lap) {
+		margin: 0 -35px 0 0;
+	}
+	.tws-list--grid-item {
+		overflow: hidden;
+		position: relative;
+		margin: 0 !important;
+		.thumbnail{
+			box-shadow: none;
+			border: none;			
+			.tws-article-list--labels{
+				left: unset;
+				box-shadow: none;
+				transform: rotate(45deg);
+				right: -50px;
+				top: -10px;
+				@media screen and (min-width: $min-mob) {
+					right: -60px;
+					top: -25px;
+				}
+				.tws-article-labels--special-offer {
+					display: none;
+				}
+				.tws-article-labels--new {
+					margin: 0;
+					.tws-article-labels--label-text {
+						padding: 13px 40px 10px 40px;
+						background-color: $green;
+					}
+				}
+			}
+			.caption {
+				padding: 0;
+				box-shadow: none;
+				position: static;
+				.tws-util-heading {
+					@media screen and (min-width: $min-mob) {
+						margin-right: 30px;
+					}
+					.tws-util-heading--heading {
+						font-size: 1.1rem;
+					}
+				}
+				.tws-article-list--price {
+					.tws-api--price-current {
+						color: $green;
+						font-family: $regular;
+						font-size: 1.2rem;
+						letter-spacing: 0.5px;
+					}
+				}
+				.tws-article-list--buy-button{
+					.btn {
+						border-radius: 0;
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+			&:focus, &:hover{
+				outline: 0;
+				box-shadow: none !important;
+			}
+		}
+		&:after {
+			pointer-events: none;
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			z-index: 1;
+			transition: background-color 0.12s;
+		}
+	}	
+}
+.tws-list--type-grid {
+	.tws-list--grid-item {
+		.thumbnail{
+			position: relative;
+			flex-direction: column;
+			height: auto;
+			margin: 10px;
+			@media screen and (min-width: $min-mob) {
+				margin: 25px;
+			}
+			.tws-articlegroup-list--article-name {
+				margin-right: 0;
+				.tws-util-heading--heading {
+					text-align: left;
+					a:before {
+						display: block;
+						content: 'Kategori: ';
+						font-size: 0.8rem;
+						opacity: 0.5;
+					}
+				}
+			}
+			.tws-article-list--grid-item-link{
+				// margin: 15px 0 85px 0;
+				// @media screen and (min-width: $min-mob) {
+				// 	margin: 35px 0 75px 0;
+				// }
+			}
+			.caption {
+				.tws-article-list--price {
+					// position: absolute;
+					// bottom: 30px;
+					// left: 0;
+				}
+				.tws-article-list--delivery-info{
+					// position: absolute;
+					// bottom: 0px;
+					// height: 30px;
+					// right: 0;
+					// width: 100%;
+					// font-size: 0.8rem;
+				}
+			}
+		}
+		@media screen and (max-width: $max-lap) {
+			&:nth-child(4n + 2),&:nth-child(4n + 3) {
+				&:after {
+					background: rgba(0,0,0,0.08);
+				}
+			}
+		}
+		@media screen and (min-width: $min-lap) {
+			&:nth-child(8n + 2),&:nth-child(8n + 4),&:nth-child(8n + 5),&:nth-child(8n + 7) {
+				&:after {
+					background: rgba(0,0,0,0.08);
+				}
+			}
+		}
+		&:hover{
+			&:after {
+				background: rgba(0,0,0,0.10);
+			}
+		}
+	}
+}
+.tws-articlegroups {
+	.tws-list--type-grid {
+		.thumbnail {
+			.caption {
+				justify-content: flex-start;
+				text-align: left;
+			}
+		}
+	}
+}
+.tws-article-list--col-lg-3 .tws-list--type-grid .tws-list--grid-item{
+	&:after {
+		background: transparent !important;
+	}
+	&:nth-child(8n + 2),&:nth-child(8n + 4),&:nth-child(8n + 5),&:nth-child(8n + 7) {
+		&:after {
+			background: rgba(0,0,0,0.08) !important;
+		}
+	}
+	&:hover{
+		&:after {
+			background: rgba(0,0,0,0.10) !important;
+		}
+	}
+}
+.slick-track{
+	.tws-list--grid-item {
+		.slick-slide {
+
+			@media screen and (max-width: $max-lap) {
+				&:nth-child(4n + 2),&:nth-child(4n + 3) {
+					&:after {
+						background: rgba(0,0,0,0.08);
+					}
+				}
+			}
+			@media screen and (min-width: $min-lap) {
+				&:nth-child(8n + 2),&:nth-child(8n + 4),&:nth-child(8n + 5),&:nth-child(8n + 7) {
+					&:after {
+						background: rgba(0,0,0,0.08);
+					}
+				}
+			}
+			&:hover{
+				&:after {
+					background: rgba(0,0,0,0.10);
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1100px) {
+	.tws-article-filter {
+		.tws-article-filter--filter-control-container{
+			background-color: #efefef;
+			padding: 25px;
+			&:before {
+				content: 'filter';
+				display: block;
+				width: 100%;
+				margin-bottom: 10px;
+				text-align: center;
+				font-weight: 600;
+				text-transform: uppercase;
+				font-size: 1.2em;
+			}
+			.tws-article-filter--dropdown {
+				.filter-select-name {
+					background-color: #efefef;
+				}
+				&:hover {
+					.filter-select-name {
+						background-color: #ccc;
+					}
+				}
+				.filter-select-wrapper {
+					position: static;
+				}
+				.filter-select-container-closed {
+					max-height: 2px;
+					.tws-article-filter--filter-content, .filter-select-wrapper{
+						transition: background-color .3s;
+						background-color: #ccc;
+							button.active:before {
+							position: absolute;
+							content: '';
+							top: 0px;
+							left: 0;
+							height: 2px;
+							width: 100%;
+							background: #bad555;
+						}
+					}
+				}
+				.filter-select-container-open {
+					box-shadow: 3px 3px 8px rgba(0,0,0,0.25) !important;
+					z-index: 10;
+				}
+				
+			}
+		
+		}
+	}
+}
+.bountiful--article {
+	.bountiful--article-left-col {
+		.bountiful--article-images {
+			overflow: hidden;
+			.slot--article-labels {
+				box-shadow: none;
+				transform: rotate(-45deg);
+				left: -36px;
+	    		top: 3px;
+				.tws-article-labels--new {
+					margin: 0;
+					.tws-article-labels--label-text {
+						padding: 13px 40px 10px 40px;
+						background-color: $green;
+					}
+				}
+				.tws-article-labels--special-offer {
+					display: none;
+				}
+			}
+		}
+	}
+	.tws-article-stock-shipping--wrapper {
+		span {
+			color: $green;
+			font-weight: 600;
+		}
+	}
+	.tws-article-price {
+		.twsPriceCurrent {
+			color: $green;
+		}
+	}
+	.slot--article-stock-shipping {
+		.tws-article-stock-shipping--stock-info {
+			display: none;
+		}
+	}
+	.slot--article-choices {
+		.form-group {
+			width: 100%;
+		}
+	}
+}
+.tws-article-price {
+	.twsPriceRegular {
+		text-decoration: none;
+		&:before {
+			content: 'ord: ';
+		}
+	}
+}
+
+.tws-api--price-current {
+	color: $green !important;
+}
+.alert-warning {
+	color: $green !important;
+}
+.tws-article-list--delivery-info-body {
+	color: $green !important;
+}
+
+#mfPreviewBar {
+	display: none !important;
+}
+.tws-article-buy-button-with-modal--cart-messages {
+	display: none !important;
+}
+
+
+.service-banner /* Service banern och texten */{
+	background: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/Grupp-wide.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 95px 70px 95px 59%;
+
+	@media screen and (max-width: 1070px) {
+		padding: 0;
+		height: 275px;
+		background-position: initial;
+	}
+	@media screen and (max-width: 900px) {
+		background: url( https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Stora/gardsman-service-personal.jpg);
+		background-position: center top;
+		background-size: cover;
+		height: 450px;
+	}
+	@media screen and (max-width: 600px) {
+		height: 275px;
+	}
+ 	.banner-text {
+    	max-width: 65%;
+    	@media screen and (max-width: 1200px) {
+			max-width: 100%;
+		}
+		@media screen and (max-width: 1070px) {
+		    position: relative;
+		    top: 275px;
+		    background-color: #c3c3c3;
+		    padding: 25px 40px 50px 45px;
+		}
+		@media screen and (max-width: 900px) {
+			top: 450px;
+		}
+    	@media screen and (max-width: 600px) {
+			top: 275px;
+		}
+    	.service-titel {
+			font-size: 54px;
+			line-height: 56px;
+			margin-bottom: 10px;
+			color: #fff;
+			@media screen and (max-width: 1070px) {
+			    font-size: 43px;
+			    padding-top: 20px;
+			}
+			@media screen and (max-width: 450px) {
+				font-size: 33px;
+				line-height: 33px;
+			}
+		}
+		.service-ingress {
+			font-size: 18px;
+			color: #fff;
+		}
+	}
+}
+
+.service-content{
+	.service-intro /* Service introt under bannern */{
+		width: 50%;
+		margin: 80px auto;
+		text-align: center;
+		@media screen and (max-width: 1070px) {
+			width: 72%;
+			margin-top: 360px; 
+		}
+		@media screen and (max-width: 900px) {
+			width: 100%;
+		}
+		@media screen and (max-width: 750px) {
+			margin-top: 450px; 
+		}
+		@media screen and (max-width: 450px) {
+			width: 100%;
+		}
+		.service-intro-titel {
+			font-size: 35px;
+			line-height: 35px;
+		}
+		.service-intro-ingress {
+			font-size: 16px;
+			max-width: 55%;
+			margin: auto;
+			@media screen and (max-width: 900px) {
+				max-width: 71%;
+			}
+			@media screen and (max-width: 450px) {
+				max-width: 66%;
+			}
+		}
+	}
+	.service-kategorier-cont {
+		text-align: center;
+		.service-kategori {
+		    display: inline-block;
+		    margin: 25px;
+		    width: 260px;
+		&.service-kategori-inner-header /* Service kategorierna */{
+			height: 215px;
+			background-size: cover;
+			.service-kategori-inner-titel {
+				color: #fff;
+			    font-size: 22px;
+			    font-weight: 100;
+			    position: relative;
+			    font-family: $bold;
+			    text-align: left;
+			    padding: 10px 0 0 25px;
+			}
+			.service-kategori-inner-titel-liten {
+				text-align: left;
+				padding: 0 0 0 25px;
+				position: relative;
+				color: #fff;
+				font-family: $light;
+			}
+			.ghost-button {
+				// top: 70px;
+				position: relative;
+				background-color: #fff;
+				color: #00a1b4;
+				font-size: 19px;
+				font-weight: 100;
+				padding: 11px 26px;
+				border: none;
+				margin: 0;
+				left: -43px;
+				text-decoration: underline;
+			}
+		} /* Service kategorierna bilderna */
+		&#service-robot {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-robotgrasklippare.jpg);
+		}
+		&#service-handburet{
+		background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-handburet.jpg);
+		}
+		&#service-hjulburet {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-hjulburet.jpg);
+		}
+		&#service-atv {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-atv.jpg);
+		}
+		&#service-slapvagnar {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-slapvagn.jpg);
+		}
+		&#service-ovrigt {
+			background-image: url(https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/service-bilder/bg/service-ovrigt.jpg);
+		}
+			.service-kategori-inner-profile /* Presentationerna av experterna */{
+				text-align: left;
+				margin-top: 10px;
+				em {
+					background: #00a1b4;
+				    display: block;
+				    padding: 15px;
+				    font-size: 16px;
+				    color: white;
+				    font-style: normal;
+				}
+				img.service-bild {
+					width: 100%;
+					display: block;
+					padding-bottom: 12px;
+				}
+				h3 {
+					margin: 5px 0;
+					font-size: 25px;
+					font-family: $bold;
+				}
+				a {
+					font-family: $bold;
+				    color: #000;
+				    font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+/* Service Automower Undersida */
+
+.banner-automower {
+	background: url("https://shop.textalk.se/shop/ws16/50016/files/Skyltf%C3%B6nster/Sma/automoer-service-3.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.banner-undersida-text {
+	    color: #fff;
+	    padding: 140px 25% 75px 5%;
+	    .service-automower-titel {
+			font-size: 57px;
+			line-height: 56px;
+			margin-bottom: 10px;
+			color: #fff;
+			@media screen and (max-width: 500px) {
+				font-size: 40px;
+			}
+		}
+		.service-automower-ingress {
+			font-size: 18px;
+			max-width: 550px;
+		}
+	}
+}
+.service-undersida-content {
+	max-width: 1090px;
+	margin: auto;
+	@media screen and (min-width: 599px) {
+		width: 90%;
+	}
+	.service-undersida-intro /* huvudtexten */{
+		width: 68%;
+		padding-right: 30px;
+		vertical-align: top;
+		margin: 50px auto;
+		display: inline-block;
+		text-align: left;
+		@media screen and (max-width: 900px) {
+			width: 59%;
+		}
+		@media screen and (max-width: 767px) {
+			width: 90%;
+			padding-right: 0;
+			display: block;
+		}
+		.service-undersida-intro-titel {
+			font-size: 30px;
+			line-height: 31px;
+		}
+		.service-undersida-intro-ingress {
+			font-size: 16px;
+			max-width: 450px;
+		    margin-top: 15px;
+		    iframe{
+		    	width: 100%;
+				max-width: 350px;
+				margin-top: 40px;
+		    }
+		}
+	}
+	.service-undersida-kategorier-cont /* experttips */{
+	    text-align: center;
+	    width: 31%;
+	    display: inline-block;
+	    margin-top: -49px;
+	    color: #fff;
+		@media screen and (max-width: 900px) {
+			width: 40%;
+		}
+		@media screen and (max-width: 767px) {
+			width: 90%;
+			margin: auto;
+			display: block;
+		}
+	    .service-undersida-kategori {
+		    display: inline-block;
+		    width: 100%;
+		    .service-undersida-kategori-inner-header /* experttips headern */{
+			    background-color: #00a1b4;
+			    .service-undersida-kategori-inner-titel {
+				    margin: 0;
+				    text-align: left;
+				    padding: 15px 15px 15px 20px;
+				    color: #fff;
+				    font-family: $regular;
+				}
+			}
+			.service-undersida-kategori-inner-profile /* experttips innehall */{
+			    background-color: #d7d7d7;
+			    text-align: left;
+			    padding: 40px 45px;
+			    h5 /* titel */{
+			    	font-size: 16px;
+					padding-bottom: 5px;
+					margin: 0;
+				}
+				p {
+				    font-size: 14px;
+				    color: #000;
+				}
+				img {
+					margin: 10px 0;
+				}
+				em {
+					display: block;
+					color: #222;
+					font-size: 14px;
+					font-style: normal;
+				}
+				h3 /* person titel */{
+					font-family: $bold;
+					margin: 5px 0;
+				}
+				a {
+					color: #555;
+					word-break: break-all;
+					font-family: $bold;
+				}
+			}
+		}
+	}
+	.service-automower-tabeller /* Service tabellerna */{
+		text-align: center;
+		.service-automower-tabeller-h2 {
+			margin: 25px 1.5%;
+		}
+		div {
+			font-size: 0px;
+			ul {
+				overflow: hidden;
+				position: relative;
+			    display: inline-block;
+			    width: 33%;
+			    min-width: 200px;
+			    max-width: 365px;
+			    margin: -2px;
+			    padding: 35px;
+			    font-size: 16px;
+			    vertical-align: top;
+			    text-align: left;
+			    color: #fff;
+			    @media screen and (max-width: $max-pad) {
+					padding: 15px;
+				}
+			    @media screen and (min-width: 800px) {
+					// height: 1200px;
+				}
+				.service-automower-info-titel {
+				    list-style: none;
+				    background: #47bffa;
+				    font-size: 22px;
+				    color: #fff;
+				    margin: -35px -35px 20px -35px;
+				    padding: 35px 35px 25px 35px;
+					font-family: $bold;
+				}
+				.service-automower-third-titel, .service-automower-second-titel {
+				    list-style: none;
+				    margin: 45px 0 5px 0;
+				    font-family: $bold;
+				}
+				.service-automower-ingress  {
+				    list-style: none;
+				    font-family: $light;
+				}
+				.service-automower-checks /* ovrelistan */{
+					margin: 15px 10px;
+					list-style: none;
+					font-family: $light;
+					em {
+					    display: block;
+					    padding-left: 24px;
+					    font-size: 13px;
+					    color: #efefef;
+					}
+					&:before {
+						content: "\2713 ";
+						padding-right: 10px;
+						font-size: 16px;
+						color: #efefef;
+					}
+				}
+				.service-automower-info /* nedre listan */{
+					margin: 15px 10px;
+					list-style: none;
+					font-family: $light;
+					&:before {
+						content: "- ";
+						padding-right: 10px;
+						color: #efefef;
+					}
+				}
+				.service-automower-pris {
+					margin: 15px 10px 15px 0;
+					font-family: $bold;
+					font-size: 22px;
+					list-style: none;
+				}
+				
+				/* Individuella skillnader */
+				&.service-all-inclusive {
+					background: $yellow;
+					@media screen and (max-width: 800px) {
+						padding-bottom: 100px;
+					}
+					.service-automower-info-titel {
+						background: $yellow;
+					}
+					.erbjudande {
+						list-style: none;
+						position: absolute;
+						bottom: -65px;
+						right: -100px;
+						img {
+							width: 330px;
+						}
+						.push-blob {
+							width: 130px;
+							left: 0px;
+				    		top: 45px;
+						}
+					}
+				}
+				&.service-premium  {
+					background: $blue;
+					.service-automower-info-titel {
+						background: $blue;
+					}
+				}
+				&.service-originalservice {
+					background: $green;
+					.service-automower-info-titel {
+						background: $green;
+					}
+				}
+
+				&.service-onlineservice {
+					background: #999;
+					.service-automower-info-titel {
+						background: #888;
+					}
+				}
+				&.service-onlinepremium {
+					background: $red;
+					.service-automower-info-titel {
+						background: $red;
+					}
+				}
+
+				&.service-lightservice{
+					background: #bbb;
+					.service-automower-info-titel {
+						background: #aaa;
+					}
+				}
+			}
+		}
+	}
+}
+
