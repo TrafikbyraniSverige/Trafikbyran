@@ -3,6 +3,12 @@ body {
   background-color: #fff;
   font-family: urw-din, sans-serif; }
 
+.fw-button-success {
+  background-color: #527138;
+  transition: transform .3s; }
+  .fw-button-success:hover, .fw-button-success:focus {
+    transform: scale(0.95); }
+
 #Header .header-icon {
   font-size: 1.8em; }
 
@@ -26,21 +32,33 @@ body {
   #body #MainContainer {
     margin-top: 0;
     padding-top: 20px;
-    background-color: rgba(250, 250, 250, 0.79); }
+    background-color: rgba(250, 250, 250, 0.88);
+    flex-grow: 1; }
     #body #MainContainer #BreadMenu {
       margin-top: 0; }
-    #body #MainContainer .list_info h1 {
-      font-family: urw-din, sans-serif;
-      font-size: 2.9rem;
-      font-weight: 700; }
+    #body #MainContainer #Filters #BuyAllWrapper {
+      border-bottom: 0px;
+      padding: 0; }
+    #body #MainContainer #ProdListHeader {
+      padding-bottom: 35px; }
+      #body #MainContainer #ProdListHeader h1 {
+        font-family: urw-din, sans-serif;
+        font-size: 2.9rem;
+        font-weight: 700; }
+    #body #MainContainer .productContainer .description-wrapper .product-rating {
+      display: none; }
+    #body #MainContainer .productContainer .price-wrapper .label {
+      display: none; }
+    #body #MainContainer .productContainer .price-wrapper .value {
+      font-size: 1.2rem; }
   #body #Footer {
     background-color: rgba(90, 90, 90, 0.5);
     border-color: #555;
-    color: #777; }
+    color: #777;
+    padding: 50px 125px; }
     #body #Footer a {
       color: #999; }
   #body.page-Start #MainContainer {
-    flex-grow: 1;
     align-items: center;
     display: flex;
     justify-content: center;
