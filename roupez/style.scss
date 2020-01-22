@@ -21,26 +21,27 @@ body {
 		align-items: center;
 	    display: flex;
 	    justify-content: center;
-	    background-image: url('https://trafikbyranisverige.github.io/roupez/hunting-trip-by-fredrik-ohlander-low-filter.jpg');
+	    background-image: url('https://trafikbyranisverige.github.io/roupez/woods-by-france-perles.jpg');
 	    background-position: center center;
 	    background-size: cover;
 	    margin-top: 0;
 	    .list_info {
 	    	&:before {
 				content: '';
-				background-image: url('https://trafikbyranisverige.github.io/roupez/jf-logo-white.png');
+				background-image: url('https://trafikbyranisverige.github.io/roupez/jf-logo-green.png');
 				background-size: contain;
 				background-position: center center;
 				background-repeat: no-repeat;
-				width: 135px;
-				height: 155px;
+				width: 160px;
+				height: 230px;
 				display: block;
+				margin: auto;
 	    	}
 	    	h2 {
 	    		font-family: urw-din, sans-serif;
-	    		font-size: 2.3rem;
+	    		font-size: 3.5rem;
 	    		font-weight: 900;
-	    		color: #efefef;
+	    		color: $green;
 	    	}
 	    	img {
 	    		display: none;
