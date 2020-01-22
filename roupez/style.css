@@ -1,3 +1,6 @@
 body {
 	background-color: #fff;
 }
+#Header .header-icon {
+	font-size: 1.8em;
+}
