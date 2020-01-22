@@ -60,6 +60,16 @@ body {
 	    		font-weight: 700;
 			}
 		}
+		.groupview {
+			.group-link {
+				background-color: $green;
+				.group-title {
+					font-size: 1.5rem;
+					color: #fff;
+					font-family: urw-din, sans-serif;
+				}
+			}
+		}
 		.productContainer  {
 			.description-wrapper {
 				.product-rating {

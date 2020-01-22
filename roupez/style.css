@@ -45,6 +45,12 @@ body {
         font-family: urw-din, sans-serif;
         font-size: 2.9rem;
         font-weight: 700; }
+    #body #MainContainer .groupview .group-link {
+      background-color: #527138; }
+      #body #MainContainer .groupview .group-link .group-title {
+        font-size: 1.5rem;
+        color: #fff;
+        font-family: urw-din, sans-serif; }
     #body #MainContainer .productContainer .description-wrapper .product-rating {
       display: none; }
     #body #MainContainer .productContainer .price-wrapper .label {
