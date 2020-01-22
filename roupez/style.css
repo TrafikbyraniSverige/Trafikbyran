@@ -4,7 +4,7 @@ body {
   font-family: urw-din, sans-serif; }
 
 .fw-button-success {
-  background-color: #527138;
+  background-color: #527138 !important;
   transition: transform .3s; }
   .fw-button-success:hover, .fw-button-success:focus {
     transform: scale(0.95); }
