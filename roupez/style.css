@@ -1,6 +1,20 @@
 body {
-	background-color: #fff;
-}
+  background-color: #fff; }
+
 #Header .header-icon {
-	font-size: 1.8em;
-}
+  font-size: 1.8em; }
+
+#imgLogo {
+  width: 215px; }
+
+#Page {
+  min-height: 100vh; }
+
+#MainContainer {
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://trafikbyranisverige.github.io/roupez/hunting-trip-by-fredrik-ohlander.jpg"); }
+
+/*# sourceMappingURL=style.css.map */
