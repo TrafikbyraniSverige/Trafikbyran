@@ -12,24 +12,36 @@ body {
 #Page {
   min-height: 100vh; }
 
-.page-Start {
+#body {
   background-image: url("https://trafikbyranisverige.github.io/roupez/woods-by-france-perles.jpg");
   background-position: center center;
-  background-size: cover; }
-  .page-Start #Header {
+  background-size: cover;
+  background-attachment: fixed; }
+  #body #Header {
     background-color: transparent; }
-    .page-Start #Header #HeaderContainer {
+    #body #Header #HeaderContainer {
       background-color: transparent; }
-  .page-Start #MainSearch {
+  #body #MainSearch {
     background-color: transparent; }
-  .page-Start #MainContainer {
+  #body #MainContainer {
+    margin-top: 0;
+    padding-top: 20px;
+    background-color: rgba(250, 250, 250, 0.79); }
+    #body #MainContainer #BreadMenu {
+      margin-top: 0; }
+  #body #Footer {
+    background-color: rgba(90, 90, 90, 0.5);
+    border-color: #555;
+    color: #777; }
+    #body #Footer a {
+      color: #999; }
+  #body.page-Start #MainContainer {
     flex-grow: 1;
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: transparent;
-    margin-top: 0; }
-    .page-Start #MainContainer .list_info:before {
+    background-color: transparent; }
+    #body.page-Start #MainContainer .list_info:before {
       content: '';
       background-image: url("https://trafikbyranisverige.github.io/roupez/jf-logo-green.png");
       background-size: contain;
@@ -39,18 +51,12 @@ body {
       height: 230px;
       display: block;
       margin: auto; }
-    .page-Start #MainContainer .list_info h2 {
+    #body.page-Start #MainContainer .list_info h2 {
       font-family: urw-din, sans-serif;
       font-size: 3.9rem;
       font-weight: 900;
       color: #333; }
-    .page-Start #MainContainer .list_info img {
+    #body.page-Start #MainContainer .list_info img {
       display: none; }
-  .page-Start #Footer {
-    background-color: rgba(90, 90, 90, 0.5);
-    border-color: #555;
-    color: #777; }
-    .page-Start #Footer a {
-      color: #999; }
 
 /*# sourceMappingURL=style.css.map */
