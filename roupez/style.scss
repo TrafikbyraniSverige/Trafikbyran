@@ -68,11 +68,6 @@ body {
 					color: #fff;
 					font-family: urw-din, sans-serif;
 				}
-				.product-code {
-					width: 100%;
-					display: block;
-					text-align: center;
-				}
 			}
 		}
 		.productContainer  {
@@ -82,16 +77,25 @@ body {
 			}
 			.description-wrapper {
 				text-align: center;
+				.product-name {
+					font-size: 1.5rem;
+				}
 				.product-rating {
 					display: none;
 				}
+				.product-code {
+					width: 100%;
+					display: block;
+					text-align: center;
+				}
 			}
 			.price-wrapper {
+				padding: 8px 0;
 				.label {
 					display: none;
 				}
 				.value {
-					font-size: 1.2rem;
+					font-size: 1.3rem;
 				}
 			}
 		}
