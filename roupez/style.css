@@ -34,6 +34,10 @@ body {
     padding-top: 20px;
     background-color: rgba(250, 250, 250, 0.88);
     flex-grow: 1; }
+    #body #MainContainer h1 {
+      font-family: urw-din, sans-serif;
+      font-size: 2.9rem;
+      font-weight: 700; }
     #body #MainContainer #BreadMenu {
       margin-top: 0; }
     #body #MainContainer #Filters #BuyAllWrapper {
@@ -41,18 +45,24 @@ body {
       padding: 0; }
     #body #MainContainer #ProdListHeader {
       padding-bottom: 35px; }
-      #body #MainContainer #ProdListHeader h1 {
-        font-family: urw-din, sans-serif;
-        font-size: 2.9rem;
-        font-weight: 700; }
     #body #MainContainer .groupview .group-link {
       background-color: #527138; }
       #body #MainContainer .groupview .group-link .group-title {
         font-size: 1.5rem;
         color: #fff;
         font-family: urw-din, sans-serif; }
-    #body #MainContainer .productContainer .description-wrapper .product-rating {
-      display: none; }
+      #body #MainContainer .groupview .group-link .product-code {
+        width: 100%;
+        display: block;
+        text-align: center; }
+    @media screen and (min-width: 1200px) {
+      #body #MainContainer .productContainer {
+        flex-basis: 25%;
+        max-width: 25%; } }
+    #body #MainContainer .productContainer .description-wrapper {
+      text-align: center; }
+      #body #MainContainer .productContainer .description-wrapper .product-rating {
+        display: none; }
     #body #MainContainer .productContainer .price-wrapper .label {
       display: none; }
     #body #MainContainer .productContainer .price-wrapper .value {

@@ -43,6 +43,11 @@ body {
 		padding-top: 20px;
 		background-color: rgba(250,250,250,0.88);
 		flex-grow: 1;
+		h1 {
+			font-family: urw-din, sans-serif;
+    		font-size: 2.9rem;
+    		font-weight: 700;
+		}
 		#BreadMenu {
 			margin-top: 0;
 		}
@@ -54,11 +59,6 @@ body {
 		}
 		#ProdListHeader {
 			padding-bottom: 35px;
-			h1 {
-				font-family: urw-din, sans-serif;
-	    		font-size: 2.9rem;
-	    		font-weight: 700;
-			}
 		}
 		.groupview {
 			.group-link {
@@ -68,10 +68,20 @@ body {
 					color: #fff;
 					font-family: urw-din, sans-serif;
 				}
+				.product-code {
+					width: 100%;
+					display: block;
+					text-align: center;
+				}
 			}
 		}
 		.productContainer  {
+			@media screen and (min-width: 1200px) {
+				flex-basis: 25%;
+				max-width: 25%;
+			}
 			.description-wrapper {
+				text-align: center;
 				.product-rating {
 					display: none;
 				}
