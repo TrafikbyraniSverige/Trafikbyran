@@ -12,9 +12,6 @@ body {
 #Header .header-icon {
   font-size: 1.8em; }
 
-#imgLogo {
-  width: 215px; }
-
 #Page {
   min-height: 100vh; }
 
@@ -27,6 +24,10 @@ body {
     background-color: transparent; }
     #body #Header #HeaderContainer {
       background-color: transparent; }
+    #body #Header #HeaderMenuText {
+      visibility: visible;
+      opacity: 1;
+      left: 5px; }
   #body #MainSearch {
     background-color: transparent; }
   #body #MainContainer {
@@ -34,10 +35,18 @@ body {
     padding-top: 20px;
     background-color: rgba(250, 250, 250, 0.88);
     flex-grow: 1; }
+    @media screen and (min-width: 992px) {
+      #body #MainContainer {
+        height: 70px; } }
     #body #MainContainer h1 {
       font-family: urw-din, sans-serif;
       font-size: 2.9rem;
       font-weight: 700; }
+    #body #MainContainer #imgLogo {
+      width: 215px; }
+      @media screen and (min-width: 992px) {
+        #body #MainContainer #imgLogo {
+          width: 300px; } }
     #body #MainContainer #BreadMenu {
       margin-top: 0; }
     #body #MainContainer #Filters #BuyAllWrapper {
@@ -75,6 +84,8 @@ body {
       padding-top: 30px; }
     #body #MainContainer #ProductWrapper #RatingSummary {
       display: none; }
+    #body #MainContainer #ProductWrapper #InnerSlider {
+      justify-content: center; }
   #body #Footer {
     background-color: rgba(90, 90, 90, 0.5);
     border-color: #555;

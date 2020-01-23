@@ -18,9 +18,7 @@ body {
 #Header .header-icon {
 	font-size: 1.8em;
 }
-#imgLogo {
-	width: 215px;
-}
+
 #Page {
 	min-height: 100vh;
 }
@@ -34,6 +32,11 @@ body {
 		#HeaderContainer {
 			background-color: transparent;
 		}
+		#HeaderMenuText {
+			visibility: visible;
+			opacity: 1;
+			left: 5px;
+		}
 	}
 	#MainSearch {
 		background-color: transparent;
@@ -43,10 +46,19 @@ body {
 		padding-top: 20px;
 		background-color: rgba(250,250,250,0.88);
 		flex-grow: 1;
+		@media screen and (min-width: 992px) {
+			height: 70px;
+		}
 		h1 {
 			font-family: urw-din, sans-serif;
     		font-size: 2.9rem;
     		font-weight: 700;
+		}
+		#imgLogo {
+			width: 215px;
+			@media screen and (min-width: 992px) {
+				width: 300px;
+			}
 		}
 		#BreadMenu {
 			margin-top: 0;
@@ -106,6 +118,9 @@ body {
 			#RatingSummary {
 				display: none;
 			}
+			#InnerSlider {
+				justify-content: center;
+			}
 		}
 	}
 	#Footer {
@@ -141,6 +156,7 @@ body {
 		    		font-weight: 900;
 		    		color: #333;
 		    	}
+		    	// remove this when the img on front page is replaced 
 		    	img {
 		    		display: none;
 		    	}
