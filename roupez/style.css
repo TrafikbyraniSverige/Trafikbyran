@@ -26,16 +26,20 @@ body {
       background-color: transparent; }
       @media screen and (min-width: 992px) {
         #body #Header #HeaderContainer {
-          height: 70px; } }
+          height: 67px; } }
     #body #Header #HeaderMenuText {
       visibility: visible;
       opacity: 1;
       left: 5px; }
+    #body #Header #OpenCartText {
+      visibility: visible;
+      opacity: 1;
+      right: 5px; }
     #body #Header #imgLogo {
       width: 215px; }
       @media screen and (min-width: 992px) {
         #body #Header #imgLogo {
-          width: 300px; } }
+          width: 280px; } }
   #body #MainSearch {
     background-color: transparent; }
   #body #MainContainer {

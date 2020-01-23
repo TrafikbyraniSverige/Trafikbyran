@@ -32,7 +32,7 @@ body {
 		#HeaderContainer {
 			background-color: transparent;
 			@media screen and (min-width: 992px) {
-				height: 70px;
+				height: 67px;
 			}
 		}
 		#HeaderMenuText {
@@ -40,10 +40,15 @@ body {
 			opacity: 1;
 			left: 5px;
 		}
+		#OpenCartText {
+			visibility: visible;
+			opacity: 1;
+			right: 5px;
+		}
 		#imgLogo {
 			width: 215px;
 			@media screen and (min-width: 992px) {
-				width: 300px;
+				width: 280px;
 			}
 		}
 	}
