@@ -99,6 +99,14 @@ body {
 				}
 			}
 		}
+		#ProductWrapper {
+			.product-images {
+				padding-top: 30px;
+			}
+			#RatingSummary {
+				display: none;
+			}
+		}
 	}
 	#Footer {
 		background-color: rgba(90,90,90,0.5);

@@ -71,6 +71,10 @@ body {
         display: none; }
       #body #MainContainer .productContainer .price-wrapper .value {
         font-size: 1.3rem; }
+    #body #MainContainer #ProductWrapper .product-images {
+      padding-top: 30px; }
+    #body #MainContainer #ProductWrapper #RatingSummary {
+      display: none; }
   #body #Footer {
     background-color: rgba(90, 90, 90, 0.5);
     border-color: #555;
