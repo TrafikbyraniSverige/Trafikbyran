@@ -24,10 +24,18 @@ body {
     background-color: transparent; }
     #body #Header #HeaderContainer {
       background-color: transparent; }
+      @media screen and (min-width: 992px) {
+        #body #Header #HeaderContainer {
+          height: 70px; } }
     #body #Header #HeaderMenuText {
       visibility: visible;
       opacity: 1;
       left: 5px; }
+    #body #Header #imgLogo {
+      width: 215px; }
+      @media screen and (min-width: 992px) {
+        #body #Header #imgLogo {
+          width: 300px; } }
   #body #MainSearch {
     background-color: transparent; }
   #body #MainContainer {
@@ -35,18 +43,10 @@ body {
     padding-top: 20px;
     background-color: rgba(250, 250, 250, 0.88);
     flex-grow: 1; }
-    @media screen and (min-width: 992px) {
-      #body #MainContainer {
-        height: 70px; } }
     #body #MainContainer h1 {
       font-family: urw-din, sans-serif;
       font-size: 2.9rem;
       font-weight: 700; }
-    #body #MainContainer #imgLogo {
-      width: 215px; }
-      @media screen and (min-width: 992px) {
-        #body #MainContainer #imgLogo {
-          width: 300px; } }
     #body #MainContainer #BreadMenu {
       margin-top: 0; }
     #body #MainContainer #Filters #BuyAllWrapper {
