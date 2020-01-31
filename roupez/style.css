@@ -47,10 +47,8 @@ body {
     #body #MainSearch #SearchContent {
       justify-content: flex-end;
       align-items: center; }
-      #body #MainSearch #SearchContent #SearchTxt {
-        flex-grow: 0; }
       #body #MainSearch #SearchContent #SearchTxt_txtField {
-        text-align: left; }
+        text-align: right; }
       #body #MainSearch #SearchContent #SearchClearBtn {
         padding-top: 5px; }
       #body #MainSearch #SearchContent #SearchBtn {
