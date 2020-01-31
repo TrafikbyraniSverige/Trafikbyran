@@ -26,9 +26,8 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	#Header {
-		background-color: rgba(90,90,90,1);
 		#HeaderContainer {
-			background-color: transparent;
+			background-color: rgba(90,90,90,1);
 			@media screen and (min-width: 992px) {
 				height: 67px;
 			}

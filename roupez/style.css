@@ -18,32 +18,30 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed; }
-  #body #Header {
+  #body #Header #HeaderContainer {
     background-color: #5a5a5a; }
-    #body #Header #HeaderContainer {
-      background-color: transparent; }
-      @media screen and (min-width: 992px) {
-        #body #Header #HeaderContainer {
-          height: 67px; } }
-    #body #Header .header-icon {
-      font-size: 2.4em;
-      margin-top: -4px;
-      color: #fff; }
-    #body #Header #HeaderMenuText {
-      visibility: visible;
-      opacity: 1;
-      left: 5px;
-      color: #fff; }
-    #body #Header #OpenCartText {
-      visibility: visible;
-      opacity: 1;
-      right: 5px;
-      color: #fff; }
-    #body #Header #imgLogo {
-      width: 215px; }
-      @media screen and (min-width: 992px) {
-        #body #Header #imgLogo {
-          width: 280px; } }
+    @media screen and (min-width: 992px) {
+      #body #Header #HeaderContainer {
+        height: 67px; } }
+  #body #Header .header-icon {
+    font-size: 2.4em;
+    margin-top: -4px;
+    color: #fff; }
+  #body #Header #HeaderMenuText {
+    visibility: visible;
+    opacity: 1;
+    left: 5px;
+    color: #fff; }
+  #body #Header #OpenCartText {
+    visibility: visible;
+    opacity: 1;
+    right: 5px;
+    color: #fff; }
+  #body #Header #imgLogo {
+    width: 215px; }
+    @media screen and (min-width: 992px) {
+      #body #Header #imgLogo {
+        width: 280px; } }
   #body #MainSearch {
     background-color: rgba(250, 250, 250, 0.5); }
     #body #MainSearch #SearchContent {
