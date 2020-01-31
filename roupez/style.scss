@@ -28,10 +28,8 @@ body {
 	#Header {
 		height: 100px;
 		#HeaderContainer {
-			background-color: rgba(50,50,50,1);
-			@media screen and (min-width: 992px) {
-				height: 100px;
-			}
+			background-color: rgba(25,25,25,1);
+			height: 100px;
 		}
 		.header-icon {
 			font-size: 2.4em;
@@ -174,10 +172,12 @@ body {
 		}
 	}
 	#Footer {
-		background-color: rgba(50,50,50,1);
+		background-color: rgba(25,25,25,1);
 		border-color: #555;
 		color: #fff;
-		padding: 10px 125px;
+		@media screen and (min-width: 767px) {
+			padding: 10px 125px;
+		}
 		a {
 			color: #fff;
 		}

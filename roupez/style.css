@@ -21,10 +21,8 @@ body {
   #body #Header {
     height: 100px; }
     #body #Header #HeaderContainer {
-      background-color: #323232; }
-      @media screen and (min-width: 992px) {
-        #body #Header #HeaderContainer {
-          height: 100px; } }
+      background-color: #191919;
+      height: 100px; }
     #body #Header .header-icon {
       font-size: 2.4em;
       margin-top: -4px;
@@ -123,10 +121,12 @@ body {
       #body #MainContainer #ProductWrapper #RatingsWrapper {
         display: none; }
   #body #Footer {
-    background-color: #323232;
+    background-color: #191919;
     border-color: #555;
-    color: #fff;
-    padding: 10px 125px; }
+    color: #fff; }
+    @media screen and (min-width: 767px) {
+      #body #Footer {
+        padding: 10px 125px; } }
     #body #Footer a {
       color: #fff; }
   #body.page-Start #MainContainer {
