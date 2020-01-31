@@ -142,14 +142,20 @@ body {
 			}
 		}
 		#ProductWrapper {
+			max-width: 1000px;
+			margin: 40px auto;
 			.product-images {
 				padding-top: 30px;
+				flex-basis: auto;
 			}
 			#RatingSummary {
 				display: none;
 			}
 			#InnerSlider {
 				justify-content: center;
+			}
+			#RatingsWrapper {
+				display: none;
 			}
 		}
 	}
