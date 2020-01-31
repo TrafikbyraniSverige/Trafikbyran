@@ -60,8 +60,13 @@ body {
 		background-color: rgba(250,250,250,.5);
 		#SearchContent{
 			flex-direction: row-reverse;
+			justify-content: flex-start;
+			align-items: center;
 			#SearchTxt_txtField {
 				text-align: right;
+			}
+			#SearchClearBtn {
+				padding-top: 5px;
 			}
 		}
 	}

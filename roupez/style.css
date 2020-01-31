@@ -45,9 +45,13 @@ body {
   #body #MainSearch {
     background-color: rgba(250, 250, 250, 0.5); }
     #body #MainSearch #SearchContent {
-      flex-direction: row-reverse; }
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      align-items: center; }
       #body #MainSearch #SearchContent #SearchTxt_txtField {
         text-align: right; }
+      #body #MainSearch #SearchContent #SearchClearBtn {
+        padding-top: 5px; }
   #body #MainContainer {
     margin-top: 0;
     padding-top: 20px;
