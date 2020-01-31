@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/eyu5aim.css");
 body {
+  font-size: 16px;
   background-color: #fff;
   font-family: urw-din, sans-serif; }
 
@@ -8,9 +9,6 @@ body {
   transition: transform .3s; }
   .fw-button-success:hover, .fw-button-success:focus {
     transform: scale(0.95); }
-
-#Header .header-icon {
-  font-size: 1.8em; }
 
 #Page {
   min-height: 100vh; }
@@ -21,27 +19,37 @@ body {
   background-size: cover;
   background-attachment: fixed; }
   #body #Header {
-    background-color: transparent; }
+    background-color: #5a5a5a; }
     #body #Header #HeaderContainer {
       background-color: transparent; }
       @media screen and (min-width: 992px) {
         #body #Header #HeaderContainer {
           height: 67px; } }
+    #body #Header .header-icon {
+      font-size: 2.4em;
+      margin-top: -4px;
+      color: #fff; }
     #body #Header #HeaderMenuText {
       visibility: visible;
       opacity: 1;
-      left: 5px; }
+      left: 5px;
+      color: #fff; }
     #body #Header #OpenCartText {
       visibility: visible;
       opacity: 1;
-      right: 5px; }
+      right: 5px;
+      color: #fff; }
     #body #Header #imgLogo {
       width: 215px; }
       @media screen and (min-width: 992px) {
         #body #Header #imgLogo {
           width: 280px; } }
   #body #MainSearch {
-    background-color: transparent; }
+    background-color: rgba(250, 250, 250, 0.5); }
+    #body #MainSearch #SearchContent {
+      flex-direction: row-reverse; }
+      #body #MainSearch #SearchContent #SearchTxt_txtField {
+        text-align: right; }
   #body #MainContainer {
     margin-top: 0;
     padding-top: 20px;
@@ -49,7 +57,7 @@ body {
     flex-grow: 1; }
     #body #MainContainer h1 {
       font-family: urw-din, sans-serif;
-      font-size: 2.9rem;
+      font-size: 2.6rem;
       font-weight: 700; }
     #body #MainContainer #BreadMenu {
       margin-top: 0; }
@@ -91,12 +99,12 @@ body {
     #body #MainContainer #ProductWrapper #InnerSlider {
       justify-content: center; }
   #body #Footer {
-    background-color: rgba(90, 90, 90, 0.5);
+    background-color: #5a5a5a;
     border-color: #555;
-    color: #777;
+    color: #fff;
     padding: 50px 125px; }
     #body #Footer a {
-      color: #999; }
+      color: #fff; }
   #body.page-Start #MainContainer {
     align-items: center;
     display: flex;

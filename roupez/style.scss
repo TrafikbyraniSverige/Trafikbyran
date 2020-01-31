@@ -3,6 +3,7 @@ $orange: rgba(237,125,32,1);
 $green: rgba(82,113,56,1);
 
 body {
+	font-size: 16px;
 	background-color: #fff;
 	font-family: urw-din, sans-serif;
 }
@@ -15,9 +16,6 @@ body {
 }
 
 
-#Header .header-icon {
-	font-size: 1.8em;
-}
 
 #Page {
 	min-height: 100vh;
@@ -28,22 +26,29 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	#Header {
-		background-color: transparent;
+		background-color: rgba(90,90,90,1);
 		#HeaderContainer {
 			background-color: transparent;
 			@media screen and (min-width: 992px) {
 				height: 67px;
 			}
 		}
+		.header-icon {
+			font-size: 2.4em;
+			margin-top: -4px;
+			color: #fff;
+		}
 		#HeaderMenuText {
 			visibility: visible;
 			opacity: 1;
 			left: 5px;
+			color: #fff;
 		}
 		#OpenCartText {
 			visibility: visible;
 			opacity: 1;
 			right: 5px;
+			color: #fff;
 		}
 		#imgLogo {
 			width: 215px;
@@ -53,7 +58,13 @@ body {
 		}
 	}
 	#MainSearch {
-		background-color: transparent;
+		background-color: rgba(250,250,250,.5);
+		#SearchContent{
+			flex-direction: row-reverse;
+			#SearchTxt_txtField {
+				text-align: right;
+			}
+		}
 	}
 	#MainContainer {
 		margin-top: 0;
@@ -63,7 +74,7 @@ body {
 		
 		h1 {
 			font-family: urw-din, sans-serif;
-    		font-size: 2.9rem;
+    		font-size: 2.6rem;
     		font-weight: 700;
 		}
 		
@@ -131,12 +142,12 @@ body {
 		}
 	}
 	#Footer {
-		background-color: rgba(90,90,90,0.5);
+		background-color: rgba(90,90,90,1);
 		border-color: #555;
-		color: #777;
+		color: #fff;
 		padding: 50px 125px;
 		a {
-			color: #999;
+			color: #fff;
 		}
 	}
 	&.page-Start{
