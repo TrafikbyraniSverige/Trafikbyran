@@ -105,20 +105,33 @@ body {
 				flex-basis: 25%;
 				max-width: 25%;
 			}
-			.description-wrapper {
-				text-align: center;
-				.product-name {
-					font-size: 1.5rem;
-				}
-				.product-rating {
-					display: none;
-				}
-				.product-code {
-					width: 100%;
-					display: block;
-					text-align: center;
+			.inner {
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.info-wrapper {
+					display: flex;
+					// height: 100%;
+					flex-direction: column;
+					justify-content: space-between;
+					.description-wrapper {
+						text-align: center;
+						.product-name {
+							font-size: 1.5rem;
+						}
+						.product-rating {
+							display: none;
+						}
+						.product-code {
+							width: 100%;
+							display: block;
+							text-align: center;
+						}
+					}
 				}
 			}
+			
 			.price-wrapper {
 				padding: 8px 0;
 				.label {
