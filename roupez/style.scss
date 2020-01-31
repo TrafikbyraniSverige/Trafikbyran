@@ -26,10 +26,11 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	#Header {
+		height: 100px;
 		#HeaderContainer {
 			background-color: rgba(90,90,90,1);
 			@media screen and (min-width: 992px) {
-				height: 67px;
+				height: 100px;
 			}
 		}
 		.header-icon {
@@ -59,14 +60,22 @@ body {
 	#MainSearch {
 		background-color: rgba(250,250,250,.5);
 		#SearchContent{
-			flex-direction: row-reverse;
-			justify-content: flex-start;
+			justify-content: flex-end;
 			align-items: center;
+			#SearchTxt {
+				flex-grow: 0;
+			}
 			#SearchTxt_txtField {
-				text-align: right;
+				text-align: left;
 			}
 			#SearchClearBtn {
 				padding-top: 5px;
+			}
+			#SearchBtn {
+				font-size: 0;
+				i {
+					font-size: 16px;
+				}
 			}
 		}
 	}
