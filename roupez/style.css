@@ -51,8 +51,6 @@ body {
         align-items: center; }
         #body #MainSearch #SearchWrapper #SearchContent #SearchTxt {
           flex-grow: 0; }
-          #body #MainSearch #SearchWrapper #SearchContent #SearchTxt #SearchTxt_txtField {
-            text-align: right; }
         #body #MainSearch #SearchWrapper #SearchContent #SearchClearBtn {
           padding-top: 5px; }
         #body #MainSearch #SearchWrapper #SearchContent #SearchBtn {
