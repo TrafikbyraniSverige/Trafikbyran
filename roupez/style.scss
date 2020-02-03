@@ -57,19 +57,25 @@ body {
 	}
 	#MainSearch {
 		background-color: rgba(250,250,250,.5);
-		#SearchContent{
-			justify-content: flex-end;
-			align-items: center;
-			#SearchTxt_txtField {
-				text-align: right;
-			}
-			#SearchClearBtn {
-				padding-top: 5px;
-			}
-			#SearchBtn {
-				font-size: 0;
-				i {
-					font-size: 16px;
+		#SearchWrapper {
+			max-width: none;
+			#SearchContent{
+				justify-content: flex-end;
+				align-items: center;
+				#SearchTxt {
+					flex-grow: 0;
+					#SearchTxt_txtField {
+						text-align: right;
+					}
+				}
+				#SearchClearBtn {
+					padding-top: 5px;
+				}
+				#SearchBtn {
+					font-size: 0;
+					i {
+						font-size: 16px;
+					}
 				}
 			}
 		}

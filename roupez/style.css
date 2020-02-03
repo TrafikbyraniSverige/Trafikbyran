@@ -44,17 +44,21 @@ body {
           width: 280px; } }
   #body #MainSearch {
     background-color: rgba(250, 250, 250, 0.5); }
-    #body #MainSearch #SearchContent {
-      justify-content: flex-end;
-      align-items: center; }
-      #body #MainSearch #SearchContent #SearchTxt_txtField {
-        text-align: right; }
-      #body #MainSearch #SearchContent #SearchClearBtn {
-        padding-top: 5px; }
-      #body #MainSearch #SearchContent #SearchBtn {
-        font-size: 0; }
-        #body #MainSearch #SearchContent #SearchBtn i {
-          font-size: 16px; }
+    #body #MainSearch #SearchWrapper {
+      max-width: none; }
+      #body #MainSearch #SearchWrapper #SearchContent {
+        justify-content: flex-end;
+        align-items: center; }
+        #body #MainSearch #SearchWrapper #SearchContent #SearchTxt {
+          flex-grow: 0; }
+          #body #MainSearch #SearchWrapper #SearchContent #SearchTxt #SearchTxt_txtField {
+            text-align: right; }
+        #body #MainSearch #SearchWrapper #SearchContent #SearchClearBtn {
+          padding-top: 5px; }
+        #body #MainSearch #SearchWrapper #SearchContent #SearchBtn {
+          font-size: 0; }
+          #body #MainSearch #SearchWrapper #SearchContent #SearchBtn i {
+            font-size: 16px; }
   #body #MainContainer {
     margin-top: 0;
     padding-top: 20px;
