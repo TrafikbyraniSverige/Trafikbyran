@@ -1026,10 +1026,14 @@ h2, h3, h4 {
 }
 
 // hide anoying messages
-.checkout {
-	#tws-react-common--modal {
-		.tws-checkout--cart-message-modal {
-			display: none;
+body.checkout {
+	&.modal_active {
+		overflow: initial;
+		#tws-react-common--modal {
+			.tws-checkout--cart-message-modal {
+				display: none;
+			}
 		}
 	}
+	
 }

@@ -952,7 +952,9 @@ h2, h3, h4 {
           .service-undersida-content .service-automower-tabeller div ul.service-lightservice .service-automower-info-titel {
             background: #aaa; }
 
-.checkout #tws-react-common--modal .tws-checkout--cart-message-modal {
-  display: none; }
+body.checkout.modal_active {
+  overflow: initial; }
+  body.checkout.modal_active #tws-react-common--modal .tws-checkout--cart-message-modal {
+    display: none; }
 
 /*# sourceMappingURL=gardsman-style.css.map */
