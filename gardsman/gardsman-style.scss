@@ -1030,7 +1030,7 @@ body.checkout {
 	&.modal_active {
 		overflow: initial;
 		#tws-react-common--modal {
-			.tws-checkout--cart-message-modal {
+			.tws-checkout--cart-message-modal, .tws-opc-cart--modal {
 				display: none;
 			}
 		}
