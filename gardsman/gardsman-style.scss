@@ -1025,3 +1025,11 @@ h2, h3, h4 {
 	}
 }
 
+// hide anoying messages
+.checkout {
+	#tws-react-common--modal {
+		.tws-checkout--cart-message-modal {
+			display: none;
+		}
+	}
+}
