@@ -954,7 +954,7 @@ h2, h3, h4 {
 
 body.checkout.modal_active {
   overflow: initial; }
-  body.checkout.modal_active #tws-react-common--modal .tws-checkout--cart-message-modal, body.checkout.modal_active #tws-react-common--modal .tws-opc-cart--modal {
+  body.checkout.modal_active #tws-react-common--modal .tws-checkout--cart-message-modal {
     display: none; }
   body.checkout.modal_active .page-canvas {
     overflow: initial; }
