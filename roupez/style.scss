@@ -25,10 +25,14 @@ body {
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
+	&.page-Product &.page-Prodlist {
+		background-image: none;
+		background-color: #fff;
+	}
 	#Header {
 		height: 100px;
 		#HeaderContainer {
-			background-color: rgba(25,25,25,1);
+			background-color: $green;
 			height: 100px;
 		}
 		.header-icon {
@@ -188,29 +192,41 @@ body {
 		    display: flex;
 		    justify-content: center;
 			background-color: transparent;
-		    .list_info {
-		    	&:before {
-					content: '';
-					background-image: url('https://trafikbyranisverige.github.io/roupez/jf-logo-green.png');
-					background-size: contain;
-					background-position: center center;
-					background-repeat: no-repeat;
-					width: 160px;
-					height: 230px;
-					display: block;
-					margin: auto;
-		    	}
-		    	h2 {
-		    		font-family: urw-din, sans-serif;
-		    		font-size: 3.9rem;
-		    		font-weight: 900;
-		    		color: #333;
-		    	}
-		    	// remove this when the img on front page is replaced 
-		    	img {
-		    		display: none;
-		    	}
-		    }
+			#MasterSections {
+				width: 100%;
+				#MainSection {
+					padding: 0;
+					max-width: none;
+					 .list_info {
+				    	&:before {
+							content: '';
+							background-image: url('https://trafikbyranisverige.github.io/roupez/jf-logo-green.png');
+							background-size: contain;
+							background-position: center center;
+							background-repeat: no-repeat;
+							width: 160px;
+							height: 230px;
+							display: block;
+							margin: 100px auto 0;
+				    	}
+				    	h2 {
+				    		font-family: urw-din, sans-serif;
+				    		font-size: 3.9rem;
+				    		font-weight: 900;
+				    		color: #333;
+				    	}
+				    	// remove this when the img on front page is replaced 
+				    	img {
+				    		display: none;
+				    	}
+				    }
+				    .mainContent {
+				    	background-color: #fff;
+				    	padding: 65px 35px;
+				    }
+				}
+			}
+		   
 		}
 	}
 }

@@ -18,10 +18,13 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed; }
+  #body.page-Product #body.page-Prodlist {
+    background-image: none;
+    background-color: #fff; }
   #body #Header {
     height: 100px; }
     #body #Header #HeaderContainer {
-      background-color: #191919;
+      background-color: #527138;
       height: 100px; }
     #body #Header .header-icon {
       font-size: 2.4em;
@@ -134,22 +137,30 @@ body {
     display: flex;
     justify-content: center;
     background-color: transparent; }
-    #body.page-Start #MainContainer .list_info:before {
-      content: '';
-      background-image: url("https://trafikbyranisverige.github.io/roupez/jf-logo-green.png");
-      background-size: contain;
-      background-position: center center;
-      background-repeat: no-repeat;
-      width: 160px;
-      height: 230px;
-      display: block;
-      margin: auto; }
-    #body.page-Start #MainContainer .list_info h2 {
-      font-family: urw-din, sans-serif;
-      font-size: 3.9rem;
-      font-weight: 900;
-      color: #333; }
-    #body.page-Start #MainContainer .list_info img {
-      display: none; }
+    #body.page-Start #MainContainer #MasterSections {
+      width: 100%; }
+      #body.page-Start #MainContainer #MasterSections #MainSection {
+        padding: 0;
+        max-width: none; }
+        #body.page-Start #MainContainer #MasterSections #MainSection .list_info:before {
+          content: '';
+          background-image: url("https://trafikbyranisverige.github.io/roupez/jf-logo-green.png");
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          width: 160px;
+          height: 230px;
+          display: block;
+          margin: 100px auto 0; }
+        #body.page-Start #MainContainer #MasterSections #MainSection .list_info h2 {
+          font-family: urw-din, sans-serif;
+          font-size: 3.9rem;
+          font-weight: 900;
+          color: #333; }
+        #body.page-Start #MainContainer #MasterSections #MainSection .list_info img {
+          display: none; }
+        #body.page-Start #MainContainer #MasterSections #MainSection .mainContent {
+          background-color: #fff;
+          padding: 65px 35px; }
 
 /*# sourceMappingURL=style.css.map */
