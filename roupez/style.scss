@@ -59,6 +59,17 @@ body {
 			}
 		}
 	}
+	#MainMenu {
+		ul.fw-list-unstyled {
+			li.level1:first-child{
+				a {
+					&:before {
+
+					}
+				}
+			}
+		}
+	}
 	#MainSearch {
 		background-color: rgba(250,250,250,.5);
 		#SearchWrapper {
@@ -196,6 +207,7 @@ body {
 				width: 100%;
 				#MainSection {
 					padding: 0;
+					margin-bottom: 0;
 					max-width: none;
 					 .list_info {
 				    	&:before {

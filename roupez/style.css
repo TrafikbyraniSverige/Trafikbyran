@@ -141,6 +141,7 @@ body {
       width: 100%; }
       #body.page-Start #MainContainer #MasterSections #MainSection {
         padding: 0;
+        margin-bottom: 0;
         max-width: none; }
         #body.page-Start #MainContainer #MasterSections #MainSection .list_info:before {
           content: '';
