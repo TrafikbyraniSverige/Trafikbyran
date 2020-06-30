@@ -18,7 +18,7 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed; }
-  #body.page-Product #body.page-Prodlist {
+  #body.page-Product, #body.page-Prodlist {
     background-image: none;
     background-color: #fff; }
   #body #Header {

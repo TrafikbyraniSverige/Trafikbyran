@@ -25,7 +25,7 @@ body {
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
-	&.page-Product &.page-Prodlist {
+	&.page-Product, &.page-Prodlist {
 		background-image: none;
 		background-color: #fff;
 	}
