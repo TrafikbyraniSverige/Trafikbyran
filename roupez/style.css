@@ -43,12 +43,16 @@ body {
 /*färger och anpassningar av footern*/
   #body #Footer {
     background-color: #fff;
-    border-color: #fff;
+    border-color: #333;
     color: #111; }
 
 /*färgen på länkar i footern*/
   #body #Footer a {
       color: #111; }
+
+div#MainFooter_FooterText p {
+  line-height: 1.2;
+}
 
  /* döljer bakgrundsbilden på startsidan*/
   #body #MainContainer #ProdListHeader {
@@ -193,7 +197,7 @@ Du behöver inte redigera något under den här linjen
     /*anpassnins för mobil*/
     @media screen and (min-width: 767px) {
       #body #Footer {
-        padding: 10px 125px; } }
+        padding: 0px 125px; } }
 
     
   #body.page-Start #MainContainer {
