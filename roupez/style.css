@@ -54,6 +54,8 @@ body {
   #body #MainContainer #ProdListHeader {
       padding-bottom: 35px;
  /*     display:none;}*/
+    
+}
  /*ta bort den här raden för att visa bakgrundsbilden på startsidan/*
 
 /*centrerad logotyp i maincontent
@@ -68,7 +70,8 @@ Den här tas bort om logotypen inte önskas
           width: 160px;
           height: 230px;
           display: block;
-          margin: 100px auto 0; }
+          margin: 100px auto 0; 
+}
 /* ta bort hit om logotypen mitt på startsidaninte ska vra med /*          
 
 
