@@ -57,8 +57,7 @@ div#MainFooter_FooterText p {
  /* döljer bakgrundsbilden på startsidan*/
   #body #MainContainer #ProdListHeader {
       padding-bottom: 35px;
- /*     display:none;}*/ /*ta bort det som är rund display:none för att dölja bakgrundsblocket helt/*
-    
+ /*     display:none;}*/ /*ta bort det som är rund display:none för att dölja bakgrundsblocket helt*/  
 }
  
 
