@@ -1,18 +1,93 @@
+/*Detta är mallen för ljus header och ljus footer/*
+
+/*import av typsnitt från adobe*/
 @import url("https://use.typekit.net/eyu5aim.css");
+
+/*generell font-storlek, typsnitt  och färg*/
 body {
   font-size: 16px;
   background-color: #fff;
   font-family: urw-din, sans-serif; }
 
+/*knappfärg*/
 .fw-button-success {
-  background-color: #527138 !important;
+  background-color: #049b72 !important; /*färgkoden för knapparna*/
   transition: transform .3s; }
   .fw-button-success:hover, .fw-button-success:focus {
     transform: scale(0.95); }
 
+/*färger på headern */
+#body #Header #HeaderContainer {
+  background-color: #ffffff;
+  height: 100px; }
+/*ikonfärgerna i headern */
+#body #Header .header-icon {
+  font-size: 2.4em;
+  margin-top: -4px;
+  color: #111; }
+
+/*texten jämte ikonen för menyn*/ 
+#body #Header #HeaderMenuText {
+  visibility: visible;
+  opacity: 1;
+  left: 5px;
+  color: #111; }
+
+/*texten jämte ikonen för varukorg*/ 
+#body #Header #OpenCartText {
+  visibility: visible;
+  opacity: 1;
+  right: 5px;
+  color: #111; }
+
+/*färger och anpassningar av footern*/
+  #body #Footer {
+    background-color: #fff;
+    border-color: #fff;
+    color: #111; }
+
+/*färgen på länkar i footern*/
+  #body #Footer a {
+      color: #111; }
+
+ /* döljer bakgrundsbilden på startsidan*/
+  #body #MainContainer #ProdListHeader {
+      padding-bottom: 35px;
+ /*     display:none;}*/
+    
+}
+ /*ta bort den här raden för att visa bakgrundsbilden på startsidan/*
+
+/*centrerad logotyp i maincontent
+Den här tas bort om logotypen inte önskas
+*/ 
+  #body.page-Start #MainContainer #MasterSections #MainSection .list_info:before {
+          content: '';
+          background-image: url("https://trafikbyranisverige.github.io/roupez/jf-logo-green.png");
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          width: 160px;
+          height: 230px;
+          display: block;
+          margin: 100px auto 0; 
+}
+/* ta bort hit om logotypen mitt på startsidaninte ska vra med /*          
+
+
+
+
+
+
+/*
+Du behöver inte redigera något under den här linjen
+---------------------------------------------------------------------------*/
+
+/*minsta storlek på sidan - höjd */
 #Page {
   min-height: 100vh; }
 
+/*anpassning av generellt utseende*/
 #body {
   background-image: url("https://trafikbyranisverige.github.io/roupez/woods-by-france-perles.jpg");
   background-position: center center;
@@ -23,28 +98,20 @@ body {
     background-color: #fff; }
   #body #Header {
     height: 100px; }
-    #body #Header #HeaderContainer {
-      background-color: #527138;
-      height: 100px; }
-    #body #Header .header-icon {
-      font-size: 2.4em;
-      margin-top: -4px;
-      color: #fff; }
+
+
     #body #Header #HeaderMenuText {
       visibility: visible;
       opacity: 1;
       left: 5px;
       color: #fff; }
-    #body #Header #OpenCartText {
-      visibility: visible;
-      opacity: 1;
-      right: 5px;
-      color: #fff; }
+
     #body #Header #imgLogo {
       width: 215px; }
       @media screen and (min-width: 992px) {
         #body #Header #imgLogo {
-          width: 280px; } }
+          width: auto;
+          max-height: 70px; } }
   #body #MainSearch {
     background-color: rgba(250, 250, 250, 1); }
     #body #MainSearch #SearchWrapper {
@@ -74,9 +141,7 @@ body {
     #body #MainContainer #Filters #BuyAllWrapper {
       border-bottom: 0px;
       padding: 0; }
-    #body #MainContainer #ProdListHeader {
-      padding-bottom: 35px;
-      display:none;}
+
     #body #MainContainer .groupview .group-link {
       background-color: #527138; }
       #body #MainContainer .groupview .group-link .group-title {
@@ -124,15 +189,13 @@ body {
         justify-content: center; }
       #body #MainContainer #ProductWrapper #RatingsWrapper {
         display: none; }
-  #body #Footer {
-    background-color: #191919;
-    border-color: #555;
-    color: #fff; }
+
+    /*anpassnins för mobil*/
     @media screen and (min-width: 767px) {
       #body #Footer {
         padding: 10px 125px; } }
-    #body #Footer a {
-      color: #fff; }
+
+    
   #body.page-Start #MainContainer {
     align-items: center;
     display: flex;
@@ -144,16 +207,7 @@ body {
         padding: 0;
         margin-bottom: 0;
         max-width: none; }
-        #body.page-Start #MainContainer #MasterSections #MainSection .list_info:before {
-          content: '';
-          background-image: url("https://trafikbyranisverige.github.io/roupez/jf-logo-green.png");
-          background-size: contain;
-          background-position: center center;
-          background-repeat: no-repeat;
-          width: 160px;
-          height: 230px;
-          display: block;
-          margin: 100px auto 0; }
+        
         #body.page-Start #MainContainer #MasterSections #MainSection .list_info h2 {
           font-family: urw-din, sans-serif;
           font-size: 3.9rem;
