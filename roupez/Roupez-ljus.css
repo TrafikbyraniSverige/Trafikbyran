@@ -11,26 +11,50 @@ body {
 
 /*knappfärg*/
 .fw-button-success {
-  background-color: #527138 !important; /*färgkoden för knapparna*/
+  background-color: #049b72 !important; /*färgkoden för knapparna*/
   transition: transform .3s; }
   .fw-button-success:hover, .fw-button-success:focus {
     transform: scale(0.95); }
 
+/*färger på headern */
+#body #Header #HeaderContainer {
+  background-color: #ffffff;
+  height: 100px; }
+/*ikonfärgerna i headern */
+#body #Header .header-icon {
+  font-size: 2.4em;
+  margin-top: -4px;
+  color: #111; }
 
+/*texten jämte ikonen för menyn*/ 
+#body #Header #HeaderMenuText {
+  visibility: visible;
+  opacity: 1;
+  left: 5px;
+  color: #111; }
+
+/*texten jämte ikonen för varukorg*/ 
+#body #Header #OpenCartText {
+  visibility: visible;
+  opacity: 1;
+  right: 5px;
+  color: #111; }
 
 /*färger och anpassningar av footern*/
   #body #Footer {
-    background-color: #191919;
-    border-color: #555;
-    color: #fff; }
+    background-color: #fff;
+    border-color: #fff;
+    color: #111; }
 
 /*färgen på länkar i footern*/
   #body #Footer a {
-      color: #fff; }
+      color: #111; }
+
  /* döljer bakgrundsbilden på startsidan*/
   #body #MainContainer #ProdListHeader {
       padding-bottom: 35px;
-     /* display:none;}/* /*ta bort den här raden för att visa bakgrundsbilden på startsidan/*
+ /*     display:none;}*/
+ /*ta bort den här raden för att visa bakgrundsbilden på startsidan/*
 
 /*centrerad logotyp i maincontent
 Den här tas bort om logotypen inte önskas
@@ -71,28 +95,20 @@ Du behöver inte redigera något under den här linjen
     background-color: #fff; }
   #body #Header {
     height: 100px; }
-    #body #Header #HeaderContainer {
-      background-color: #527138;
-      height: 100px; }
-    #body #Header .header-icon {
-      font-size: 2.4em;
-      margin-top: -4px;
-      color: #fff; }
+
+
     #body #Header #HeaderMenuText {
       visibility: visible;
       opacity: 1;
       left: 5px;
       color: #fff; }
-    #body #Header #OpenCartText {
-      visibility: visible;
-      opacity: 1;
-      right: 5px;
-      color: #fff; }
+
     #body #Header #imgLogo {
       width: 215px; }
       @media screen and (min-width: 992px) {
         #body #Header #imgLogo {
-          width: 280px; } }
+          width: auto;
+          max-height: 70px; } }
   #body #MainSearch {
     background-color: rgba(250, 250, 250, 1); }
     #body #MainSearch #SearchWrapper {
@@ -201,6 +217,3 @@ Du behöver inte redigera något under den här linjen
           padding: 65px 35px; }
 
 /*# sourceMappingURL=style.css.map */
-
-
-
