@@ -1,4 +1,211 @@
+/*Detta är mallen för ljus header och ljus footer/*
+
+/*import av typsnitt från adobe*/
 @import url("https://use.typekit.net/eyu5aim.css");
+
+/*generell font-storlek, typsnitt  och färg*/
+body {
+  font-size: 16px;
+  background-color: #fff;
+  font-family: urw-din, sans-serif; }
+
+/*knappfärg*/
+.fw-button-success {
+  background-color: #527138 !important; /*färgkoden för knapparna*/
+  transition: transform .3s; }
+  .fw-button-success:hover, .fw-button-success:focus {
+    transform: scale(0.95); }
+
+
+
+/*färger och anpassningar av footern*/
+  #body #Footer {
+    background-color: #191919;
+    border-color: #555;
+    color: #fff; }
+
+/*färgen på länkar i footern*/
+  #body #Footer a {
+      color: #fff; }
+ /* döljer bakgrundsbilden på startsidan*/
+  #body #MainContainer #ProdListHeader {
+      padding-bottom: 35px;
+     /* display:none;}/* /*ta bort den här raden för att visa bakgrundsbilden på startsidan/*
+
+/*centrerad logotyp i maincontent
+Den här tas bort om logotypen inte önskas
+*/ 
+  #body.page-Start #MainContainer #MasterSections #MainSection .list_info:before {
+          content: '';
+          background-image: url("https://trafikbyranisverige.github.io/roupez/jf-logo-green.png");
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          width: 160px;
+          height: 230px;
+          display: block;
+          margin: 100px auto 0; }
+/* ta bort hit om logotypen mitt på startsidaninte ska vra med /*          
+
+
+
+
+
+
+/*
+Du behöver inte redigera något under den här linjen
+---------------------------------------------------------------------------*/
+
+/*minsta storlek på sidan - höjd */
+#Page {
+  min-height: 100vh; }
+
+/*anpassning av generellt utseende*/
+#body {
+  background-image: url("https://trafikbyranisverige.github.io/roupez/woods-by-france-perles.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+  #body.page-Product, #body.page-Prodlist {
+    background-image: none;
+    background-color: #fff; }
+  #body #Header {
+    height: 100px; }
+    #body #Header #HeaderContainer {
+      background-color: #527138;
+      height: 100px; }
+    #body #Header .header-icon {
+      font-size: 2.4em;
+      margin-top: -4px;
+      color: #fff; }
+    #body #Header #HeaderMenuText {
+      visibility: visible;
+      opacity: 1;
+      left: 5px;
+      color: #fff; }
+    #body #Header #OpenCartText {
+      visibility: visible;
+      opacity: 1;
+      right: 5px;
+      color: #fff; }
+    #body #Header #imgLogo {
+      width: 215px; }
+      @media screen and (min-width: 992px) {
+        #body #Header #imgLogo {
+          width: 280px; } }
+  #body #MainSearch {
+    background-color: rgba(250, 250, 250, 1); }
+    #body #MainSearch #SearchWrapper {
+      max-width: none; }
+      #body #MainSearch #SearchWrapper #SearchContent {
+        justify-content: flex-end;
+        align-items: center; }
+        #body #MainSearch #SearchWrapper #SearchContent #SearchTxt {
+          flex-grow: 0; }
+        #body #MainSearch #SearchWrapper #SearchContent #SearchClearBtn {
+          padding-top: 5px; }
+        #body #MainSearch #SearchWrapper #SearchContent #SearchBtn {
+          font-size: 0; }
+          #body #MainSearch #SearchWrapper #SearchContent #SearchBtn i {
+            font-size: 16px; }
+  #body #MainContainer {
+    margin-top: 0;
+    padding-top: 0px;
+    background-color: rgba(250, 250, 250, 0.88);
+    flex-grow: 1; }
+    #body #MainContainer h1 {
+      font-family: urw-din, sans-serif;
+      font-size: 2.6rem;
+      font-weight: 700; }
+    #body #MainContainer #BreadMenu {
+      margin-top: 0; }
+    #body #MainContainer #Filters #BuyAllWrapper {
+      border-bottom: 0px;
+      padding: 0; }
+
+    #body #MainContainer .groupview .group-link {
+      background-color: #527138; }
+      #body #MainContainer .groupview .group-link .group-title {
+        font-size: 1.5rem;
+        color: #fff;
+        font-family: urw-din, sans-serif; }
+    @media screen and (min-width: 1200px) {
+      #body #MainContainer .productContainer {
+        flex-basis: 25%;
+        max-width: 25%; } }
+    #body #MainContainer .productContainer .inner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      #body #MainContainer .productContainer .inner .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        #body #MainContainer .productContainer .inner .info-wrapper .description-wrapper {
+          text-align: center; }
+          #body #MainContainer .productContainer .inner .info-wrapper .description-wrapper .product-name {
+            font-size: 1.5rem; }
+          #body #MainContainer .productContainer .inner .info-wrapper .description-wrapper .product-rating {
+            display: none; }
+          #body #MainContainer .productContainer .inner .info-wrapper .description-wrapper .product-code {
+            width: 100%;
+            display: block;
+            text-align: center; }
+    #body #MainContainer .productContainer .price-wrapper {
+      padding: 8px 0; }
+      #body #MainContainer .productContainer .price-wrapper .label {
+        display: none; }
+      #body #MainContainer .productContainer .price-wrapper .value {
+        font-size: 1.3rem; }
+    #body #MainContainer #ProductWrapper {
+      max-width: 1000px;
+      margin: 40px auto; }
+      #body #MainContainer #ProductWrapper .product-images {
+        padding-top: 30px;
+        flex-basis: auto; }
+      #body #MainContainer #ProductWrapper #RatingSummary {
+        display: none; }
+      #body #MainContainer #ProductWrapper #InnerSlider {
+        justify-content: center; }
+      #body #MainContainer #ProductWrapper #RatingsWrapper {
+        display: none; }
+
+    /*anpassnins för mobil*/
+    @media screen and (min-width: 767px) {
+      #body #Footer {
+        padding: 10px 125px; } }
+
+    
+  #body.page-Start #MainContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent; }
+    #body.page-Start #MainContainer #MasterSections {
+      width: 100%; }
+      #body.page-Start #MainContainer #MasterSections #MainSection {
+        padding: 0;
+        margin-bottom: 0;
+        max-width: none; }
+        
+        #body.page-Start #MainContainer #MasterSections #MainSection .list_info h2 {
+          font-family: urw-din, sans-serif;
+          font-size: 3.9rem;
+          font-weight: 900;
+          color: #333; }
+        #body.page-Start #MainContainer #MasterSections #MainSection .list_info img {
+          display: none; }
+        #body.page-Start #MainContainer #MasterSections #MainSection .mainContent {
+          background-color: #fff;
+          padding: 65px 35px; }
+
+/*# sourceMappingURL=style.css.map */
+
+
+
+
+/* @import url("https://use.typekit.net/eyu5aim.css");
 body {
   font-size: 16px;
   background-color: #fff;
@@ -166,3 +373,4 @@ body {
           padding: 65px 35px; }
 
 /*# sourceMappingURL=style.css.map */
+*/
