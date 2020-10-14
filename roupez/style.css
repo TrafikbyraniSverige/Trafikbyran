@@ -194,10 +194,10 @@ Du behöver inte redigera något under den här linjen
       #body #MainContainer #ProductWrapper #RatingsWrapper {
         display: none; }
 
-    /*anpassnins för mobil*/
+    /*anpassnins för responivitet*/
     @media screen and (min-width: 767px) {
       #body #Footer {
-        padding: 0px 125px; } }
+        padding: 15px 125px 0px 125px; } }
 
     
   #body.page-Start #MainContainer {
