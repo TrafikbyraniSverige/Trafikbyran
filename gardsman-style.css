@@ -941,5 +941,14 @@ h2, h3, h4 {
           background: #bbb; }
           .service-undersida-content .service-automower-tabeller div ul.service-lightservice .service-automower-info-titel {
             background: #aaa; }
+#hestra-sizeguide.sm {
+    height: 500px;
+}
+#hestra-sizeguide.xs {
+    height: 800px;
+}
+#hestra-sizeguide.md {
+    height: 340px;
+}
 
 /*# sourceMappingURL=gardsman-style.css.map */
