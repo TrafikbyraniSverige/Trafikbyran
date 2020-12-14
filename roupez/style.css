@@ -151,7 +151,7 @@ body {
           background-position: center center;
           background-repeat: no-repeat;
           width: 160px;
-          height: 230px;
+          /*height: 230px;*/
           display: block;
           margin: 100px auto 0; }
         #body.page-Start #MainContainer #MasterSections #MainSection .list_info h2 {
