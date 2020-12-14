@@ -958,13 +958,23 @@ body.checkout.modal_active {
     display: none; }
   body.checkout.modal_active .page-canvas {
     overflow: initial; }
-#hestra-sizeguide.sm {
-    height: 500px;
-}
-#hestra-sizeguide.xs {
-    height: 800px;
-}
+
+
 #hestra-sizeguide.md {
     height: 340px;
 }
+
+@media screen and (max-width: 1330px) {
+#hestra-sizeguide.sm {
+    height: 500px;
+}
+}
+
+@media screen and (max-width: 810px) {
+#hestra-sizeguide.xs {
+    height: 800px;
+}
+}
+
+
 /*# sourceMappingURL=gardsman-style.css.map */
