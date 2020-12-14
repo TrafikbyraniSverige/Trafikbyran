@@ -76,7 +76,7 @@ body {
       padding: 0; }
     #body #MainContainer #ProdListHeader {
       padding-bottom: 35px;
-      display:none;}
+      display:block;}
     #body #MainContainer .groupview .group-link {
       background-color: #527138; }
       #body #MainContainer .groupview .group-link .group-title {
@@ -146,7 +146,7 @@ body {
         max-width: none; }
         #body.page-Start #MainContainer #MasterSections #MainSection .list_info:before {
           content: '';
-          background-image: url("https://trafikbyranisverige.github.io/roupez/jf-logo-green.png");
+          /*background-image: url("https://trafikbyranisverige.github.io/roupez/jf-logo-green.png");*/
           background-size: contain;
           background-position: center center;
           background-repeat: no-repeat;
