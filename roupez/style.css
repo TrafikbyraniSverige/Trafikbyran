@@ -14,7 +14,7 @@ body {
   min-height: 100vh; }
 
 #body {
-  background-image: url("https://trafikbyranisverige.github.io/roupez/woods-by-france-perles.jpg");
+  /*background-image: url("https://trafikbyranisverige.github.io/roupez/woods-by-france-perles.jpg");*/
   background-position: center center;
   background-size: cover;
   background-attachment: fixed; }
