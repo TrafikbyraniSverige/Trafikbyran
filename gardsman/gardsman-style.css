@@ -976,5 +976,21 @@ body.checkout.modal_active {
 }
 }
 
+#top > div.bountiful--body > div > div.bountiful--main > div > div.bountiful--content-wrapper span.tws-api--price-regular.twsPriceRegular {
+    display: none;
+}
+
+body > div.tws-article-buy-button-with-modal--dialog-wrapper > div > div.modal.tws-article-buy-button-with-modal--dialog > div > div > div > div > div.media-body > div > span.tws-api--price-regular.twsPriceRegular {
+    display: none !important;
+}
+
+body > div.tws-article-buy-button-with-modal--dialog-wrapper > div > div.modal.tws-article-buy-button-with-modal--dialog > div > div > div > div > tws-articles-two > div > div > div > div > div > div > div > div > div > div.caption > div.tws-article-list--price > div > span.tws-api--price-regular.twsPriceRegular {
+    display: none;
+}
+
+
+#top div.tws-opc-cart--item-wrapper.clearfix > div.tws-opc-cart--item-price > ul > li.tws-opc-cart--unit-costs-unit > div > span.tws-api--price-regular.twsPriceRegular {
+    display: none;
+}
 
 /*# sourceMappingURL=gardsman-style.css.map */
