@@ -961,12 +961,12 @@ body.checkout.modal_active {
 
 
 #hestra-sizeguide.md {
-    height: 340px;
+    height: 810px;
 }
 
 @media screen and (max-width: 1330px) {
 #hestra-sizeguide.sm {
-    height: 500px;
+    height: 810px;
 }
 }
 
