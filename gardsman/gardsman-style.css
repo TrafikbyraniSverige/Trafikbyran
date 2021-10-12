@@ -502,7 +502,7 @@ h2, h3, h4 {
     background: rgba(0, 0, 0, 0.08); } }
 .slick-track .tws-list--grid-item .slick-slide:hover:after {
   background: rgba(0, 0, 0, 0.1); }
-.slick-track .tws-list--grid-item .slick-slide .thumbnail {
+.slick-track .slick-slide .thumbnail {
   height: 100%; }
 
 .tws-article-filter .open-filter-button.btn {
