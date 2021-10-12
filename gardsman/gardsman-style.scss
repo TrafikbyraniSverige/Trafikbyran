@@ -427,7 +427,6 @@ h2, h3, h4 {
 .slick-track{
 	.tws-list--grid-item {
 		.slick-slide {
-
 			@media screen and (max-width: $max-lap) {
 				&:nth-child(4n + 2),&:nth-child(4n + 3) {
 					&:after {
@@ -446,6 +445,9 @@ h2, h3, h4 {
 				&:after {
 					background: rgba(0,0,0,0.10);
 				}
+			}
+			.thumbnail {
+				height: 100%;
 			}
 		}
 	}

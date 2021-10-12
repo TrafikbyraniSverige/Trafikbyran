@@ -502,6 +502,8 @@ h2, h3, h4 {
     background: rgba(0, 0, 0, 0.08); } }
 .slick-track .tws-list--grid-item .slick-slide:hover:after {
   background: rgba(0, 0, 0, 0.1); }
+.slick-track .tws-list--grid-item .slick-slide .thumbnail {
+  height: 100%; }
 
 .tws-article-filter .open-filter-button.btn {
   width: 100%;
@@ -959,46 +961,4 @@ body.checkout.modal_active {
   body.checkout.modal_active .page-canvas {
     overflow: initial; }
 
-
-#hestra-sizeguide.md {
-    height: 810px;
-}
-
-@media screen and (max-width: 1330px) {
-#hestra-sizeguide.sm {
-    height: 810px;
-}
-}
-
-@media screen and (max-width: 810px) {
-#hestra-sizeguide.xs {
-    height: 800px;
-}
-.ts-xepc--frame {
-    width: 100%;
-    height: 810px !important;
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-}
-}
-
-
-/*
-#top > div.bountiful--body > div > div.bountiful--main > div > div.bountiful--content-wrapper span.tws-api--price-regular.twsPriceRegular {
-    display: none;
-}
-
-body > div.tws-article-buy-button-with-modal--dialog-wrapper > div > div.modal.tws-article-buy-button-with-modal--dialog > div > div > div > div > div.media-body > div > span.tws-api--price-regular.twsPriceRegular {
-    display: none !important;
-}
-
-body > div.tws-article-buy-button-with-modal--dialog-wrapper > div > div.modal.tws-article-buy-button-with-modal--dialog > div > div > div > div > tws-articles-two > div > div > div > div > div > div > div > div > div > div.caption > div.tws-article-list--price > div > span.tws-api--price-regular.twsPriceRegular {
-    display: none;
-}
-
-
-#top div.tws-opc-cart--item-wrapper.clearfix > div.tws-opc-cart--item-price > ul > li.tws-opc-cart--unit-costs-unit > div > span.tws-api--price-regular.twsPriceRegular {
-    display: none;
-}
-*/
 /*# sourceMappingURL=gardsman-style.css.map */
