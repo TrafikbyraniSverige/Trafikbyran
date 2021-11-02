@@ -961,4 +961,20 @@ body.checkout.modal_active {
   body.checkout.modal_active .page-canvas {
     overflow: initial; }
 
+#hestra-sizeguide.md {
+  height: 810px; }
+@media screen and (max-width: 1330px) {
+  #hestra-sizeguide.sm {
+    height: 810px; } }
+@media screen and (max-width: 810px) {
+  #hestra-sizeguide.xs {
+    height: 800px; } }
+
+@media screen and (max-width: 810px) {
+  .ts-xepc--frame {
+    width: 100%;
+    height: 810px !important;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px; } }
+
 /*# sourceMappingURL=gardsman-style.css.map */
